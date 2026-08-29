@@ -7,13 +7,13 @@ const Contact = () => {
   
   useEffect(() => {
     const updateTime = () => {
-      const sfTime = new Date().toLocaleTimeString("en-US", {
-        timeZone: "America/Los_Angeles",
+      const manchesterTime = new Date().toLocaleTimeString("en-US", {
+        timeZone: "Europe/London",
         hour: "numeric",
         minute: "2-digit",
         hour12: true,
       });
-      setCurrentTime(sfTime);
+      setCurrentTime(manchesterTime);
     };
     
     updateTime();
@@ -22,9 +22,9 @@ const Contact = () => {
   }, []);
 
   const contactLinks = [
-    { text: "hello@mayachen.design", href: "mailto:hello@mayachen.design", external: false },
-    { text: "LinkedIn", href: "https://linkedin.com/in/mayachen", external: true },
-    { text: "Dribbble", href: "https://dribbble.com/mayachen", external: true },
+    { text: "bernalmpau@gmail.com", href: "mailto:bernalmpau@gmail.com", external: false },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/paumartinezbernal/", external: true },
+    { text: "GitHub", href: "https://github.com/paumbernal", external: true },
   ];
 
   return (
@@ -74,7 +74,7 @@ const Contact = () => {
         >
           <div className="flex flex-col gap-2">
             <span className="text-lg text-foreground flex items-center gap-2">
-              San Francisco, USA 🇺🇸
+              Manchester, UK 🇬🇧
             </span>
             <span className="text-lg text-text-muted">
               {currentTime} local time

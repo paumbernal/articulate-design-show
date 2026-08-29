@@ -15,7 +15,7 @@ const Navigation = () => {
           to="/" 
           className="text-sm font-medium text-accent-green hover:opacity-70 transition-opacity"
         >
-          M—C
+          P—B
         </Link>
       </motion.div>
 
@@ -81,7 +81,7 @@ const Navigation = () => {
             />
             <text className="text-[11px] uppercase tracking-[0.2em] fill-foreground">
               <textPath href="#circlePath">
-                CRAFTED BY MAYA CHEN × CRAFTED BY MAYA CHEN ×
+                FINANCE × MARKETS × ANALYSIS × FINANCE × MARKETS × ANALYSIS ×
               </textPath>
             </text>
           </svg>

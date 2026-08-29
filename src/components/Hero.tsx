@@ -11,11 +11,11 @@ const Hero = () => {
         className="text-center mb-24 max-w-lg"
       >
         <p className="text-lg md:text-xl text-foreground leading-relaxed">
-          Welcome to the portfolio of Maya Chen —
+          Welcome to the portfolio of Pau Martinez Bernal —
           <br />
-          an award-winning freelance digital designer
+          a finance &amp; market analyst
           <br />
-          from the North of England ✌️
+          from Manchester, UK
         </p>
       </motion.div>
     </section>
