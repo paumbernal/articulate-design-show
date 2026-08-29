@@ -1,55 +1,30 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Sun, Moon } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
 
 const Navigation = () => {
   const { theme, toggleTheme } = useTheme();
   return (
     <>
-      {/* Top Left - Logo/Initials */}
+      {/* Top Left - Theme Toggle */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         className="fixed top-8 left-8 z-50"
       >
-        <Link 
-          to="/" 
-          className="text-sm font-medium text-accent-green hover:opacity-70 transition-opacity"
-        >
-          P—B
-        </Link>
-      </motion.div>
-
-{/* Top Center - Theme Toggle */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.25 }}
-        className="fixed top-8 left-1/2 -translate-x-1/2 z-50"
-      >
         <button
           onClick={toggleTheme}
           aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-          className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
+          className="flex items-center justify-center w-9 h-9 rounded-full border border-border-default text-foreground hover:bg-surface-hover transition-colors"
         >
-          {theme === "dark" ? "Light" : "Dark"}
+          {theme === "dark" ? (
+            <Sun size={16} strokeWidth={2} />
+          ) : (
+            <Moon size={16} strokeWidth={2} />
+          )}
         </button>
-      </motion.div>
-
-      {/* Top Right - Work Link */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        className="fixed top-8 right-8 z-50"
-      >
-        <Link 
-          to="/#work" 
-          className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
-        >
-          Work
-        </Link>
       </motion.div>
 
       {/* Bottom Left - About Link */}
@@ -59,8 +34,8 @@ const Navigation = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
         className="fixed bottom-8 left-8 z-50"
       >
-        <Link 
-          to="/#about" 
+        <Link
+          to="/#about"
           className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
         >
           About
@@ -74,13 +49,13 @@ const Navigation = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
         className="fixed bottom-8 right-8 z-50"
       >
-        <Link 
-          to="/#contact" 
+        <Link
+          to="/#contact"
           className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
         >
           Contact
         </Link>
-</motion.div>
+      </motion.div>
     </>
   );
 };
