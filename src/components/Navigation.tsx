@@ -64,31 +64,5 @@ const Navigation = () => {
         </Link>
       </motion.div>
 
-      {/* Top Center - Circular Badge */}
-      <motion.div
-        initial={{ opacity: 0, rotate: -180 }}
-        animate={{ opacity: 1, rotate: 0 }}
-        transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-        className="fixed top-6 left-1/2 -translate-x-1/2 z-50"
-      >
-        <div className="relative w-16 h-16">
-          {/* Circular text */}
-          <svg viewBox="0 0 100 100" className="w-full h-full animate-spin" style={{ animationDuration: '20s' }}>
-            <path
-              id="circlePath"
-              d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"
-              fill="none"
-            />
-            <text className="text-[11px] uppercase tracking-[0.2em] fill-foreground">
-              <textPath href="#circlePath">
-                FINANCE × MARKETS × ANALYSIS × FINANCE × MARKETS × ANALYSIS ×
-              </textPath>
-            </text>
-          </svg>
-        </div>
-      </motion.div>
-    </>
-  );
-};
 
 export default Navigation;
