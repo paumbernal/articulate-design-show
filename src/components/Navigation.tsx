@@ -21,6 +21,22 @@ const Navigation = () => {
         </Link>
       </motion.div>
 
+{/* Top Center - Theme Toggle */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.25 }}
+        className="fixed top-8 left-1/2 -translate-x-1/2 z-50"
+      >
+        <button
+          onClick={toggleTheme}
+          aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
+        >
+          {theme === "dark" ? "Light" : "Dark"}
+        </button>
+      </motion.div>
+
       {/* Top Right - Work Link */}
       <motion.div
         initial={{ opacity: 0 }}
