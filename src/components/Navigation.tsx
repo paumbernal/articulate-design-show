@@ -32,7 +32,7 @@ const Navigation = () => {
         <button
           onClick={toggleTheme}
           aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-          className="flex items-center justify-center w-9 h-9 rounded-full border border-border-default text-foreground hover:bg-surface-hover transition-colors"
+className="flex items-center justify-center w-9 h-9 rounded-full text-foreground hover:opacity-70 transition-opacity"
         >
           {theme === "dark" ? (
             <Sun size={16} strokeWidth={2} />
