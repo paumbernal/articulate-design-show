@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
@@ -25,36 +24,6 @@ const Navigation = () => {
             <Moon size={16} strokeWidth={2} />
           )}
         </button>
-      </motion.div>
-
-      {/* Bottom Left - About Link */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        className="fixed bottom-8 left-8 z-50"
-      >
-        <Link
-          to="/#about"
-          className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
-        >
-          About
-        </Link>
-      </motion.div>
-
-      {/* Bottom Right - Contact Link */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-        className="fixed bottom-8 right-8 z-50"
-      >
-        <Link
-          to="/#contact"
-          className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
-        >
-          Contact
-        </Link>
       </motion.div>
     </>
   );
