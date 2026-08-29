@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const NAME = "pau martínez bernal";
 
@@ -25,7 +26,7 @@ const Hero = () => {
 
   return (
 <section className="min-h-screen flex flex-col justify-start items-center px-8 pt-64 pb-24">
-      <motion.div
+<motion.div
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
@@ -33,13 +34,16 @@ const Hero = () => {
       >
         <p className="font-mono text-2xl md:text-4xl text-foreground lowercase tracking-tight">
           {typed}
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 1, 1] }}
-            transition={{ duration: 0.3, delay: 1 }}
-            className="inline-block w-0.5 h-[0.9em] bg-primary ml-1 align-middle"
-          />
         </p>
+        <div className="mt-6 flex items-center justify-center gap-6 font-mono text-sm md:text-base lowercase tracking-wide">
+          <Link to="/projects" className="text-foreground hover:text-primary transition-colors duration-300">
+            projects
+          </Link>
+          <span className="text-text-muted">/</span>
+          <Link to="/about" className="text-foreground hover:text-primary transition-colors duration-300">
+            about
+          </Link>
+        </div>
       </motion.div>
     </section>
   );
