@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTheme } from "@/hooks/use-theme";
 
 const Navigation = () => {
+  const { theme, toggleTheme } = useTheme();
   return (
     <>
       {/* Top Left - Logo/Initials */}
