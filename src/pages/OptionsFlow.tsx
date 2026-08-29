@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
-const Figma = () => {
+const OptionsFlow = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Back Navigation */}
@@ -28,10 +28,10 @@ const Figma = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-text-muted text-sm uppercase tracking-wide mb-4">Senior Designer • 2016–2020</p>
-          <h1 className="font-display text-[12vw] md:text-[8vw] leading-[0.9] mb-8">FIGMA</h1>
+          <p className="text-text-muted text-sm uppercase tracking-wide mb-4">Market Analysis Project</p>
+          <h1 className="font-display text-[9vw] md:text-[7vw] leading-[0.9] mb-8">OPTIONSFLOW EDGE LAB</h1>
           <p className="text-xl md:text-2xl text-text-muted leading-relaxed max-w-2xl mb-16">
-            Building the design tool that would revolutionize how teams create together in the browser.
+            A market analysis project using options flow, volume, and positioning data to identify potential trading opportunities.
           </p>
         </motion.div>
 
@@ -42,7 +42,7 @@ const Figma = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="w-full aspect-[16/10] bg-foreground/5 rounded-2xl mb-24 flex items-center justify-center"
         >
-          <span className="text-text-muted">Project Hero Image</span>
+          <span className="text-text-muted">Project Visual</span>
         </motion.div>
 
         {/* Overview */}
@@ -55,10 +55,10 @@ const Figma = () => {
         >
           <h2 className="text-sm uppercase tracking-wide text-text-muted mb-6">Overview</h2>
           <p className="text-lg leading-relaxed text-foreground/80 mb-6">
-            I joined Figma when the team was just 30 people, working directly on the core editor experience. Those early years shaped not just my career, but how millions of designers approach their craft.
+            OptionsFlow Edge Lab explores how options activity reveals what institutional participants are positioning for. By analysing options flow, volume, and open interest, it surfaces potential moves that pure price action alone would miss.
           </p>
           <p className="text-lg leading-relaxed text-foreground/80">
-            From the constraints panel to interactive components, I helped build features that became industry standards. The challenge was always the same: make the complex feel effortless.
+            I built and developed the analysis framework, researched options-flow concepts, analysed market positioning, and tested how options activity could be used alongside price action and order flow.
           </p>
         </motion.section>
 
@@ -68,16 +68,13 @@ const Figma = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid grid-cols-3 gap-4 mb-24"
+          className="grid grid-cols-2 gap-4 mb-24"
         >
           <div className="aspect-square bg-foreground/5 rounded-xl flex items-center justify-center">
-            <span className="text-text-muted text-sm">Components</span>
+            <span className="text-text-muted text-sm">Flow Signals</span>
           </div>
           <div className="aspect-square bg-foreground/5 rounded-xl flex items-center justify-center">
-            <span className="text-text-muted text-sm">Prototyping</span>
-          </div>
-          <div className="aspect-square bg-foreground/5 rounded-xl flex items-center justify-center">
-            <span className="text-text-muted text-sm">Collaboration</span>
+            <span className="text-text-muted text-sm">Positioning</span>
           </div>
         </motion.div>
 
@@ -89,28 +86,14 @@ const Figma = () => {
           transition={{ duration: 0.6 }}
           className="mb-24"
         >
-          <h2 className="text-sm uppercase tracking-wide text-text-muted mb-6">Key Contributions</h2>
+          <h2 className="text-sm uppercase tracking-wide text-text-muted mb-6">What I Built</h2>
           <ul className="space-y-4 text-lg text-foreground/80">
-            <li>• Designed the Auto Layout feature from concept to launch</li>
-            <li>• Created the original constraints and resizing system</li>
-            <li>• Led the design of Figma's commenting and feedback tools</li>
-            <li>• Established early design system documentation practices</li>
+            <li>• Built and developed the options-flow analysis framework</li>
+            <li>• Researched options-flow concepts to shape the methodology</li>
+            <li>• Analysed market positioning and open-interest dynamics</li>
+            <li>• Tested how options activity combines with price action and order flow</li>
           </ul>
         </motion.section>
-
-        {/* Quote */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="border-l-2 border-foreground/20 pl-8 mb-24"
-        >
-          <p className="text-2xl md:text-3xl leading-relaxed text-foreground/80 italic mb-4">
-            "Maya's work on Auto Layout fundamentally changed how designers think about responsive design."
-          </p>
-          <p className="text-text-muted">— Dylan Field, Figma CEO</p>
-        </motion.div>
 
         {/* Full Width Image */}
         <motion.div
@@ -120,7 +103,7 @@ const Figma = () => {
           transition={{ duration: 0.6 }}
           className="w-full aspect-video bg-foreground/5 rounded-2xl mb-24 flex items-center justify-center"
         >
-          <span className="text-text-muted">Editor Interface</span>
+          <span className="text-text-muted">Analysis Dashboard</span>
         </motion.div>
 
         {/* Results */}
@@ -131,19 +114,19 @@ const Figma = () => {
           transition={{ duration: 0.6 }}
           className="mb-24"
         >
-          <h2 className="text-sm uppercase tracking-wide text-text-muted mb-8">Impact</h2>
+          <h2 className="text-sm uppercase tracking-wide text-text-muted mb-8">Focus Areas</h2>
           <div className="grid grid-cols-3 gap-8">
             <div>
-              <p className="font-display text-5xl md:text-6xl mb-2">30→</p>
-              <p className="text-text-muted">300 Employees</p>
+              <p className="font-display text-3xl md:text-4xl mb-2">FLOW</p>
+              <p className="text-text-muted">Options Volume</p>
             </div>
             <div>
-              <p className="font-display text-5xl md:text-6xl mb-2">3</p>
-              <p className="text-text-muted">Core Features</p>
+              <p className="font-display text-3xl md:text-4xl mb-2">OI</p>
+              <p className="text-text-muted">Positioning</p>
             </div>
             <div>
-              <p className="font-display text-5xl md:text-6xl mb-2">4M+</p>
-              <p className="text-text-muted">Daily Users</p>
+              <p className="font-display text-3xl md:text-4xl mb-2">RX</p>
+              <p className="text-text-muted">Price Action</p>
             </div>
           </div>
         </motion.section>
@@ -156,9 +139,9 @@ const Figma = () => {
           transition={{ duration: 0.6 }}
           className="border-t border-foreground/10 pt-12"
         >
-          <p className="text-text-muted text-sm mb-4">Next Project</p>
-          <Link to="/notion" className="font-display text-4xl md:text-5xl hover:text-text-muted transition-colors">
-            NOTION →
+          <p className="text-text-muted text-sm mb-4">Back to</p>
+          <Link to="/orderflow" className="font-display text-4xl md:text-5xl hover:text-text-muted transition-colors">
+            ORDERFLOW EDGE LAB →
           </Link>
         </motion.div>
       </div>
@@ -166,4 +149,4 @@ const Figma = () => {
   );
 };
 
-export default Figma;
+export default OptionsFlow;

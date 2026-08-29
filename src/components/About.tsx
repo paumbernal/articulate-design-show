@@ -21,7 +21,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="text-lg leading-relaxed text-foreground"
         >
-          Over a decade of experience crafting digital products, brands and experiences that are used by millions of people every day.
+          I'm a finance and market analyst focused on order flow, options flow, and market positioning — turning complex market data into clear, actionable trading signals.
         </motion.p>
         
         <motion.p
@@ -31,11 +31,10 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-lg leading-relaxed text-foreground"
         >
-          Embracing growth, I continually combine extensive experience in{" "}
-          <span className="font-semibold">Product</span>,{" "}
-          <span className="font-semibold">Motion</span>,{" "}
-          <span className="font-semibold">Sound</span> and{" "}
-          <span className="font-semibold">Brand</span>-Design.
+          My approach blends structured research with hands-on{" "}
+          <span className="font-semibold">analysis</span>,{" "}
+          <span className="font-semibold">data</span>, and{" "}
+          <span className="font-semibold">market structure</span> — building frameworks that help identify opportunities before they become obvious.
         </motion.p>
         
         <motion.p
@@ -45,7 +44,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="text-lg leading-relaxed text-foreground"
         >
-          I am dedicated to shaping a better future through Design. My approach always puts people first — from clients to users.
+          I'm dedicated to the craft of understanding markets. My work always starts with the data — from price action to positioning — and builds up to a confident, well-researched view.
         </motion.p>
         
         <motion.p
@@ -55,7 +54,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="text-lg leading-relaxed text-text-muted italic"
         >
-          Curious and optimistic.
+          Curious and methodical.
         </motion.p>
       </div>
     </section>

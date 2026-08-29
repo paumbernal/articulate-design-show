@@ -2,11 +2,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const projects = [
-  { name: "VERVE", link: "/verve" },
-  { name: "SPOTIFY", link: "/spotify" },
-  { name: "FIGMA", link: "/figma" },
-  { name: "NOTION", link: "/notion" },
-  { name: "EXPLORATIONS", link: "/explorations" },
+  { name: "OrderFlow Edge Lab", link: "/orderflow" },
+  { name: "OptionsFlow Edge Lab", link: "/optionsflow" },
 ];
 
 const Experience = () => {
@@ -26,7 +23,7 @@ const Experience = () => {
         >
           <Link
             to={project.link}
-            className="block font-display text-[12vw] md:text-[10vw] lg:text-[8vw] leading-[0.9] text-foreground hover:text-text-muted transition-colors duration-300 text-center"
+            className="block font-display text-[9vw] md:text-[7vw] lg:text-[5.5vw] leading-[0.9] text-foreground hover:text-text-muted transition-colors duration-300 text-center"
           >
             {project.name}
           </Link>
