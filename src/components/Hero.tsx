@@ -33,12 +33,6 @@ const Hero = () => {
       >
         <p className="font-mono text-2xl md:text-4xl text-foreground lowercase tracking-tight">
           {typed}
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 1, 1] }}
-            transition={{ duration: 0.3, delay: 1 }}
-            className="inline-block w-0.5 h-[0.9em] bg-primary ml-1 align-middle"
-          />
         </p>
       </motion.div>
     </section>
