@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
@@ -6,12 +7,27 @@ const Navigation = () => {
   const { theme, toggleTheme } = useTheme();
   return (
     <>
-      {/* Top Left - Theme Toggle */}
+      {/* Top Left - Logo/Initials */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         className="fixed top-8 left-8 z-50"
+      >
+        <Link
+          to="/"
+          className="text-sm font-medium text-accent-green hover:opacity-70 transition-opacity"
+        >
+          P—B
+        </Link>
+      </motion.div>
+
+      {/* Top Right - Theme Toggle */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="fixed top-8 right-8 z-50"
       >
         <button
           onClick={toggleTheme}
