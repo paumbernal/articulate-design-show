@@ -62,7 +62,9 @@ const Navigation = () => {
         >
           Contact
         </Link>
-      </motion.div>
-
+</motion.div>
+    </>
+  );
+};
 
 export default Navigation;
