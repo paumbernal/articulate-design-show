@@ -1,21 +1,39 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+const NAME = "pau martinez bernal";
+
+const useTypewriter = (text: string, speed = 90) => {
+  const [display, setDisplay] = useState("");
+
+  useEffect(() => {
+    let i = 0;
+    setDisplay("");
+    const interval = setInterval(() => {
+      i += 1;
+      setDisplay(text.slice(0, i));
+      if (i >= text.length) clearInterval(interval);
+    }, speed);
+    return () => clearInterval(interval);
+  }, [text, speed]);
+
+  return display;
+};
+
 const Hero = () => {
+  const typed = useTypewriter(NAME);
+
   return (
     <section className="min-h-screen flex flex-col justify-center items-center px-8 pt-32 pb-24">
-      {/* Intro Text */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className="text-center mb-24 max-w-lg"
+        className="text-center"
       >
-        <p className="text-lg md:text-xl text-foreground leading-relaxed">
-          Welcome to the portfolio of Pau Martinez Bernal —
-          <br />
-          a finance &amp; market analyst
-          <br />
-          from Manchester, UK
+        <p className="font-mono text-2xl md:text-4xl text-foreground lowercase">
+          {typed}
+          <span className="animate-pulse text-accent-green">|</span>
         </p>
       </motion.div>
     </section>
