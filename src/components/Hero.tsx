@@ -75,15 +75,18 @@ const Hero = () => {
           initial={{ opacity: 0, y: 8 }}
           animate={finished ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-6 flex items-center justify-center gap-6 font-mono text-sm md:text-base lowercase tracking-wide"
+          className="mt-6 flex flex-col items-center gap-5"
         >
-          <Link to="/projects" className="text-foreground hover:text-primary transition-colors duration-300">
-            projects
-          </Link>
-          <span className="text-text-muted">/</span>
-          <Link to="/about" className="text-foreground hover:text-primary transition-colors duration-300">
-            about
-          </Link>
+          <div className="flex items-center justify-center gap-6 font-mono text-sm md:text-base lowercase tracking-wide">
+            <Link to="/projects" className="text-foreground hover:text-primary transition-colors duration-300">
+              projects
+            </Link>
+            <span className="text-text-muted">/</span>
+            <Link to="/about" className="text-foreground hover:text-primary transition-colors duration-300">
+              about
+            </Link>
+          </div>
+          <Candlesticks />
         </motion.div>
       </motion.div>
     </section>
