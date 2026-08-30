@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -6,6 +6,11 @@ const NAME = "pau martínez bernal";
 
 const useTypewriter = (text: string, speed = 80, onComplete?: () => void) => {
   const [display, setDisplay] = useState("");
+  const callbackRef = useRef(onComplete);
+
+  useEffect(() => {
+    callbackRef.current = onComplete;
+  }, [onComplete]);
 
   useEffect(() => {
     let i = 0;
@@ -15,11 +20,11 @@ const useTypewriter = (text: string, speed = 80, onComplete?: () => void) => {
       setDisplay(text.slice(0, i));
       if (i >= text.length) {
         clearInterval(interval);
-        onComplete?.();
+        callbackRef.current?.();
       }
     }, speed);
     return () => clearInterval(interval);
-  }, [text, speed, onComplete]);
+  }, [text, speed]);
 
   return display;
 };
