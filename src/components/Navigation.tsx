@@ -16,7 +16,7 @@ const Navigation = () => {
       >
         <Link
           to="/"
-          className="text-sm font-medium text-accent-green hover:opacity-70 transition-opacity"
+          className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
         >
           P—B
         </Link>
