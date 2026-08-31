@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
+import Candlesticks from "./Candlesticks";
 
 const Navigation = () => {
   const { theme, toggleTheme } = useTheme();
   return (
     <>
-      {/* Top Left - Logo/Initials */}
+      {/* Top Left - Candlesticks Logo */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -16,9 +17,10 @@ const Navigation = () => {
       >
         <Link
           to="/"
-          className="text-sm font-medium text-foreground hover:opacity-70 transition-opacity"
+          className="text-foreground hover:opacity-70 transition-opacity"
+          aria-label="Home"
         >
-          P—B
+          <Candlesticks className="text-foreground" />
         </Link>
       </motion.div>
 
