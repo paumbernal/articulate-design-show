@@ -51,12 +51,22 @@ const Hero = () => {
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="mt-6 flex items-center justify-center gap-6 font-mono text-sm md:text-base lowercase tracking-wide"
         >
-          <Link to="/projects" className="text-foreground hover:text-primary transition-colors duration-300">
+          <Link
+            to="/projects"
+            className="relative text-foreground hover:text-primary transition-colors duration-300 group"
+          >
             projects
+            <span className="absolute -bottom-1 left-0 w-full h-px bg-primary origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100" />
           </Link>
           <span className="text-text-muted">/</span>
-          <Link to="/about" className="text-foreground hover:text-primary transition-colors duration-300">
-            about
+          <Link
+            to="/about"
+            className="relative text-foreground hover:text-primary transition-all duration-300 group"
+          >
+            <span className="inline-block transition-transform duration-300 group-hover:-translate-y-0.5">
+              about
+            </span>
+            <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </Link>
         </motion.div>
       </motion.div>
