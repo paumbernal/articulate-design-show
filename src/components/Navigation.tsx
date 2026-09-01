@@ -6,6 +6,21 @@ const Navigation = () => {
   const { theme, toggleTheme } = useTheme();
   return (
     <>
+      {/* Top Left - Contact */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="fixed top-8 left-8 z-50"
+      >
+        <a
+          href="#contact"
+          className="font-mono text-sm text-foreground hover:opacity-70 transition-opacity lowercase"
+        >
+          contact
+        </a>
+      </motion.div>
+
       {/* Top Right - Theme Toggle */}
       <motion.div
         initial={{ opacity: 0 }}
