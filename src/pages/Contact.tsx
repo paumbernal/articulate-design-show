@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 
 const ContactPage = () => {
   return (
@@ -9,7 +8,6 @@ const ContactPage = () => {
       <div className="pt-32">
         <Contact />
       </div>
-      <Footer />
     </main>
   );
 };
