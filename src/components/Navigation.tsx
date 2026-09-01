@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
@@ -13,12 +14,12 @@ const Navigation = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="fixed top-8 left-8 z-50"
       >
-        <a
-          href="#contact"
+        <Link
+          to="/contact"
           className="font-mono text-sm text-foreground hover:opacity-70 transition-opacity lowercase"
         >
           contact
-        </a>
+        </Link>
       </motion.div>
 
       {/* Top Right - Theme Toggle */}
