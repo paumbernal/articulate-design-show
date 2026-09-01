@@ -35,7 +35,7 @@ const Hero = () => {
   const typed = useTypewriter(NAME, 80, () => setFinished(true));
 
   return (
-    <section className="min-h-screen flex flex-col justify-start items-center px-8 pt-64 pb-24">
+    <section className="h-full flex flex-col justify-center items-center px-8">
       <motion.div
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}

@@ -1,0 +1,122 @@
+{
+  "$defs": {
+    "PriceLevelVolume": {
+      "description": "Bid/ask volume synthesized at a single price level within a bar.\n\nReserved for a future footprint-grid view \u2014 not rendered by the MVP UI,\nbut included in the schema now so the model doesn't need reshaping later.",
+      "properties": {
+        "price": {
+          "title": "Price",
+          "type": "number"
+        },
+        "bidVolume": {
+          "minimum": 0,
+          "title": "Bidvolume",
+          "type": "number"
+        },
+        "askVolume": {
+          "minimum": 0,
+          "title": "Askvolume",
+          "type": "number"
+        }
+      },
+      "required": [
+        "price",
+        "bidVolume",
+        "askVolume"
+      ],
+      "title": "PriceLevelVolume",
+      "type": "object"
+    }
+  },
+  "description": "Per-bar aggregate order-flow features.\n\nThis is deliberately bar-aggregated, not raw tick-by-tick \u2014 the MVP's\nsynthetic generator produces bar-level bid/ask/delta directly rather than\nsimulating individual trades, which keeps exported artifacts small while\nstill supporting delta/imbalance/absorption-style feature detection.",
+  "properties": {
+    "symbol": {
+      "enum": [
+        "MES",
+        "MNQ"
+      ],
+      "title": "Symbol",
+      "type": "string"
+    },
+    "timeframe": {
+      "enum": [
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h"
+      ],
+      "title": "Timeframe",
+      "type": "string"
+    },
+    "barIndex": {
+      "minimum": 0,
+      "title": "Barindex",
+      "type": "integer"
+    },
+    "bidVolume": {
+      "minimum": 0,
+      "title": "Bidvolume",
+      "type": "number"
+    },
+    "askVolume": {
+      "minimum": 0,
+      "title": "Askvolume",
+      "type": "number"
+    },
+    "delta": {
+      "description": "ask_volume - bid_volume",
+      "title": "Delta",
+      "type": "number"
+    },
+    "cumulativeDelta": {
+      "description": "Running sum of delta up to and including this bar",
+      "title": "Cumulativedelta",
+      "type": "number"
+    },
+    "aggressiveBuyVolume": {
+      "minimum": 0,
+      "title": "Aggressivebuyvolume",
+      "type": "number"
+    },
+    "aggressiveSellVolume": {
+      "minimum": 0,
+      "title": "Aggressivesellvolume",
+      "type": "number"
+    },
+    "imbalanceRatio": {
+      "description": "ask_volume / bid_volume, clamped and signed; >1 = ask-heavy, <1 = bid-heavy",
+      "title": "Imbalanceratio",
+      "type": "number"
+    },
+    "priceLevels": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/PriceLevelVolume"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Reserved for future footprint-grid rendering",
+      "title": "Pricelevels"
+    }
+  },
+  "required": [
+    "symbol",
+    "timeframe",
+    "barIndex",
+    "bidVolume",
+    "askVolume",
+    "delta",
+    "cumulativeDelta",
+    "aggressiveBuyVolume",
+    "aggressiveSellVolume",
+    "imbalanceRatio"
+  ],
+  "title": "SyntheticOrderFlowBar",
+  "type": "object"
+}

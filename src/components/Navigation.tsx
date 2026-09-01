@@ -6,18 +6,18 @@ import { useTheme } from "@/hooks/use-theme";
 const Navigation = () => {
   const { theme, toggleTheme } = useTheme();
   const location = useLocation();
-  const isContactPage = location.pathname === "/contact";
+  const isHomePage = location.pathname === "/";
 
   return (
     <>
-      {/* Top Left - Contact or Back */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="fixed top-8 left-8 z-50"
-      >
-        {isContactPage ? (
+      {/* Top Left - Back to Home */}
+      {!isHomePage && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="fixed top-8 left-8 z-50"
+        >
           <Link
             to="/"
             aria-label="Back to home"
@@ -25,15 +25,8 @@ const Navigation = () => {
           >
             <ArrowLeft size={18} strokeWidth={2} />
           </Link>
-        ) : (
-          <Link
-            to="/contact"
-            className="font-mono text-sm text-foreground hover:opacity-70 transition-opacity lowercase"
-          >
-            contact
-          </Link>
-        )}
-      </motion.div>
+        </motion.div>
+      )}
 
       {/* Top Right - Theme Toggle */}
       <motion.div

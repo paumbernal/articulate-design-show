@@ -10,7 +10,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "engine:setup": "cd engine && python -m uv sync",
+    "engine:test": "cd engine && python -m uv run pytest",
+    "engine:lint": "cd engine && python -m uv run ruff check . && python -m uv run ruff format --check .",
+    "engine:dev": "cd engine && python -m uv run uvicorn edge_lab.api.app:app --reload --port 8000",
+    "engine:export": "cd engine && python -m uv run python -m edge_lab.cli.export_artifacts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -73,6 +78,8 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",

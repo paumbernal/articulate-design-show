@@ -1,0 +1,476 @@
+{
+  "$defs": {
+    "BacktestConfigSnapshot": {
+      "properties": {
+        "symbol": {
+          "enum": [
+            "MES",
+            "MNQ"
+          ],
+          "title": "Symbol",
+          "type": "string"
+        },
+        "dateRangeStart": {
+          "format": "date-time",
+          "title": "Daterangestart",
+          "type": "string"
+        },
+        "dateRangeEnd": {
+          "format": "date-time",
+          "title": "Daterangeend",
+          "type": "string"
+        },
+        "session": {
+          "anyOf": [
+            {
+              "enum": [
+                "RTH",
+                "ETH"
+              ],
+              "type": "string"
+            },
+            {
+              "const": "ANY",
+              "type": "string"
+            }
+          ],
+          "default": "ANY",
+          "title": "Session"
+        },
+        "setupId": {
+          "title": "Setupid",
+          "type": "string"
+        },
+        "setupVersion": {
+          "title": "Setupversion",
+          "type": "integer"
+        },
+        "minEdgeScore": {
+          "title": "Minedgescore",
+          "type": "number"
+        },
+        "entryMethodology": {
+          "title": "Entrymethodology",
+          "type": "string"
+        },
+        "stopMethodology": {
+          "title": "Stopmethodology",
+          "type": "string"
+        },
+        "targetMethodology": {
+          "title": "Targetmethodology",
+          "type": "string"
+        },
+        "maxHoldBars": {
+          "title": "Maxholdbars",
+          "type": "integer"
+        },
+        "costsAssumedPoints": {
+          "title": "Costsassumedpoints",
+          "type": "number"
+        },
+        "outOfSampleSplit": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Trades at/after this timestamp are treated as out-of-sample",
+          "title": "Outofsamplesplit"
+        }
+      },
+      "required": [
+        "symbol",
+        "dateRangeStart",
+        "dateRangeEnd",
+        "setupId",
+        "setupVersion",
+        "minEdgeScore",
+        "entryMethodology",
+        "stopMethodology",
+        "targetMethodology",
+        "maxHoldBars",
+        "costsAssumedPoints"
+      ],
+      "title": "BacktestConfigSnapshot",
+      "type": "object"
+    },
+    "BreakdownRow": {
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "n": {
+          "minimum": 0,
+          "title": "N",
+          "type": "integer"
+        },
+        "winRate": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Winrate"
+        },
+        "avgR": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Avgr"
+        },
+        "expectancy": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expectancy"
+        }
+      },
+      "required": [
+        "label",
+        "n"
+      ],
+      "title": "BreakdownRow",
+      "type": "object"
+    },
+    "Breakdowns": {
+      "properties": {
+        "byTimeOfDay": {
+          "items": {
+            "$ref": "#/$defs/BreakdownRow"
+          },
+          "title": "Bytimeofday",
+          "type": "array"
+        },
+        "byDayOfWeek": {
+          "items": {
+            "$ref": "#/$defs/BreakdownRow"
+          },
+          "title": "Bydayofweek",
+          "type": "array"
+        },
+        "bySession": {
+          "items": {
+            "$ref": "#/$defs/BreakdownRow"
+          },
+          "title": "Bysession",
+          "type": "array"
+        },
+        "byEdgeScoreBucket": {
+          "items": {
+            "$ref": "#/$defs/BreakdownRow"
+          },
+          "title": "Byedgescorebucket",
+          "type": "array"
+        }
+      },
+      "title": "Breakdowns",
+      "type": "object"
+    },
+    "SignificanceResult": {
+      "properties": {
+        "method": {
+          "description": "e.g. 'one-sample two-sided t-test against zero mean R'",
+          "title": "Method",
+          "type": "string"
+        },
+        "pValue": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pvalue"
+        },
+        "ciLow": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cilow"
+        },
+        "ciHigh": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cihigh"
+        },
+        "winRateCiLow": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Winratecilow"
+        },
+        "winRateCiHigh": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Winratecihigh"
+        }
+      },
+      "required": [
+        "method"
+      ],
+      "title": "SignificanceResult",
+      "type": "object"
+    },
+    "ValidationSummary": {
+      "properties": {
+        "inSampleN": {
+          "minimum": 0,
+          "title": "Insamplen",
+          "type": "integer"
+        },
+        "outOfSampleN": {
+          "minimum": 0,
+          "title": "Outofsamplen",
+          "type": "integer"
+        },
+        "significance": {
+          "$ref": "#/$defs/SignificanceResult"
+        },
+        "warnings": {
+          "description": "Auto-populated caveats (small sample, look-ahead bias, unrealistic fills, etc.)",
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "inSampleN",
+        "outOfSampleN",
+        "significance"
+      ],
+      "title": "ValidationSummary",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "config": {
+      "$ref": "#/$defs/BacktestConfigSnapshot"
+    },
+    "sampleSize": {
+      "minimum": 0,
+      "title": "Samplesize",
+      "type": "integer"
+    },
+    "winRate": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Winrate"
+    },
+    "avgReturnPoints": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Avgreturnpoints"
+    },
+    "avgR": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Avgr"
+    },
+    "expectancy": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Expectancy"
+    },
+    "profitFactor": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Profitfactor"
+    },
+    "maxDrawdownPoints": {
+      "anyOf": [
+        {
+          "maximum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maxdrawdownpoints"
+    },
+    "maxDrawdownR": {
+      "anyOf": [
+        {
+          "maximum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Maxdrawdownr"
+    },
+    "outcomeDistribution": {
+      "description": "Histogram buckets over pnl_r, reusing BreakdownRow as {label, n}",
+      "items": {
+        "$ref": "#/$defs/BreakdownRow"
+      },
+      "title": "Outcomedistribution",
+      "type": "array"
+    },
+    "avgMfePoints": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Avgmfepoints"
+    },
+    "avgMaePoints": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Avgmaepoints"
+    },
+    "avgTimeToTargetBars": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Avgtimetotargetbars"
+    },
+    "avgTimeToStopBars": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Avgtimetostopbars"
+    },
+    "breakdowns": {
+      "$ref": "#/$defs/Breakdowns"
+    },
+    "validation": {
+      "$ref": "#/$defs/ValidationSummary"
+    }
+  },
+  "required": [
+    "config",
+    "sampleSize",
+    "breakdowns",
+    "validation"
+  ],
+  "title": "BacktestStatistics",
+  "type": "object"
+}

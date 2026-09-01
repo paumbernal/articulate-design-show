@@ -1,0 +1,117 @@
+{
+  "$defs": {
+    "ComponentScore": {
+      "properties": {
+        "signalType": {
+          "title": "Signaltype",
+          "type": "string"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        },
+        "present": {
+          "title": "Present",
+          "type": "boolean"
+        },
+        "contribution": {
+          "description": "weight if present else 0",
+          "title": "Contribution",
+          "type": "number"
+        }
+      },
+      "required": [
+        "signalType",
+        "weight",
+        "present",
+        "contribution"
+      ],
+      "title": "ComponentScore",
+      "type": "object"
+    }
+  },
+  "description": "The outcome of scoring one setup against one trigger bar's detected\nconditions. Deliberately carries no field implying prediction \u2014 the \"not\na price forecast\" disclaimer is enforced in the UI layer, not here.",
+  "properties": {
+    "setupId": {
+      "title": "Setupid",
+      "type": "string"
+    },
+    "setupVersion": {
+      "title": "Setupversion",
+      "type": "integer"
+    },
+    "symbol": {
+      "enum": [
+        "MES",
+        "MNQ"
+      ],
+      "title": "Symbol",
+      "type": "string"
+    },
+    "timeframe": {
+      "enum": [
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h"
+      ],
+      "title": "Timeframe",
+      "type": "string"
+    },
+    "triggerBarIndex": {
+      "minimum": 0,
+      "title": "Triggerbarindex",
+      "type": "integer"
+    },
+    "triggerTimestamp": {
+      "format": "date-time",
+      "title": "Triggertimestamp",
+      "type": "string"
+    },
+    "direction": {
+      "enum": [
+        "bullish",
+        "bearish"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "score": {
+      "minimum": 0,
+      "title": "Score",
+      "type": "number"
+    },
+    "maxScore": {
+      "exclusiveMinimum": 0,
+      "title": "Maxscore",
+      "type": "number"
+    },
+    "metRequiredRules": {
+      "title": "Metrequiredrules",
+      "type": "boolean"
+    },
+    "componentScores": {
+      "items": {
+        "$ref": "#/$defs/ComponentScore"
+      },
+      "title": "Componentscores",
+      "type": "array"
+    }
+  },
+  "required": [
+    "setupId",
+    "setupVersion",
+    "symbol",
+    "timeframe",
+    "triggerBarIndex",
+    "triggerTimestamp",
+    "direction",
+    "score",
+    "maxScore",
+    "metRequiredRules",
+    "componentScores"
+  ],
+  "title": "EdgeScoreResult",
+  "type": "object"
+}

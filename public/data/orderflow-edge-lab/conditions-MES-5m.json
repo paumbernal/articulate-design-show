@@ -1,0 +1,4707 @@
+[
+  {
+    "id": "005ca693-c5e8-4b53-9422-bb7f2a3d70b4",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 49,
+    "timestamp": "2026-05-11T17:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2553.060648483549
+    }
+  },
+  {
+    "id": "08b9a265-d49c-4ab0-96f4-dab76b002ee3",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 56,
+    "timestamp": "2026-05-11T18:10:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000002,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000003,
+      "volume_multiple": 2.6125610321050163,
+      "effort_vs_result": 3369.762325581807
+    }
+  },
+  {
+    "id": "7c3cab04-4084-4f8c-a9c3-c1d99743e364",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 56,
+    "timestamp": "2026-05-11T18:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1982.3380611393445
+    }
+  },
+  {
+    "id": "5c2cda90-1bf3-4d51-becc-ce983a18045d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 57,
+    "timestamp": "2026-05-11T18:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1935.05471549174
+    }
+  },
+  {
+    "id": "7aa6d155-09a1-460e-b03c-ebc9a42dc626",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 58,
+    "timestamp": "2026-05-11T18:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2692.118883946141
+    }
+  },
+  {
+    "id": "8bc09955-bc5f-4c0f-8301-c5b4e09377f3",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 76,
+    "timestamp": "2026-05-11T19:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2048.927915981959
+    }
+  },
+  {
+    "id": "32a98e60-fd01-4835-8ce1-c5a5068b692d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 78,
+    "timestamp": "2026-05-12T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -754.4396742328977
+    }
+  },
+  {
+    "id": "d9494e86-8d13-4166-b7d7-1ea1ad6aa715",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 79,
+    "timestamp": "2026-05-12T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -965.3119677725701
+    }
+  },
+  {
+    "id": "d5256659-1a0c-4519-90fd-a2905cbca263",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 80,
+    "timestamp": "2026-05-12T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -259.9740668872473
+    }
+  },
+  {
+    "id": "dec99820-4a84-408b-bf78-2f1e153800a7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 87,
+    "timestamp": "2026-05-12T14:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -974.9403738121073
+    }
+  },
+  {
+    "id": "d5891964-cc94-463f-9356-273cd392dd85",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 88,
+    "timestamp": "2026-05-12T14:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -918.7442164301301
+    }
+  },
+  {
+    "id": "01481d73-c6c8-4b55-9d15-7b2bbdebf8ac",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 93,
+    "timestamp": "2026-05-12T14:45:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5930914187408958,
+    "evidence": {
+      "swept_level": 5192.091300159918,
+      "volume_multiple": 2.135129107467225,
+      "pierce_ticks": 8.110884274483396
+    }
+  },
+  {
+    "id": "87c1e6a6-6031-4d9e-a3d6-957891893b15",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 93,
+    "timestamp": "2026-05-12T14:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2643.5038653569363
+    }
+  },
+  {
+    "id": "f18dec7b-5aa7-4634-9088-240b42236a69",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 94,
+    "timestamp": "2026-05-12T14:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3408.4269538591625
+    }
+  },
+  {
+    "id": "6143b30a-239c-489b-a68b-527bc8f4e27d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 95,
+    "timestamp": "2026-05-12T14:55:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.5600000000000002,
+    "evidence": {
+      "imbalance_ratio": 0.282051282051282,
+      "volume_multiple": 1.475395745696012,
+      "effort_vs_result": 3411.1853633880573
+    }
+  },
+  {
+    "id": "f536bd8a-b177-41b5-9bcb-27b3e325c23c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 95,
+    "timestamp": "2026-05-12T14:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4363.558855607818
+    }
+  },
+  {
+    "id": "b1e426cd-a855-493b-b370-58a7c17157fb",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 96,
+    "timestamp": "2026-05-12T15:00:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.8692128304560303,
+      "effort_vs_result": 4438.991769542762
+    }
+  },
+  {
+    "id": "af181148-b10d-4435-bf90-1efd02e0ce26",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 96,
+    "timestamp": "2026-05-12T15:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5606.4765510797915
+    }
+  },
+  {
+    "id": "d43283da-ce98-475c-8c66-6bc835b424a9",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 97,
+    "timestamp": "2026-05-12T15:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5261.321046561838
+    }
+  },
+  {
+    "id": "3ec34147-580e-4f1e-b9c9-e9eceb0ab89a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 98,
+    "timestamp": "2026-05-12T15:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4839.658326946677
+    }
+  },
+  {
+    "id": "c58293f4-5c4b-45fa-afd2-6cd1f343c313",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 104,
+    "timestamp": "2026-05-12T15:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3032.0334208443114
+    }
+  },
+  {
+    "id": "25aa064c-aedb-46e6-ab91-8d7961cb0d5b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 105,
+    "timestamp": "2026-05-12T15:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3323.8096620173546
+    }
+  },
+  {
+    "id": "45ca17b5-2694-4335-95b5-4de08549e108",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 107,
+    "timestamp": "2026-05-12T15:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3075.1715708164083
+    }
+  },
+  {
+    "id": "45cbf823-40dc-4684-b547-16b4a12811c4",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 122,
+    "timestamp": "2026-05-12T17:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3951.5887724455038
+    }
+  },
+  {
+    "id": "4b811488-0a72-415c-8f1d-1ac6456d2c2f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 125,
+    "timestamp": "2026-05-12T17:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3934.3538845119665
+    }
+  },
+  {
+    "id": "b77e4011-333d-4632-8144-8fcdb9ec91ff",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 142,
+    "timestamp": "2026-05-12T18:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4210.602326610144
+    }
+  },
+  {
+    "id": "ffbeaec1-be62-4964-8531-1853eb7cfbcc",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 146,
+    "timestamp": "2026-05-12T19:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4365.674173891448
+    }
+  },
+  {
+    "id": "e81da92a-6490-4623-97df-473e4cf4dcf0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 160,
+    "timestamp": "2026-05-13T13:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -676.8708963621426
+    }
+  },
+  {
+    "id": "51967e7a-dc26-4b8e-8cc7-df90a319a660",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 192,
+    "timestamp": "2026-05-13T16:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1038.9966868815632
+    }
+  },
+  {
+    "id": "f4b532eb-ca35-4750-8af9-d5bf8eeb2891",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 200,
+    "timestamp": "2026-05-13T17:10:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.39367895698204036,
+    "evidence": {
+      "imbalance_ratio": 0.4350507266974349,
+      "volume_multiple": 1.3646036115779248,
+      "effort_vs_result": 779.2248331072838
+    }
+  },
+  {
+    "id": "41e2fd16-20e9-4e6f-8958-70d2e3729e0f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 201,
+    "timestamp": "2026-05-13T17:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -648.0577744192045
+    }
+  },
+  {
+    "id": "31cc97fd-e580-41f6-8987-c69eccbd7ca8",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 202,
+    "timestamp": "2026-05-13T17:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -664.8115091239081
+    }
+  },
+  {
+    "id": "cfcfb471-ee9c-42ea-9adf-698a04e0f4f6",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 205,
+    "timestamp": "2026-05-13T17:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -517.5873380012248
+    }
+  },
+  {
+    "id": "f7ecc2d0-5d59-4587-b3ec-620d1045e518",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 206,
+    "timestamp": "2026-05-13T17:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -192.93317333194346
+    }
+  },
+  {
+    "id": "4f65eb70-7949-4fab-b99f-009167539344",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 221,
+    "timestamp": "2026-05-13T18:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -81.75018367861631
+    }
+  },
+  {
+    "id": "57b63e36-1449-4ccc-9f42-27fa93db046a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 234,
+    "timestamp": "2026-05-14T13:30:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5541977427598762,
+    "evidence": {
+      "swept_level": 5178.138658250328,
+      "volume_multiple": 1.9951118739355542,
+      "pierce_ticks": 0.5138189334320487
+    }
+  },
+  {
+    "id": "953c683a-3e7a-45e0-8bb4-3b34703fc510",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 248,
+    "timestamp": "2026-05-14T14:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2650.9423042644885
+    }
+  },
+  {
+    "id": "857e8d20-5185-4c90-8c8f-1a01b408cd23",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 252,
+    "timestamp": "2026-05-14T15:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5075.550374504181
+    }
+  },
+  {
+    "id": "de8049c2-8752-40f7-9935-d7e69c335ead",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 253,
+    "timestamp": "2026-05-14T15:05:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25,
+      "volume_multiple": 1.3653586909346989,
+      "effort_vs_result": 1051.5518512220626
+    }
+  },
+  {
+    "id": "9dc302b1-83ba-436b-aa2a-f15e88216897",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 253,
+    "timestamp": "2026-05-14T15:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -6002.612562006783
+    }
+  },
+  {
+    "id": "a512c838-d9d5-4891-8d97-c0d0a583e79a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 255,
+    "timestamp": "2026-05-14T15:15:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25,
+      "volume_multiple": 1.4151755539635125,
+      "effort_vs_result": 883.901412452236
+    }
+  },
+  {
+    "id": "dfd37ae4-8683-487f-b2a1-20a3e7a25c83",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 262,
+    "timestamp": "2026-05-14T15:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -8648.693121530281
+    }
+  },
+  {
+    "id": "2e0a01c3-9e1d-4c2a-8d8e-9d83d92cf9ed",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 271,
+    "timestamp": "2026-05-14T16:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -9123.27576161708
+    }
+  },
+  {
+    "id": "a89b2ec5-8424-46c7-a474-e6cbb157dfb6",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 272,
+    "timestamp": "2026-05-14T16:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -8893.274343668607
+    }
+  },
+  {
+    "id": "ed6bcbeb-5111-4d65-a8f1-9f0b1244b526",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 273,
+    "timestamp": "2026-05-14T16:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -9106.200526575725
+    }
+  },
+  {
+    "id": "5f729de5-846b-47f9-b182-b7d1ad32bb6c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 295,
+    "timestamp": "2026-05-14T18:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -9637.580824844374
+    }
+  },
+  {
+    "id": "03d1ea4b-1589-4b4d-be0d-9db6b9e74d7e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 303,
+    "timestamp": "2026-05-14T19:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -10468.149199256877
+    }
+  },
+  {
+    "id": "8eb64ab1-61fa-452f-96a9-673e6f4a6772",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 312,
+    "timestamp": "2026-05-15T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -170.36576853029862
+    }
+  },
+  {
+    "id": "9be733c9-87cf-4198-8bf1-29f7ec5e316b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 313,
+    "timestamp": "2026-05-15T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -529.8922069459285
+    }
+  },
+  {
+    "id": "92242e1d-abdc-4512-b2d1-072a8bbf66dd",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 314,
+    "timestamp": "2026-05-15T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -709.0342304613001
+    }
+  },
+  {
+    "id": "17f8d8d7-e633-46e5-8c9f-ffa175aac35a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 321,
+    "timestamp": "2026-05-15T14:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1756.922217929957
+    }
+  },
+  {
+    "id": "9a65d71a-9004-4767-897f-109b13060953",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 328,
+    "timestamp": "2026-05-15T14:50:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.35108067185998837,
+    "evidence": {
+      "imbalance_ratio": 2.0820472025892216,
+      "volume_multiple": 1.439329841182937,
+      "effort_vs_result": 1212.8354188737046
+    }
+  },
+  {
+    "id": "068789de-353c-4598-ac9b-0c0e00f3ccb2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 360,
+    "timestamp": "2026-05-15T17:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 306.41709477012364
+    }
+  },
+  {
+    "id": "33e1e6b1-af22-4e47-8ce4-c1596689f20f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 362,
+    "timestamp": "2026-05-15T17:40:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.6525170079257833,
+    "evidence": {
+      "swept_level": 5167.633674561358,
+      "volume_multiple": 2.3490612285328196,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "50d7f96b-ee20-49f8-bc87-89fdfdb08d53",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 363,
+    "timestamp": "2026-05-15T17:45:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.9313645356047502,
+      "effort_vs_result": 2331.4796725646115
+    }
+  },
+  {
+    "id": "f4ecbd11-c05b-4626-840f-592940800ee6",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 366,
+    "timestamp": "2026-05-15T18:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1322.7726035512737
+    }
+  },
+  {
+    "id": "ec94a33d-bdc9-46a3-89bf-2b5e141931d1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 372,
+    "timestamp": "2026-05-15T18:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 95.09314417721652
+    }
+  },
+  {
+    "id": "e44de3bb-7709-44cb-847f-464b3f7a6d22",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 373,
+    "timestamp": "2026-05-15T18:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -65.07081368517703
+    }
+  },
+  {
+    "id": "9cd41063-2bf8-471d-9d44-c36c6fc9e7ae",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 387,
+    "timestamp": "2026-05-15T19:45:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.4042607442187812,
+    "evidence": {
+      "imbalance_ratio": 0.4242369219775069,
+      "volume_multiple": 1.3357129949270106,
+      "effort_vs_result": 1180.6419647554383
+    }
+  },
+  {
+    "id": "c0f6ee1c-07e4-4d57-9d48-f9ec60425a45",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 397,
+    "timestamp": "2026-05-18T14:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1350.6425534916991
+    }
+  },
+  {
+    "id": "5fce747d-db04-4e2d-9718-d6b48edfdaa1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 398,
+    "timestamp": "2026-05-18T14:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1815.6711089593255
+    }
+  },
+  {
+    "id": "9343ac87-6793-4273-8b3b-27ecbb6a8cfe",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 400,
+    "timestamp": "2026-05-18T14:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1844.9943251642105
+    }
+  },
+  {
+    "id": "480d8850-208d-4de1-832d-e42dc95f8b94",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 401,
+    "timestamp": "2026-05-18T14:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2119.84205697107
+    }
+  },
+  {
+    "id": "f3890a38-9da2-4426-8882-d49de5922952",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 402,
+    "timestamp": "2026-05-18T14:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2177.4737814688056
+    }
+  },
+  {
+    "id": "fb719404-a9fd-407d-ac98-7aaf957c1d8a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 413,
+    "timestamp": "2026-05-18T15:25:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.6471860374023407,
+    "evidence": {
+      "swept_level": 5163.828193638773,
+      "volume_multiple": 2.3298697346484265,
+      "pierce_ticks": 2.0
+    }
+  },
+  {
+    "id": "dce0f698-b912-4753-8378-54346e5f398b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 419,
+    "timestamp": "2026-05-18T15:55:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.35294484382835145,
+    "evidence": {
+      "imbalance_ratio": 2.090926609461168,
+      "volume_multiple": 1.3507572214500565,
+      "effort_vs_result": 2141.8912882572668
+    }
+  },
+  {
+    "id": "384b03dc-0472-4a51-90b7-0ddd6bfb4440",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 432,
+    "timestamp": "2026-05-18T17:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1830.3171448256105
+    }
+  },
+  {
+    "id": "71a16f21-19ea-4fb4-8b1e-efd6bae6f366",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 434,
+    "timestamp": "2026-05-18T17:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2303.467328066323
+    }
+  },
+  {
+    "id": "e375fc6d-011f-450b-a0d4-3694b993dc81",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 441,
+    "timestamp": "2026-05-18T17:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4400.387262114882
+    }
+  },
+  {
+    "id": "692c751d-9e0a-42c9-a51c-e493c8437538",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 455,
+    "timestamp": "2026-05-18T18:55:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6348202118318286,
+    "evidence": {
+      "imbalance_ratio": 0.22337611532156482,
+      "volume_multiple": 2.7317002513423665,
+      "effort_vs_result": 840.8413530464146
+    }
+  },
+  {
+    "id": "bfaa1f7a-0bc9-4f94-af4d-266cc761e71e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 461,
+    "timestamp": "2026-05-18T19:25:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.46596869016226705,
+    "evidence": {
+      "imbalance_ratio": 0.36428561770894397,
+      "volume_multiple": 1.5334001373201034,
+      "effort_vs_result": 928.1965189739101
+    }
+  },
+  {
+    "id": "4e03cb55-351a-4477-9961-1d9c54fcbd1f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 463,
+    "timestamp": "2026-05-18T19:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1695.11309570965
+    }
+  },
+  {
+    "id": "64951d23-3701-45c8-bd38-a82d8ed98511",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 482,
+    "timestamp": "2026-05-19T14:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 467.1121075188506
+    }
+  },
+  {
+    "id": "06ec89c7-91ba-4add-85ed-5bad410cf743",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 491,
+    "timestamp": "2026-05-19T15:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1560.3930953487977
+    }
+  },
+  {
+    "id": "ae4abb53-486e-4703-a0c6-7e6cc771cbb2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 509,
+    "timestamp": "2026-05-19T16:55:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.8784872700490245,
+    "evidence": {
+      "swept_level": 5163.328193638773,
+      "volume_multiple": 3.1625541721764883,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "85b0e922-f873-4bac-af48-848c59adf9e1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 511,
+    "timestamp": "2026-05-19T17:05:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.4785096200741716,
+      "effort_vs_result": 1518.0035592370339
+    }
+  },
+  {
+    "id": "22c658b4-327d-4cfe-af7f-bd48a90d6ee0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 513,
+    "timestamp": "2026-05-19T17:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 184.424226382887
+    }
+  },
+  {
+    "id": "fe3dfc8d-e609-40d6-9733-6fe47a5a6384",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 519,
+    "timestamp": "2026-05-19T17:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 402.40811133067257
+    }
+  },
+  {
+    "id": "98f2f98d-ef20-44de-80e3-88001e72e625",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 527,
+    "timestamp": "2026-05-19T18:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -467.5060349974292
+    }
+  },
+  {
+    "id": "e0e16dd5-0e5a-413e-913e-0ae23e741bcc",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 547,
+    "timestamp": "2026-05-20T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -301.01499369860755
+    }
+  },
+  {
+    "id": "833d5cc9-ccef-497c-a648-b4e967d3bc82",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 559,
+    "timestamp": "2026-05-20T14:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 516.1647100890424
+    }
+  },
+  {
+    "id": "093a49d9-de51-4806-aeac-0e2a4a43bb40",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 564,
+    "timestamp": "2026-05-20T15:00:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.6829060101714937,
+    "evidence": {
+      "swept_level": 5162.578193638773,
+      "volume_multiple": 2.4584616366173773,
+      "pierce_ticks": 1.0
+    }
+  },
+  {
+    "id": "d7499190-5518-40ac-822b-5a5513e99a02",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 565,
+    "timestamp": "2026-05-20T15:05:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25,
+      "volume_multiple": 1.3870643554368827,
+      "effort_vs_result": 1547.2702814487113
+    }
+  },
+  {
+    "id": "0be4190d-3c07-4ac7-b636-9d22cfd143cf",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 568,
+    "timestamp": "2026-05-20T15:20:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25,
+      "volume_multiple": 1.3107097673406685,
+      "effort_vs_result": 1128.985887469122
+    }
+  },
+  {
+    "id": "dc6ce8c2-f933-44fd-8738-00b3d5ea3db0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 569,
+    "timestamp": "2026-05-20T15:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3433.6268333514336
+    }
+  },
+  {
+    "id": "5db15e20-0fc3-4358-b3a8-711cb0c4f59e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 570,
+    "timestamp": "2026-05-20T15:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3793.1113515575116
+    }
+  },
+  {
+    "id": "481a9968-0156-4aba-8d49-0977b62ae31a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 598,
+    "timestamp": "2026-05-20T17:50:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000001,
+      "volume_multiple": 3.353963257475727,
+      "effort_vs_result": 2903.7616710604157
+    }
+  },
+  {
+    "id": "c2fce08d-387b-4cab-9395-6812e1a1bbb0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 600,
+    "timestamp": "2026-05-20T18:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3772.909021336718
+    }
+  },
+  {
+    "id": "65f68df8-2dee-46d1-bcff-a738d077dd5a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 605,
+    "timestamp": "2026-05-20T18:25:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.4030292684417158,
+    "evidence": {
+      "imbalance_ratio": 0.4254870122711794,
+      "volume_multiple": 1.5694039153085235,
+      "effort_vs_result": 766.0260756755772
+    }
+  },
+  {
+    "id": "0ed64bb6-9430-4ea8-85c2-60ac88fe7e81",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 612,
+    "timestamp": "2026-05-20T19:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5484.644619185511
+    }
+  },
+  {
+    "id": "a259337c-2d56-4ccc-8140-807d3442c775",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 618,
+    "timestamp": "2026-05-20T19:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4511.882727349188
+    }
+  },
+  {
+    "id": "9dffcfa2-4d4d-4eaf-b59d-d465057530d7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 624,
+    "timestamp": "2026-05-21T13:30:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.704142785679216,
+    "evidence": {
+      "swept_level": 5160.053126958805,
+      "volume_multiple": 2.5349140284451774,
+      "pierce_ticks": 1.984131016964966
+    }
+  },
+  {
+    "id": "8fe5b0f1-adab-4b71-98b1-1459f492202b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 624,
+    "timestamp": "2026-05-21T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -172.19619173456294
+    }
+  },
+  {
+    "id": "854cf56e-7861-4fad-b70d-a0d9e1b98ec3",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 625,
+    "timestamp": "2026-05-21T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -896.5929672688546
+    }
+  },
+  {
+    "id": "09bae9a2-e146-40ab-ab39-ad3b758eb951",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 626,
+    "timestamp": "2026-05-21T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -829.5567074061664
+    }
+  },
+  {
+    "id": "bb1e3291-ede3-41d2-a060-9c65272507e0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 650,
+    "timestamp": "2026-05-21T15:40:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.762108269193567,
+    "evidence": {
+      "swept_level": 5165.519843143965,
+      "volume_multiple": 2.7435897690968414,
+      "pierce_ticks": 2.0
+    }
+  },
+  {
+    "id": "ea4e94fa-453d-45e2-9218-c6600ddf7fc2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 651,
+    "timestamp": "2026-05-21T15:45:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.3802804347553703,
+      "effort_vs_result": 2711.9265106196635
+    }
+  },
+  {
+    "id": "d1dc7e41-3477-4d35-b6fa-d7e608d8d4bc",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 652,
+    "timestamp": "2026-05-21T15:50:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.879120335611526,
+      "effort_vs_result": 5008.907400808951
+    }
+  },
+  {
+    "id": "ee380fbd-bf4a-4629-83d0-14b22f3f859a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 654,
+    "timestamp": "2026-05-21T16:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 454.4967704739314
+    }
+  },
+  {
+    "id": "fe4156ca-fc7c-4ed3-b37e-0acfaeba5c67",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 667,
+    "timestamp": "2026-05-21T17:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2395.6024468971873
+    }
+  },
+  {
+    "id": "b6ef6fe2-bc30-4f13-8ca3-b33ec3fef73b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 668,
+    "timestamp": "2026-05-21T17:10:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000001,
+      "volume_multiple": 1.6220854021862074,
+      "effort_vs_result": 954.3309208687023
+    }
+  },
+  {
+    "id": "806274fd-7345-40f2-ad24-db0eda3f07d6",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 685,
+    "timestamp": "2026-05-21T18:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1702.8856352299717
+    }
+  },
+  {
+    "id": "7bd8c38b-8b4c-4cd9-926d-cce11b876195",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 694,
+    "timestamp": "2026-05-21T19:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2249.5499770252845
+    }
+  },
+  {
+    "id": "ca50c34b-bc63-4ea0-95bf-645cd5d91e34",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 703,
+    "timestamp": "2026-05-22T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -323.25680567438826
+    }
+  },
+  {
+    "id": "99eda7a6-343e-4294-8b73-c1901a7b66a1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 704,
+    "timestamp": "2026-05-22T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -484.5623777784948
+    }
+  },
+  {
+    "id": "668ec118-db2a-43e9-86b2-31ff146de8e2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 732,
+    "timestamp": "2026-05-22T16:00:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.6139761983745449,
+    "evidence": {
+      "swept_level": 5144.404797018807,
+      "volume_multiple": 2.2103143141483614,
+      "pierce_ticks": 2.7494401037583884
+    }
+  },
+  {
+    "id": "24de426d-7513-4e3d-943a-767fb3b86d60",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 732,
+    "timestamp": "2026-05-22T16:00:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.6139761983745449,
+    "evidence": {
+      "swept_level": 5166.019843143965,
+      "volume_multiple": 2.2103143141483614,
+      "pierce_ticks": 1.0
+    }
+  },
+  {
+    "id": "8431dd05-3c1e-4e79-9e4d-79984af78dbc",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 733,
+    "timestamp": "2026-05-22T16:05:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.678896673995909,
+      "effort_vs_result": 2814.9495453454774
+    }
+  },
+  {
+    "id": "66d37c83-05b0-433c-a298-2bacb10db041",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 734,
+    "timestamp": "2026-05-22T16:10:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.8708554796336756,
+      "effort_vs_result": 3847.9655418939124
+    }
+  },
+  {
+    "id": "30ebed2a-688a-4263-aaa0-3e25ebdf2f6d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 736,
+    "timestamp": "2026-05-22T16:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1843.9135490224755
+    }
+  },
+  {
+    "id": "4645ce78-79e1-4285-a4e8-a41e3175fba6",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 754,
+    "timestamp": "2026-05-22T17:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -301.0441261509533
+    }
+  },
+  {
+    "id": "ac51d8bc-9169-4dcc-b533-d55211148e7f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 755,
+    "timestamp": "2026-05-22T17:55:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25,
+      "volume_multiple": 1.442539670772572,
+      "effort_vs_result": 1176.810358372664
+    }
+  },
+  {
+    "id": "e8c46f7f-f634-4202-9129-5ceaf9bb6eb7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 755,
+    "timestamp": "2026-05-22T17:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1008.5474695263441
+    }
+  },
+  {
+    "id": "982a8560-3561-4302-b3f4-194ab7118f3e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 757,
+    "timestamp": "2026-05-22T18:05:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25,
+      "volume_multiple": 1.5930766531072134,
+      "effort_vs_result": 2651.33237262736
+    }
+  },
+  {
+    "id": "4a128ba5-e57c-4700-9f0d-875f36e79b52",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 766,
+    "timestamp": "2026-05-22T18:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1576.59830963541
+    }
+  },
+  {
+    "id": "78c3c28b-ec60-4114-a8ea-39e69ba3c4dc",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 768,
+    "timestamp": "2026-05-22T19:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2426.333167813316
+    }
+  },
+  {
+    "id": "0ded000b-1cea-495f-b361-7f8069e2b04e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 774,
+    "timestamp": "2026-05-22T19:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3446.8491799554804
+    }
+  },
+  {
+    "id": "2a1dcac4-a6dc-45e5-ab8d-a6e8ee88e9f2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 808,
+    "timestamp": "2026-05-25T15:50:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5444352091227208,
+    "evidence": {
+      "swept_level": 5135.050061808733,
+      "volume_multiple": 1.9599667528417948,
+      "pierce_ticks": 11.710214865579474
+    }
+  },
+  {
+    "id": "864b3790-5d74-4e1f-86a6-61ca08289f2c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 808,
+    "timestamp": "2026-05-25T15:50:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.5444352091227208,
+    "evidence": {
+      "swept_level": 5166.368762544161,
+      "volume_multiple": 1.9599667528417948,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "7dc2e07d-086c-4edb-80a0-0c39fc49babd",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 809,
+    "timestamp": "2026-05-25T15:55:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000002,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000003,
+      "volume_multiple": 1.4811389790604566,
+      "effort_vs_result": 1164.1186106032162
+    }
+  },
+  {
+    "id": "882894da-3fb5-44ca-9b6a-db84e2aa6172",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 810,
+    "timestamp": "2026-05-25T16:00:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000001,
+      "volume_multiple": 1.5380580464598632,
+      "effort_vs_result": 1150.948762940902
+    }
+  },
+  {
+    "id": "1344fe09-09a4-4ccd-9e09-6903162487a1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 811,
+    "timestamp": "2026-05-25T16:05:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000002,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000003,
+      "volume_multiple": 1.3454107912380264,
+      "effort_vs_result": 1394.2083331783194
+    }
+  },
+  {
+    "id": "99941311-bfb6-4bed-89ea-7909179ef238",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 812,
+    "timestamp": "2026-05-25T16:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 181.6976503419777
+    }
+  },
+  {
+    "id": "25abb57d-50bb-4dcf-8a81-ac11bdfcbce0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 813,
+    "timestamp": "2026-05-25T16:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 355.7941355221891
+    }
+  },
+  {
+    "id": "3c9d3a6e-6ba7-4a72-b8c3-e70cea17fa04",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 832,
+    "timestamp": "2026-05-25T17:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1652.595879201272
+    }
+  },
+  {
+    "id": "3d926339-8b29-48da-a926-a8cfd743be47",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 838,
+    "timestamp": "2026-05-25T18:20:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.7974903813340428,
+      "effort_vs_result": 3644.7694496851245
+    }
+  },
+  {
+    "id": "69cdae9c-39f6-44eb-92bd-5f379bc7fbd5",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 841,
+    "timestamp": "2026-05-25T18:35:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.3892569269709549,
+    "evidence": {
+      "imbalance_ratio": 0.4396185192041255,
+      "volume_multiple": 1.3121063194671398,
+      "effort_vs_result": 2134.169145100886
+    }
+  },
+  {
+    "id": "8b2b9222-d125-429a-9a33-a79cc63e3282",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 842,
+    "timestamp": "2026-05-25T18:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2817.7001834939438
+    }
+  },
+  {
+    "id": "e0608baa-70ff-4660-9ce8-b9dc0655a936",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 858,
+    "timestamp": "2026-05-26T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -190.73186765157175
+    }
+  },
+  {
+    "id": "335803dd-be85-4c06-9751-6b56e556445b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 859,
+    "timestamp": "2026-05-26T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 223.08411421193568
+    }
+  },
+  {
+    "id": "9f960980-cf85-41c1-9615-7fd298adee32",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 864,
+    "timestamp": "2026-05-26T14:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -159.35712137464333
+    }
+  },
+  {
+    "id": "f7a53849-bcda-4aec-bb31-1f2f329384fa",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 879,
+    "timestamp": "2026-05-26T15:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 654.9744802321813
+    }
+  },
+  {
+    "id": "69770308-6722-42cd-8493-001a6262df7f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 880,
+    "timestamp": "2026-05-26T15:20:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000002,
+      "volume_multiple": 2.143492907989501,
+      "effort_vs_result": 1254.3806497941791
+    }
+  },
+  {
+    "id": "e914f69b-3a19-478b-8878-cbba812fa4d4",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 880,
+    "timestamp": "2026-05-26T15:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1578.1290464210674
+    }
+  },
+  {
+    "id": "93f74819-47a4-4581-b24d-74bb7f33e491",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 885,
+    "timestamp": "2026-05-26T15:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1511.9255931376686
+    }
+  },
+  {
+    "id": "f72ef29d-32d2-4a9c-b29c-c3e95e068cc2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 902,
+    "timestamp": "2026-05-26T17:10:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.477421754480579,
+    "evidence": {
+      "imbalance_ratio": 2.8271780678739953,
+      "volume_multiple": 1.325706640874457,
+      "effort_vs_result": 1174.3633282267187
+    }
+  },
+  {
+    "id": "34b5eb6c-7fc9-4ce3-9b11-4df7990ae6f5",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 904,
+    "timestamp": "2026-05-26T17:20:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.8679274070283886,
+    "evidence": {
+      "swept_level": 5123.46174686376,
+      "volume_multiple": 3.124538665302199,
+      "pierce_ticks": 2.0
+    }
+  },
+  {
+    "id": "1a24e630-8606-4de2-970f-5b35692a3159",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 905,
+    "timestamp": "2026-05-26T17:25:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.6835679948886109,
+      "effort_vs_result": 825.7808877006436
+    }
+  },
+  {
+    "id": "3c47c7e1-09b7-4481-9ec2-7bf6d7b2e205",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 934,
+    "timestamp": "2026-05-26T19:50:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.3931425497671055,
+    "evidence": {
+      "imbalance_ratio": 0.43560326998435595,
+      "volume_multiple": 1.660661439618353,
+      "effort_vs_result": 1074.8189070703168
+    }
+  },
+  {
+    "id": "0665a744-f6c6-4fa1-93bd-a6358608ed5b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 934,
+    "timestamp": "2026-05-26T19:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1040.8990748521742
+    }
+  },
+  {
+    "id": "807ec8a0-107a-483b-9053-d1b68ed978b1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 974,
+    "timestamp": "2026-05-27T16:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2029.6188062251447
+    }
+  },
+  {
+    "id": "5f03ceaa-e7c1-44a5-9762-c49bc1351e30",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 975,
+    "timestamp": "2026-05-27T16:45:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 1.0,
+    "evidence": {
+      "swept_level": 5129.372223419515,
+      "volume_multiple": 3.6347438549682782,
+      "pierce_ticks": 5.876832851208746
+    }
+  },
+  {
+    "id": "18369b46-c9cb-4089-a8a8-2dcae0188b93",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 975,
+    "timestamp": "2026-05-27T16:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3156.988413906357
+    }
+  },
+  {
+    "id": "772cf455-1c9f-4555-93fb-7df176329429",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 976,
+    "timestamp": "2026-05-27T16:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3501.352231565123
+    }
+  },
+  {
+    "id": "a5a1b6bf-4a9d-4f42-b980-1d847969275b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 977,
+    "timestamp": "2026-05-27T16:55:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.5454545454545463,
+      "volume_multiple": 1.483628192204703,
+      "effort_vs_result": 1485.1267811932669
+    }
+  },
+  {
+    "id": "e1f250b0-f286-4539-b58a-392a5d76ea80",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 978,
+    "timestamp": "2026-05-27T17:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3715.9375133490894
+    }
+  },
+  {
+    "id": "12f4d3ef-cd91-445b-9a3f-2fb976e7dd47",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 979,
+    "timestamp": "2026-05-27T17:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3516.3885520539784
+    }
+  },
+  {
+    "id": "7b67efdf-5c32-4340-8f8d-fc8c58f81d4d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 983,
+    "timestamp": "2026-05-27T17:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3008.465357241398
+    }
+  },
+  {
+    "id": "99ddc758-ae53-4536-bbd2-b2f13c473de1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 990,
+    "timestamp": "2026-05-27T18:00:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.36441247482880357,
+    "evidence": {
+      "imbalance_ratio": 2.14669486230287,
+      "volume_multiple": 1.3086316904480377,
+      "effort_vs_result": 995.66780605453
+    }
+  },
+  {
+    "id": "17b0cd59-c14a-4f1a-a761-7b769c153512",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 995,
+    "timestamp": "2026-05-27T18:25:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.4162114882506979,
+    "evidence": {
+      "imbalance_ratio": 2.425898180159574,
+      "volume_multiple": 1.383459509196538,
+      "effort_vs_result": 860.2977627114799
+    }
+  },
+  {
+    "id": "9edf889f-3ae3-4ac7-8e78-cee0b5deaf31",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1026,
+    "timestamp": "2026-05-28T14:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1309.4183030101458
+    }
+  },
+  {
+    "id": "3a750a3e-c8b3-4246-9d57-fc123be01b69",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1028,
+    "timestamp": "2026-05-28T14:40:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.7565571911026515,
+    "evidence": {
+      "swept_level": 5132.782699719468,
+      "volume_multiple": 2.7236058879695455,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "4b579c88-9551-4727-9c95-8505d3f0ebea",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1029,
+    "timestamp": "2026-05-28T14:45:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.9369091895584243,
+      "effort_vs_result": 3300.6249787143042
+    }
+  },
+  {
+    "id": "5fb53376-053b-4662-9252-c71f069589b7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1036,
+    "timestamp": "2026-05-28T15:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -825.8044996751785
+    }
+  },
+  {
+    "id": "2fed824c-f6b8-4cfc-9bc3-2a0f1241e79b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1051,
+    "timestamp": "2026-05-28T16:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -634.3317146019415
+    }
+  },
+  {
+    "id": "459ee532-8bdc-4c09-962e-8e083ac86ad6",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1052,
+    "timestamp": "2026-05-28T16:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -688.0810861978048
+    }
+  },
+  {
+    "id": "8abe4806-c8c5-4046-83e0-552029601507",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1092,
+    "timestamp": "2026-05-29T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -193.6375588767072
+    }
+  },
+  {
+    "id": "5fe81c17-4267-46bf-801e-af7f573bfe0d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1093,
+    "timestamp": "2026-05-29T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -407.34683630318364
+    }
+  },
+  {
+    "id": "137061d7-80c5-47df-9436-9fb537ead7af",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1097,
+    "timestamp": "2026-05-29T13:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -27.381903671887812
+    }
+  },
+  {
+    "id": "730a2120-dd00-4d01-8f83-d0c5306f5d3f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1117,
+    "timestamp": "2026-05-29T15:35:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.7328590818444529,
+    "evidence": {
+      "swept_level": 5138.434996702199,
+      "volume_multiple": 2.6382926946400307,
+      "pierce_ticks": 7.130428338550701
+    }
+  },
+  {
+    "id": "b587bd99-ff44-4cbb-8b78-4a866ca6acc9",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1117,
+    "timestamp": "2026-05-29T15:35:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000002,
+      "volume_multiple": 2.6382926946400307,
+      "effort_vs_result": 1878.1975690350223
+    }
+  },
+  {
+    "id": "80eecf9c-144c-4610-b9d6-613b7d820195",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1130,
+    "timestamp": "2026-05-29T16:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1224.2634859223376
+    }
+  },
+  {
+    "id": "033be06d-0d81-439a-bec7-6d966cd1575c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1148,
+    "timestamp": "2026-05-29T18:10:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.7500666397338607,
+    "evidence": {
+      "swept_level": 5128.215319544564,
+      "volume_multiple": 2.7002399030418984,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "e4b69108-8cf4-4d99-a6de-59fac2085183",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1149,
+    "timestamp": "2026-05-29T18:15:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25,
+      "volume_multiple": 1.5122705762498008,
+      "effort_vs_result": 1891.6842410265021
+    }
+  },
+  {
+    "id": "2dd3c13d-3a04-45a2-8495-b4aef48b164a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1153,
+    "timestamp": "2026-05-29T18:35:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25000000000000006,
+      "volume_multiple": 1.3201343610410423,
+      "effort_vs_result": 1110.2353934566818
+    }
+  },
+  {
+    "id": "90fb1882-57c0-4cb6-84fc-c75983fbed33",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1155,
+    "timestamp": "2026-05-29T18:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3642.882248402934
+    }
+  },
+  {
+    "id": "f708a098-bea2-4253-9e7d-be8e75901b4b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1162,
+    "timestamp": "2026-05-29T19:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5010.588005107487
+    }
+  },
+  {
+    "id": "5a3d8fb1-db6f-4bb7-9227-2e027870ffa4",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1170,
+    "timestamp": "2026-06-01T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -372.4928171539238
+    }
+  },
+  {
+    "id": "7b517ca8-fb07-466f-a6bf-98f8ebcaeb09",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1197,
+    "timestamp": "2026-06-01T15:45:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.5318396197622363,
+    "evidence": {
+      "swept_level": 5140.492638611682,
+      "volume_multiple": 1.9146226311440506,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "2af116e5-4ef7-4e9d-a0d7-357547cd78c0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1198,
+    "timestamp": "2026-06-01T15:50:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.9745784054255089,
+      "effort_vs_result": 2462.4295735976098
+    }
+  },
+  {
+    "id": "b8a43a54-08d1-4d67-a54e-195068484314",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1235,
+    "timestamp": "2026-06-01T18:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3831.1490670286335
+    }
+  },
+  {
+    "id": "7bd2d077-038d-42c5-ac3c-b726d7bb98be",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1266,
+    "timestamp": "2026-06-02T15:00:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.5192773780347214,
+    "evidence": {
+      "imbalance_ratio": 3.1604033357607526,
+      "volume_multiple": 1.4209372792827595,
+      "effort_vs_result": 779.3612061729266
+    }
+  },
+  {
+    "id": "65971d55-0352-46d2-bf8a-ffbbb8c31b38",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1273,
+    "timestamp": "2026-06-02T15:35:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.7884460074689774,
+    "evidence": {
+      "swept_level": 5127.058171158058,
+      "volume_multiple": 2.838405626888319,
+      "pierce_ticks": 1.0
+    }
+  },
+  {
+    "id": "0461d2c7-c4f8-4f1b-a604-aa11272e7dc6",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1274,
+    "timestamp": "2026-06-02T15:40:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.8575578182195263,
+      "effort_vs_result": 3827.170945487432
+    }
+  },
+  {
+    "id": "a2954739-f11d-40fd-9505-d2b48b93dff9",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1282,
+    "timestamp": "2026-06-02T16:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 253.19176254502196
+    }
+  },
+  {
+    "id": "1f52d15f-72ec-4b2a-b231-8aedab966c81",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1308,
+    "timestamp": "2026-06-02T18:30:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.5004753150535165,
+    "evidence": {
+      "swept_level": 5141.242638611682,
+      "volume_multiple": 1.8017111341926595,
+      "pierce_ticks": 8.519499358837493
+    }
+  },
+  {
+    "id": "149adaec-05d4-4e75-8fb3-2f292002ead0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1315,
+    "timestamp": "2026-06-02T19:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 5737.9637753362385
+    }
+  },
+  {
+    "id": "2d8c8719-058f-484c-9813-2fe872df0d98",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1322,
+    "timestamp": "2026-06-02T19:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 6573.401750813882
+    }
+  },
+  {
+    "id": "8cf2f85a-31d9-4b62-8882-2f0bc5c59736",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1328,
+    "timestamp": "2026-06-03T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1444.2704891362687
+    }
+  },
+  {
+    "id": "eb08d9e8-af5a-4157-8925-e1e428be00bb",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1329,
+    "timestamp": "2026-06-03T13:45:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.5193741479490843,
+    "evidence": {
+      "swept_level": 5151.0976823365145,
+      "volume_multiple": 1.8697469326167038,
+      "pierce_ticks": 1.1392710951076879
+    }
+  },
+  {
+    "id": "7b130833-865b-4da9-9deb-63110b5ee798",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1340,
+    "timestamp": "2026-06-03T14:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4309.952378586832
+    }
+  },
+  {
+    "id": "6fb97fda-d7cd-461a-8336-34875da6f6ff",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1341,
+    "timestamp": "2026-06-03T14:45:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.6584841288493124,
+      "effort_vs_result": 2276.476837220775
+    }
+  },
+  {
+    "id": "a40ffe46-7a9d-4486-8274-61eea5cd261c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1341,
+    "timestamp": "2026-06-03T14:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 5452.308916703238
+    }
+  },
+  {
+    "id": "fd610d3a-282c-4d1d-9f3c-48533a9de984",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1342,
+    "timestamp": "2026-06-03T14:50:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.4226316605476004,
+      "effort_vs_result": 3651.4956245499757
+    }
+  },
+  {
+    "id": "6078cfd9-f42a-4af1-91a8-813f8e5f3a30",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1342,
+    "timestamp": "2026-06-03T14:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 6474.727691577231
+    }
+  },
+  {
+    "id": "43c5ee12-73e9-4b7a-af25-d3c392d22b01",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1343,
+    "timestamp": "2026-06-03T14:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 6203.211738998404
+    }
+  },
+  {
+    "id": "53a5e630-c581-48c9-a21c-a7e06aef6a93",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1344,
+    "timestamp": "2026-06-03T15:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 5640.375679369541
+    }
+  },
+  {
+    "id": "c723cc5a-d3b7-40fb-a1f4-29641be5b4d0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1348,
+    "timestamp": "2026-06-03T15:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4755.0336791667605
+    }
+  },
+  {
+    "id": "dc45529c-3421-45dc-93ef-3c5388a1028e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1359,
+    "timestamp": "2026-06-03T16:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4749.252442507277
+    }
+  },
+  {
+    "id": "168cb599-bf4b-4e68-aa6e-eaf649badd73",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1363,
+    "timestamp": "2026-06-03T16:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4800.162317813765
+    }
+  },
+  {
+    "id": "e26ed808-9813-4e3f-a9a6-3bb5fd3b1095",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1385,
+    "timestamp": "2026-06-03T18:25:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.41144167789424024,
+    "evidence": {
+      "imbalance_ratio": 2.3981339229803877,
+      "volume_multiple": 1.3961980588105751,
+      "effort_vs_result": 1015.008317202742
+    }
+  },
+  {
+    "id": "f9dc2b68-f118-4bef-a4d7-d358d8be5f4d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1391,
+    "timestamp": "2026-06-03T18:55:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.36532881615575796,
+    "evidence": {
+      "imbalance_ratio": 0.4648485964218001,
+      "volume_multiple": 2.1835696084429665,
+      "effort_vs_result": 775.2476377927483
+    }
+  },
+  {
+    "id": "610b53c8-99fb-4e51-aad3-c8f70d78c18d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1401,
+    "timestamp": "2026-06-03T19:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2370.2782861401956
+    }
+  },
+  {
+    "id": "3bd294e4-ebb7-4178-9ce8-37ee75715910",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1402,
+    "timestamp": "2026-06-03T19:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2595.4802092455866
+    }
+  },
+  {
+    "id": "b622bdab-9d9d-49e2-832d-12708dd2ac2b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1408,
+    "timestamp": "2026-06-04T13:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -619.0235399569169
+    }
+  },
+  {
+    "id": "742bc73d-8f2d-4843-8521-49b5b69aaff7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1419,
+    "timestamp": "2026-06-04T14:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1987.866878775753
+    }
+  },
+  {
+    "id": "433eb05e-b18a-4004-b724-f9e5d0a3e2fb",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1432,
+    "timestamp": "2026-06-04T15:50:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5772450135658846,
+    "evidence": {
+      "swept_level": 5147.28612439213,
+      "volume_multiple": 2.0780820488371847,
+      "pierce_ticks": 3.29748351100352
+    }
+  },
+  {
+    "id": "a26b71d5-6d4b-4544-8bea-e3ae2d9e987b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1432,
+    "timestamp": "2026-06-04T15:50:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000001,
+      "volume_multiple": 2.0780820488371847,
+      "effort_vs_result": 1988.7386235567424
+    }
+  },
+  {
+    "id": "34ffb3e4-1261-441e-ac91-4d15e8354b89",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1434,
+    "timestamp": "2026-06-04T16:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2845.4553173007967
+    }
+  },
+  {
+    "id": "7565118a-3634-4066-a963-003446f60b2a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1436,
+    "timestamp": "2026-06-04T16:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3322.5122097540084
+    }
+  },
+  {
+    "id": "6fcb4b80-55ba-494f-8b47-207bd1d05e6d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1437,
+    "timestamp": "2026-06-04T16:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3063.664194559928
+    }
+  },
+  {
+    "id": "e6888455-066b-4adb-98a6-835ff2fad34d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1445,
+    "timestamp": "2026-06-04T16:55:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.410856192771816,
+    "evidence": {
+      "imbalance_ratio": 0.41757892140001324,
+      "volume_multiple": 1.351368050827396,
+      "effort_vs_result": 927.162383936771
+    }
+  },
+  {
+    "id": "2bd202fc-5efe-4107-b574-01c521ae1e2e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1453,
+    "timestamp": "2026-06-04T17:35:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.40204560144813145,
+    "evidence": {
+      "imbalance_ratio": 0.4264871256214913,
+      "volume_multiple": 1.4193642897475696,
+      "effort_vs_result": 839.7591914772236
+    }
+  },
+  {
+    "id": "79c864cc-8891-42b6-b2a6-a9a7969f1583",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1470,
+    "timestamp": "2026-06-04T19:00:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.5166568853397524,
+    "evidence": {
+      "imbalance_ratio": 3.1378472959231942,
+      "volume_multiple": 1.4459737246202136,
+      "effort_vs_result": 782.9385057747519
+    }
+  },
+  {
+    "id": "cb6d1c47-f547-4fb8-9e44-7194d8865a06",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1479,
+    "timestamp": "2026-06-04T19:45:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.5680171405522555,
+    "evidence": {
+      "imbalance_ratio": 3.6298133276788813,
+      "volume_multiple": 2.0776685494137017,
+      "effort_vs_result": 926.6990642892463
+    }
+  },
+  {
+    "id": "85ca9112-f148-4660-9fe2-e45eaa2e4221",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1479,
+    "timestamp": "2026-06-04T19:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1069.61186313765
+    }
+  },
+  {
+    "id": "15d2a99d-b8b5-4d1d-b0e6-fb182a43ba19",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1480,
+    "timestamp": "2026-06-04T19:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1506.3865951569326
+    }
+  },
+  {
+    "id": "74dac548-6442-4c2f-ad63-ed0d54ca6053",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1481,
+    "timestamp": "2026-06-04T19:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1748.0404266108999
+    }
+  },
+  {
+    "id": "579bf6fb-87c3-4d1b-87aa-7d0194932645",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1483,
+    "timestamp": "2026-06-05T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 391.9112006685801
+    }
+  },
+  {
+    "id": "08733f7d-f32a-4000-8d40-713f81027918",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1492,
+    "timestamp": "2026-06-05T14:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2217.63233473684
+    }
+  },
+  {
+    "id": "1e665703-2fcd-4b19-b8a0-481f3cf1491e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1493,
+    "timestamp": "2026-06-05T14:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2870.9645683112985
+    }
+  },
+  {
+    "id": "af62a7cf-1ac8-4452-a1dc-36a035bb6a56",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1520,
+    "timestamp": "2026-06-05T16:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5098.690076106291
+    }
+  },
+  {
+    "id": "ca431f6e-f490-450d-ba23-a893b579fa97",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1528,
+    "timestamp": "2026-06-05T17:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5970.681484080372
+    }
+  },
+  {
+    "id": "4d8edd44-b23c-4776-902b-f703a49ad43b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1529,
+    "timestamp": "2026-06-05T17:25:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5086857454250281,
+    "evidence": {
+      "swept_level": 5145.375646278634,
+      "volume_multiple": 1.831268683530101,
+      "pierce_ticks": 6.936265766737051
+    }
+  },
+  {
+    "id": "3d6fef7e-a5b8-4a9c-b396-3c4546c1324a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1539,
+    "timestamp": "2026-06-05T18:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -6795.677435352797
+    }
+  },
+  {
+    "id": "1c3b9549-b790-493a-9393-7c52a6a096b9",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1541,
+    "timestamp": "2026-06-05T18:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -6345.189897538737
+    }
+  },
+  {
+    "id": "97e635e2-6cdd-44aa-b82f-a6f2ebc3a83f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1543,
+    "timestamp": "2026-06-05T18:35:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.4444093354010812,
+    "evidence": {
+      "imbalance_ratio": 2.599772507775668,
+      "volume_multiple": 1.669215508452601,
+      "effort_vs_result": 1144.357695742814
+    }
+  },
+  {
+    "id": "5e51645b-dbe1-4334-a8e3-8273d7736286",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1547,
+    "timestamp": "2026-06-05T18:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -6481.424384781308
+    }
+  },
+  {
+    "id": "e86c7948-2ebd-43ce-931b-256a3d28f285",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1585,
+    "timestamp": "2026-06-08T15:35:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.6891009758490821,
+    "evidence": {
+      "swept_level": 5151.963134106552,
+      "volume_multiple": 2.480763513056696,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "1b3da3c2-7221-48d8-8d70-92900de07142",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1586,
+    "timestamp": "2026-06-08T15:40:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.5454545454545463,
+      "volume_multiple": 1.413296825206434,
+      "effort_vs_result": 1328.3986260460456
+    }
+  },
+  {
+    "id": "e7473652-b5bf-461f-a9ea-39ad65d8b325",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1587,
+    "timestamp": "2026-06-08T15:45:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.5454545454545454,
+      "volume_multiple": 1.8784945955378347,
+      "effort_vs_result": 3054.5198653646653
+    }
+  },
+  {
+    "id": "240e0e03-4e9f-4499-98e7-e92844ac0822",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1589,
+    "timestamp": "2026-06-08T15:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3068.251801720534
+    }
+  },
+  {
+    "id": "0c9f80a5-c9b7-47e4-9145-a62ffad5b0b7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1604,
+    "timestamp": "2026-06-08T17:10:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.513553531648729,
+    "evidence": {
+      "swept_level": 5138.907468734804,
+      "volume_multiple": 1.8487927139354243,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "abb01d56-c011-4855-8cdd-5ba0deff4fd2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1623,
+    "timestamp": "2026-06-08T18:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3852.562085750224
+    }
+  },
+  {
+    "id": "972758f2-8cec-4548-965e-2c1284688e57",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1638,
+    "timestamp": "2026-06-09T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 351.95749338442096
+    }
+  },
+  {
+    "id": "4aa405e9-9163-43d2-8264-7fe406136caf",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1639,
+    "timestamp": "2026-06-09T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 669.2607700632395
+    }
+  },
+  {
+    "id": "b629238f-44e7-4c76-a4aa-4c6cbd82c14f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1640,
+    "timestamp": "2026-06-09T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 521.0164607406754
+    }
+  },
+  {
+    "id": "e9aad987-8eb2-49c6-8f35-2e0457bf8a80",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1653,
+    "timestamp": "2026-06-09T14:45:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.5993096993857265,
+    "evidence": {
+      "swept_level": 5152.713134106552,
+      "volume_multiple": 2.1575149177886157,
+      "pierce_ticks": 2.0
+    }
+  },
+  {
+    "id": "908c9f0d-1c6d-4f16-9bbc-7503d01eee1c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1654,
+    "timestamp": "2026-06-09T14:50:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.699450985916183,
+      "effort_vs_result": 2640.618649375
+    }
+  },
+  {
+    "id": "ba0e8306-7019-4f7b-9e7c-714391b926ee",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1655,
+    "timestamp": "2026-06-09T14:55:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.6064252543003241,
+      "effort_vs_result": 2764.472142094909
+    }
+  },
+  {
+    "id": "6727bcfd-0bcb-475b-8bc2-cbd8d70aa291",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1657,
+    "timestamp": "2026-06-09T15:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2353.484439588732
+    }
+  },
+  {
+    "id": "b57f0aa1-2232-48d9-971e-732f53706a6d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1676,
+    "timestamp": "2026-06-09T16:40:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5190099852760179,
+    "evidence": {
+      "swept_level": 5138.157468734804,
+      "volume_multiple": 1.8684359469936644,
+      "pierce_ticks": 1.0
+    }
+  },
+  {
+    "id": "3097eece-3b4f-41e2-9bc1-209353a2ca52",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1683,
+    "timestamp": "2026-06-09T17:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1326.0880269756012
+    }
+  },
+  {
+    "id": "aa2d469e-dc1e-4521-b84c-c2f22ae68ce2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1684,
+    "timestamp": "2026-06-09T17:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1061.3558241022895
+    }
+  },
+  {
+    "id": "fe01b289-3bac-4bc8-8d75-71b9f434f0f2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1716,
+    "timestamp": "2026-06-10T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 588.2552836716279
+    }
+  },
+  {
+    "id": "b1cc40fc-0640-4263-a0e3-00fc0f49fa32",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1723,
+    "timestamp": "2026-06-10T14:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 492.9574738330572
+    }
+  },
+  {
+    "id": "d46f19ee-da43-4fd7-959a-2ef430e7a7ed",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1745,
+    "timestamp": "2026-06-10T15:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1525.8324651641947
+    }
+  },
+  {
+    "id": "e5f58e9b-b6e7-4a84-b4b0-02e77711eefd",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1762,
+    "timestamp": "2026-06-10T17:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1587.6099678677708
+    }
+  },
+  {
+    "id": "f875f367-775f-4157-93c6-9e43862f1c5c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1766,
+    "timestamp": "2026-06-10T17:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1755.7502623751845
+    }
+  },
+  {
+    "id": "bdabd24d-a0c0-4b81-a35d-9844c452c07d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1781,
+    "timestamp": "2026-06-10T18:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2353.894273042394
+    }
+  },
+  {
+    "id": "2e443039-7884-451e-a8ac-8928f28862c7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1782,
+    "timestamp": "2026-06-10T19:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2117.9060457552055
+    }
+  },
+  {
+    "id": "acac2c55-c405-4c73-b186-5aefe212c262",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1806,
+    "timestamp": "2026-06-11T14:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -871.9580748365527
+    }
+  },
+  {
+    "id": "4a734dc6-4a58-4353-877d-6d43f555ab3e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1816,
+    "timestamp": "2026-06-11T15:20:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000001,
+      "volume_multiple": 1.9277292510441353,
+      "effort_vs_result": 1211.640527999405
+    }
+  },
+  {
+    "id": "762193bc-b393-4dd4-a614-c7838190446b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1825,
+    "timestamp": "2026-06-11T16:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1326.3917150262764
+    }
+  },
+  {
+    "id": "9b1a9b46-9800-4526-be28-a33781f3c84e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1850,
+    "timestamp": "2026-06-11T18:10:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.9087673260871352,
+    "evidence": {
+      "swept_level": 5145.399936866871,
+      "volume_multiple": 3.2715623739136865,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "a49c2862-4fde-473c-b6c1-c1086b765161",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1851,
+    "timestamp": "2026-06-11T18:15:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.545454545454546,
+      "volume_multiple": 1.9643550682312312,
+      "effort_vs_result": 1977.460342206651
+    }
+  },
+  {
+    "id": "db66e8c3-6dcd-487f-831a-ecdfc49311e4",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1864,
+    "timestamp": "2026-06-11T19:20:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.4088951152031796,
+    "evidence": {
+      "imbalance_ratio": 0.4195520861832046,
+      "volume_multiple": 1.7642085735458464,
+      "effort_vs_result": 771.2416468805279
+    }
+  },
+  {
+    "id": "2793dca4-2721-4799-b3bd-5f39edf3b2b3",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1884,
+    "timestamp": "2026-06-12T14:30:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.8494384679019876,
+    "evidence": {
+      "swept_level": 5137.216281034757,
+      "volume_multiple": 3.0579784844471556,
+      "pierce_ticks": 1.0
+    }
+  },
+  {
+    "id": "2988416a-6186-40e5-b4b6-21ab4b1f6ae3",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1885,
+    "timestamp": "2026-06-12T14:35:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.4867927109651093,
+      "effort_vs_result": 3339.806502208101
+    }
+  },
+  {
+    "id": "c6d7e536-ed1c-41cc-a7f6-2df2b6d20a72",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1886,
+    "timestamp": "2026-06-12T14:40:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.7736205306744,
+      "effort_vs_result": 4136.200736953843
+    }
+  },
+  {
+    "id": "304bcbfc-5d74-4183-ab2f-a2c3a772557b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1888,
+    "timestamp": "2026-06-12T14:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5210.369127848808
+    }
+  },
+  {
+    "id": "f03d8c87-f2ee-435f-9782-a78753dacef0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1895,
+    "timestamp": "2026-06-12T15:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2615.6424938886894
+    }
+  },
+  {
+    "id": "205f6e4f-9924-4ac4-bbbb-f2a118daad7f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1896,
+    "timestamp": "2026-06-12T15:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2428.8056911942917
+    }
+  },
+  {
+    "id": "2407877b-e5ea-40ae-bcd6-7995e61791cf",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1918,
+    "timestamp": "2026-06-12T17:20:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.39101269434472874,
+    "evidence": {
+      "imbalance_ratio": 2.2841407060989507,
+      "volume_multiple": 2.055344848147677,
+      "effort_vs_result": 781.8742586893918
+    }
+  },
+  {
+    "id": "1a3fd7e2-a5e0-4ca3-bb74-82b986d8a477",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1947,
+    "timestamp": "2026-06-12T19:45:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.5904747352753993,
+    "evidence": {
+      "swept_level": 5146.149936866871,
+      "volume_multiple": 2.1257090469914375,
+      "pierce_ticks": 2.7979308306239545
+    }
+  },
+  {
+    "id": "b78fb8d3-54b7-4a27-b5a8-74745acfc778",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1950,
+    "timestamp": "2026-06-15T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 807.3249074008182
+    }
+  },
+  {
+    "id": "075ed906-de4e-40f7-8779-dacfae4069be",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1951,
+    "timestamp": "2026-06-15T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 475.8922480672831
+    }
+  },
+  {
+    "id": "03b070a2-c002-40bd-a2d2-5627661add42",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1952,
+    "timestamp": "2026-06-15T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1075.0068316104218
+    }
+  },
+  {
+    "id": "0411af6e-466a-4502-b060-57f3a65a45aa",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1971,
+    "timestamp": "2026-06-15T15:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2531.777947342007
+    }
+  },
+  {
+    "id": "c0e408f2-8a8e-415a-a55d-505e8ce523ae",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1999,
+    "timestamp": "2026-06-15T17:35:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.7840544807786654,
+    "evidence": {
+      "swept_level": 5134.38189121517,
+      "volume_multiple": 2.8225961308031953,
+      "pierce_ticks": 3.0
+    }
+  },
+  {
+    "id": "5e2136a7-503a-4731-8e1f-11f3c6315475",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2002,
+    "timestamp": "2026-06-15T17:50:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 0.25000000000000006,
+      "volume_multiple": 1.4371993970343067,
+      "effort_vs_result": 1540.6233159159779
+    }
+  },
+  {
+    "id": "a8d79281-33e6-4a8d-be1a-3597a2e681a7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2004,
+    "timestamp": "2026-06-15T18:00:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.6835954855844246,
+      "effort_vs_result": 2197.368617939568
+    }
+  },
+  {
+    "id": "0e022433-cfcc-4e12-bd12-a95f74c090a1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2004,
+    "timestamp": "2026-06-15T18:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3374.0716478171717
+    }
+  },
+  {
+    "id": "79a9cb12-0939-4e8f-9403-ab11f3fd8076",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2005,
+    "timestamp": "2026-06-15T18:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3168.6599700113675
+    }
+  },
+  {
+    "id": "a4e4e634-989c-4ff1-973e-5cc4474f402c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2006,
+    "timestamp": "2026-06-15T18:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2960.407238785456
+    }
+  },
+  {
+    "id": "9bad17f5-d825-4c39-b3d2-479304965bf3",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2013,
+    "timestamp": "2026-06-15T18:45:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.5517739602566901,
+    "evidence": {
+      "swept_level": 5147.127643473768,
+      "volume_multiple": 1.9863862569240847,
+      "pierce_ticks": 24.829530308532412
+    }
+  },
+  {
+    "id": "fe456024-0001-40fc-b682-a26fffd36288",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2015,
+    "timestamp": "2026-06-15T18:55:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.4204866394736073,
+    "evidence": {
+      "imbalance_ratio": 2.4511715108402825,
+      "volume_multiple": 1.4482602270563754,
+      "effort_vs_result": 796.9654305503839
+    }
+  },
+  {
+    "id": "fecee6bd-67bf-49c5-a038-d597ce2776a5",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2028,
+    "timestamp": "2026-06-16T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -17.73207552155725
+    }
+  },
+  {
+    "id": "b3eed2a3-2037-4178-afa7-e2cb09b97cae",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2035,
+    "timestamp": "2026-06-16T14:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -948.1509795082651
+    }
+  },
+  {
+    "id": "2ba7b091-0b28-4d90-81bf-aff3df42d44a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2056,
+    "timestamp": "2026-06-16T15:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4549.182979176612
+    }
+  },
+  {
+    "id": "6b948d84-91d0-40f2-8dda-fe8dd006781f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2085,
+    "timestamp": "2026-06-16T18:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5195.50366301198
+    }
+  },
+  {
+    "id": "ecb7f1cd-19cb-4ad6-9769-a90910dbff03",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2093,
+    "timestamp": "2026-06-16T18:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4800.218201679606
+    }
+  },
+  {
+    "id": "fc2e735b-0954-4777-abb9-5e31bcbe71bf",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2100,
+    "timestamp": "2026-06-16T19:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4038.4622049379786
+    }
+  },
+  {
+    "id": "347548c7-9553-4a4e-aa1d-b8a93d69a539",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2101,
+    "timestamp": "2026-06-16T19:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -3730.28577658226
+    }
+  },
+  {
+    "id": "6a9504d2-53fc-4f63-bc12-674e8a306546",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2128,
+    "timestamp": "2026-06-17T15:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1417.6707741850105
+    }
+  },
+  {
+    "id": "14196a36-9bca-447d-a218-27dcd7ffb11a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2170,
+    "timestamp": "2026-06-17T18:50:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5523216314879176,
+    "evidence": {
+      "swept_level": 5145.80532185912,
+      "volume_multiple": 1.9883578733565035,
+      "pierce_ticks": 6.110192965712486
+    }
+  },
+  {
+    "id": "0e6eb572-5d1c-4373-9287-b3a6655a15c2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2185,
+    "timestamp": "2026-06-18T13:35:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5102642044278569,
+    "evidence": {
+      "swept_level": 5141.6053749355515,
+      "volume_multiple": 1.8369511359402848,
+      "pierce_ticks": 6.454024666341866
+    }
+  },
+  {
+    "id": "808e9b5c-7a55-4cc3-af83-403bdcb6916c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2201,
+    "timestamp": "2026-06-18T14:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1039.786173692089
+    }
+  },
+  {
+    "id": "64ae68eb-6d26-4cf3-88fc-0243e5103e81",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2208,
+    "timestamp": "2026-06-18T15:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1396.0023980445603
+    }
+  },
+  {
+    "id": "f97381cb-ce63-49bd-b915-194c56f72f47",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2215,
+    "timestamp": "2026-06-18T16:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -731.5655227087168
+    }
+  },
+  {
+    "id": "abea31f6-8312-40c9-a287-86f5c1485366",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2218,
+    "timestamp": "2026-06-18T16:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -972.7408727330776
+    }
+  },
+  {
+    "id": "2225b89a-d58d-4fce-bbcf-67217e7736b8",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2229,
+    "timestamp": "2026-06-18T17:15:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.6664842692059794,
+    "evidence": {
+      "swept_level": 5151.974533738234,
+      "volume_multiple": 2.399343369141526,
+      "pierce_ticks": 1.0
+    }
+  },
+  {
+    "id": "013d35c5-0c91-4cff-b75c-a0530238c150",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2230,
+    "timestamp": "2026-06-18T17:20:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000001,
+      "volume_multiple": 1.4434606956842013,
+      "effort_vs_result": 799.6166401776347
+    }
+  },
+  {
+    "id": "fe4fe7ae-a742-4866-b4fb-2de9335511d9",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2231,
+    "timestamp": "2026-06-18T17:25:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "imbalance_ratio": 4.0,
+      "volume_multiple": 1.451000917544826,
+      "effort_vs_result": 1376.1281127759428
+    }
+  },
+  {
+    "id": "f89cf6d4-a01c-4100-b592-763cb80a12bd",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2232,
+    "timestamp": "2026-06-18T17:30:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000002,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000003,
+      "volume_multiple": 1.4689797289173496,
+      "effort_vs_result": 1849.214039234199
+    }
+  },
+  {
+    "id": "b059c19d-50f1-4a14-92ba-48dbf8c18bc7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2236,
+    "timestamp": "2026-06-18T17:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2239.5017809317806
+    }
+  },
+  {
+    "id": "41afe6fc-8079-4f50-988e-3b0a64fba6b9",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2238,
+    "timestamp": "2026-06-18T18:00:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 3.5454545454545463,
+      "volume_multiple": 1.636206848031759,
+      "effort_vs_result": 2592.1074403545026
+    }
+  },
+  {
+    "id": "4638cbc6-6ebc-4ede-a140-43f56464eaf9",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2247,
+    "timestamp": "2026-06-18T18:45:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.41900073818944067,
+    "evidence": {
+      "imbalance_ratio": 0.4094425366909106,
+      "volume_multiple": 1.3518440213663971,
+      "effort_vs_result": 1093.3729480008124
+    }
+  },
+  {
+    "id": "ba83d038-08af-46f5-aed5-37b72e1b37e4",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2253,
+    "timestamp": "2026-06-18T19:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 5598.195883490575
+    }
+  },
+  {
+    "id": "7183f0d5-3a17-4227-abc2-97d10c6fbb36",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2262,
+    "timestamp": "2026-06-19T13:30:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.5227738032726881,
+    "evidence": {
+      "swept_level": 5134.677254977026,
+      "volume_multiple": 1.8819856917816773,
+      "pierce_ticks": 2.0368280012226023
+    }
+  },
+  {
+    "id": "2ae46c04-5223-4bd4-9b2a-32c74c62931f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2268,
+    "timestamp": "2026-06-19T14:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -238.85219815288553
+    }
+  },
+  {
+    "id": "f3eb0c9d-d6b9-4f71-be0d-64187474f4f5",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2298,
+    "timestamp": "2026-06-19T16:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5276.035365139184
+    }
+  },
+  {
+    "id": "9df79dc1-198d-46a5-85cf-b9320f9edb4d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2340,
+    "timestamp": "2026-06-22T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -668.9760649766489
+    }
+  },
+  {
+    "id": "b07cfb7f-baeb-4b68-ba81-43bb28b9f4c2",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2341,
+    "timestamp": "2026-06-22T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1384.8919290030753
+    }
+  },
+  {
+    "id": "af094672-dce7-4a8d-821b-a6e36994c23f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2342,
+    "timestamp": "2026-06-22T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1861.1571638988712
+    }
+  },
+  {
+    "id": "a1edbfee-3042-4d8b-a82a-40cfbf7c6379",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2354,
+    "timestamp": "2026-06-22T14:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -4440.1641725168465
+    }
+  },
+  {
+    "id": "c0033f92-f0b9-4914-9176-38b7afd6238a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2356,
+    "timestamp": "2026-06-22T14:50:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.6655436948105118,
+    "evidence": {
+      "swept_level": 5111.79127029957,
+      "volume_multiple": 2.3959573013178423,
+      "pierce_ticks": 17.237475093490502
+    }
+  },
+  {
+    "id": "7773a166-bf10-4998-80dd-92b5e0dfb09a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2356,
+    "timestamp": "2026-06-22T14:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5746.776462119515
+    }
+  },
+  {
+    "id": "cb26eacc-6e40-49b7-9c87-232f0b88eda3",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2357,
+    "timestamp": "2026-06-22T14:55:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.445696621775599,
+      "effort_vs_result": 2972.0453402862067
+    }
+  },
+  {
+    "id": "d2648ab9-62f8-4536-a488-e0c8e4da80f7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2357,
+    "timestamp": "2026-06-22T14:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -6578.949157399653
+    }
+  },
+  {
+    "id": "3604ac13-be2d-424f-99e2-e32b30c4b2b7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2358,
+    "timestamp": "2026-06-22T15:00:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.5487595606084537,
+      "effort_vs_result": 3212.910271184002
+    }
+  },
+  {
+    "id": "65ca8539-ba2f-4633-bfef-b685fb9a24ce",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2358,
+    "timestamp": "2026-06-22T15:00:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -7478.564033331173
+    }
+  },
+  {
+    "id": "8e5929df-aeb3-43ff-8c01-ef85b21a6807",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2359,
+    "timestamp": "2026-06-22T15:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -7099.362937034591
+    }
+  },
+  {
+    "id": "deafcb39-dfbf-44d0-8215-f776eef9d078",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2360,
+    "timestamp": "2026-06-22T15:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -6740.010597311789
+    }
+  },
+  {
+    "id": "c93cd488-cc5a-4642-85a6-804fc49a036b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2366,
+    "timestamp": "2026-06-22T15:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -5309.791281474223
+    }
+  },
+  {
+    "id": "c5346bce-cb2a-4edd-9ef4-dde27a216fda",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2394,
+    "timestamp": "2026-06-22T18:00:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.3520154770210333,
+    "evidence": {
+      "imbalance_ratio": 2.086493471796886,
+      "volume_multiple": 1.4602349612282952,
+      "effort_vs_result": 1275.0519045409224
+    }
+  },
+  {
+    "id": "1f4da514-95fb-47c6-93c9-46d217774ead",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2395,
+    "timestamp": "2026-06-22T18:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -6708.3050430702115
+    }
+  },
+  {
+    "id": "6553f4a5-320f-4f86-8a9f-d4d8a16e2c9f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2403,
+    "timestamp": "2026-06-22T18:45:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.3525207672041455,
+    "evidence": {
+      "imbalance_ratio": 2.088902158859797,
+      "volume_multiple": 1.3509819886945824,
+      "effort_vs_result": 813.0788678584202
+    }
+  },
+  {
+    "id": "01146a64-76bd-4d66-ad93-f656185fc9d0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2413,
+    "timestamp": "2026-06-22T19:35:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.3937241558632619,
+    "evidence": {
+      "imbalance_ratio": 0.43500418758345727,
+      "volume_multiple": 2.120025318017098,
+      "effort_vs_result": 1057.4311841239114
+    }
+  },
+  {
+    "id": "888a2567-b463-45b6-b057-7589e5b22c94",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2415,
+    "timestamp": "2026-06-22T19:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -9296.317889660555
+    }
+  },
+  {
+    "id": "d2103ac5-006f-4245-8476-5c61c6a68788",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2426,
+    "timestamp": "2026-06-23T14:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -324.14546151893524
+    }
+  },
+  {
+    "id": "a979cf1e-42a8-46ca-8e93-2217b3467c4e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2431,
+    "timestamp": "2026-06-23T14:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -378.17654363859197
+    }
+  },
+  {
+    "id": "b09c7534-2c03-421c-8bc5-ed1ee254ab5f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2432,
+    "timestamp": "2026-06-23T14:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 0.6982867594888376
+    }
+  },
+  {
+    "id": "0e80b90f-2c32-4bd1-bd07-1c48aa68a073",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2439,
+    "timestamp": "2026-06-23T15:15:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.7179017108180157,
+    "evidence": {
+      "swept_level": 5116.660952683539,
+      "volume_multiple": 2.5844461589448566,
+      "pierce_ticks": 2.0
+    }
+  },
+  {
+    "id": "a82a7259-5b64-4139-af5f-71f42f1d9730",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2440,
+    "timestamp": "2026-06-23T15:20:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000002,
+      "volume_multiple": 1.3918780183221486,
+      "effort_vs_result": 995.1529789879158
+    }
+  },
+  {
+    "id": "f183f5c1-b883-4e24-8560-26b0024de2d0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2443,
+    "timestamp": "2026-06-23T15:35:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000001,
+      "volume_multiple": 1.3315097633834745,
+      "effort_vs_result": 1169.7229131844745
+    }
+  },
+  {
+    "id": "729e059d-5893-48a8-a9a0-0f1d60361080",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2444,
+    "timestamp": "2026-06-23T15:40:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000002,
+      "volume_multiple": 1.4183823358241228,
+      "effort_vs_result": 2343.090656460587
+    }
+  },
+  {
+    "id": "401aeb39-b2bc-4494-a36e-b9288f1f8b4a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2445,
+    "timestamp": "2026-06-23T15:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4632.347277421722
+    }
+  },
+  {
+    "id": "1330edff-9ef3-42b4-a408-6245f4043d88",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2467,
+    "timestamp": "2026-06-23T17:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4061.875304300201
+    }
+  },
+  {
+    "id": "33c3949e-5f37-4cc1-a6ed-f96fab469d07",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2468,
+    "timestamp": "2026-06-23T17:40:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.3583921880494357,
+    "evidence": {
+      "imbalance_ratio": 2.117169028724512,
+      "volume_multiple": 1.4294880329659363,
+      "effort_vs_result": 857.1177041061059
+    }
+  },
+  {
+    "id": "49740933-8e04-4cc5-8ce2-5674d6c5e27a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2470,
+    "timestamp": "2026-06-23T17:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4036.778215814184
+    }
+  },
+  {
+    "id": "a7442ff1-3a56-42d3-abe8-6e14a455131c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2473,
+    "timestamp": "2026-06-23T18:05:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.5866380575368069,
+    "evidence": {
+      "imbalance_ratio": 3.838374786227654,
+      "volume_multiple": 1.9239438882396642,
+      "effort_vs_result": 954.7957964112135
+    }
+  },
+  {
+    "id": "22984d0d-94a9-414a-8d3c-62a9b83cb9c7",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2479,
+    "timestamp": "2026-06-23T18:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4874.142863637104
+    }
+  },
+  {
+    "id": "b327f468-9637-445c-a932-6f112db9f199",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2498,
+    "timestamp": "2026-06-24T13:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 487.35017283278864
+    }
+  },
+  {
+    "id": "82efb8f3-a298-44e5-aac9-f15b65b86b46",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2505,
+    "timestamp": "2026-06-24T14:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -161.36820260859122
+    }
+  },
+  {
+    "id": "868c7505-9fc2-454d-afed-223fb12ce238",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2506,
+    "timestamp": "2026-06-24T14:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 153.1522034564835
+    }
+  },
+  {
+    "id": "4d2d4dda-82fd-40f2-980b-228ab60b8376",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2507,
+    "timestamp": "2026-06-24T14:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 576.3649113674192
+    }
+  },
+  {
+    "id": "ebbe932f-f62a-42dc-9edf-7172613043f9",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2515,
+    "timestamp": "2026-06-24T15:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -20.679980602769206
+    }
+  },
+  {
+    "id": "3d1a410d-6de7-4f94-a39f-03f3c6c9aaaf",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2542,
+    "timestamp": "2026-06-24T17:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -7.602969311654476
+    }
+  },
+  {
+    "id": "37de144f-37f2-47e1-be0d-8d7193006029",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2552,
+    "timestamp": "2026-06-24T18:10:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bullish",
+    "strength": 0.667355420268083,
+    "evidence": {
+      "swept_level": 5104.139660909499,
+      "volume_multiple": 2.402479512965099,
+      "pierce_ticks": 1.0
+    }
+  },
+  {
+    "id": "9efa17cd-eadc-4ab2-9337-de23beb8db6f",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2553,
+    "timestamp": "2026-06-24T18:15:00Z",
+    "signalType": "absorption",
+    "direction": "bullish",
+    "strength": 0.56,
+    "evidence": {
+      "imbalance_ratio": 0.28205128205128205,
+      "volume_multiple": 1.7032007780655647,
+      "effort_vs_result": 1883.0768397790039
+    }
+  },
+  {
+    "id": "1ea85d2a-b97c-466e-a324-b3665a26b09c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2594,
+    "timestamp": "2026-06-25T15:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3289.018387541454
+    }
+  },
+  {
+    "id": "655f7442-1db8-4d78-a9a0-e42f654d42a4",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2608,
+    "timestamp": "2026-06-25T16:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3725.628453291304
+    }
+  },
+  {
+    "id": "e6dde91a-1321-4aaf-bcbd-a5e571825160",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2610,
+    "timestamp": "2026-06-25T16:30:00Z",
+    "signalType": "liquidity_sweep",
+    "direction": "bearish",
+    "strength": 0.8829883928492671,
+    "evidence": {
+      "swept_level": 5112.348058155608,
+      "volume_multiple": 3.178758214257362,
+      "pierce_ticks": 16.173579522161162
+    }
+  },
+  {
+    "id": "bdd96c34-66bd-41fd-ad12-04f85991ae2d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2610,
+    "timestamp": "2026-06-25T16:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 5330.824451417942
+    }
+  },
+  {
+    "id": "70b979e9-6bf4-4ac6-b5e7-cdbf57be6999",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2611,
+    "timestamp": "2026-06-25T16:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 5896.043612689774
+    }
+  },
+  {
+    "id": "b38aeefe-78bb-4081-bc17-4ea9f64547b0",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2612,
+    "timestamp": "2026-06-25T16:40:00Z",
+    "signalType": "absorption",
+    "direction": "bearish",
+    "strength": 0.6000000000000001,
+    "evidence": {
+      "imbalance_ratio": 4.000000000000002,
+      "volume_multiple": 1.60826413765873,
+      "effort_vs_result": 2288.7777498779756
+    }
+  },
+  {
+    "id": "2d5df851-6b33-4f6c-9719-b7bbe8497f75",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2618,
+    "timestamp": "2026-06-25T17:10:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 7313.1249363509305
+    }
+  },
+  {
+    "id": "86d4be35-b010-41bb-a146-0d6b5b3bbeaf",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2646,
+    "timestamp": "2026-06-25T19:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 9250.474114807166
+    }
+  },
+  {
+    "id": "d95c3cf1-64dd-4f3b-9a2a-7155518a4ad6",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2652,
+    "timestamp": "2026-06-26T13:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -649.8240026526682
+    }
+  },
+  {
+    "id": "89743bcb-7b26-4255-abd9-e52703cf060b",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2653,
+    "timestamp": "2026-06-26T13:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -278.9663631638625
+    }
+  },
+  {
+    "id": "9f6eebdd-b605-4229-87a8-52198cae94a1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2690,
+    "timestamp": "2026-06-26T16:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2973.8670775953387
+    }
+  },
+  {
+    "id": "4f12e8bb-6fa2-47c0-a284-2398f9e16191",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2723,
+    "timestamp": "2026-06-26T19:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -2087.824620655011
+    }
+  }
+]

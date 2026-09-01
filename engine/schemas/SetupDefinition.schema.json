@@ -1,0 +1,129 @@
+{
+  "$defs": {
+    "WeightedRule": {
+      "description": "One condition contributing to a setup's Edge Score.\n\nThe score is a configurable measure of how many predefined conditions\nare present \u2014 never a prediction of price. `weight` is points added to\nthe Edge Score when `signal_type` is present within `sequence_within_bars`\nof the trigger bar (or on the trigger bar itself, if the field is None).",
+      "properties": {
+        "signalType": {
+          "title": "Signaltype",
+          "type": "string"
+        },
+        "weight": {
+          "description": "Points contributed to the Edge Score when this condition is met",
+          "exclusiveMinimum": 0,
+          "title": "Weight",
+          "type": "number"
+        },
+        "required": {
+          "default": false,
+          "description": "If true, the setup cannot trigger at all when this condition is absent",
+          "title": "Required",
+          "type": "boolean"
+        },
+        "sequenceWithinBars": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Max bars before the trigger bar this may occur within; None = trigger bar only",
+          "title": "Sequencewithinbars"
+        },
+        "params": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "title": "Params",
+          "type": "object"
+        }
+      },
+      "required": [
+        "signalType",
+        "weight"
+      ],
+      "title": "WeightedRule",
+      "type": "object"
+    }
+  },
+  "description": "A named, versioned research hypothesis: a combination of weighted\nconditions plus the entry/exit methodology used to backtest it.\n\n`version` matters: it makes re-scoring historical detections reproducible\nwhen weights change later, rather than silently rewriting history.",
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "version": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Version",
+      "type": "integer"
+    },
+    "rules": {
+      "items": {
+        "$ref": "#/$defs/WeightedRule"
+      },
+      "minItems": 1,
+      "title": "Rules",
+      "type": "array"
+    },
+    "minEdgeScoreDefault": {
+      "minimum": 0,
+      "title": "Minedgescoredefault",
+      "type": "number"
+    },
+    "entryMethodology": {
+      "description": "e.g. 'close_of_trigger_bar', 'next_bar_open'",
+      "title": "Entrymethodology",
+      "type": "string"
+    },
+    "stopMethodology": {
+      "description": "e.g. 'swept_level_plus_buffer', 'atr_multiple'",
+      "title": "Stopmethodology",
+      "type": "string"
+    },
+    "targetMethodology": {
+      "description": "e.g. 'fixed_r_multiple', 'opposing_value_area'",
+      "title": "Targetmethodology",
+      "type": "string"
+    },
+    "maxHoldBars": {
+      "exclusiveMinimum": 0,
+      "title": "Maxholdbars",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "rules",
+    "minEdgeScoreDefault",
+    "entryMethodology",
+    "stopMethodology",
+    "targetMethodology",
+    "maxHoldBars"
+  ],
+  "title": "SetupDefinition",
+  "type": "object"
+}

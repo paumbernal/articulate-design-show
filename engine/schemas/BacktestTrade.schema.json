@@ -1,0 +1,180 @@
+{
+  "description": "One simulated occurrence of a setup, from trigger to exit.",
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "setupId": {
+      "title": "Setupid",
+      "type": "string"
+    },
+    "setupVersion": {
+      "title": "Setupversion",
+      "type": "integer"
+    },
+    "symbol": {
+      "enum": [
+        "MES",
+        "MNQ"
+      ],
+      "title": "Symbol",
+      "type": "string"
+    },
+    "direction": {
+      "enum": [
+        "bullish",
+        "bearish"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "edgeScoreAtEntry": {
+      "title": "Edgescoreatentry",
+      "type": "number"
+    },
+    "entryBarIndex": {
+      "minimum": 0,
+      "title": "Entrybarindex",
+      "type": "integer"
+    },
+    "entryTimestamp": {
+      "format": "date-time",
+      "title": "Entrytimestamp",
+      "type": "string"
+    },
+    "entryPrice": {
+      "title": "Entryprice",
+      "type": "number"
+    },
+    "stopPrice": {
+      "title": "Stopprice",
+      "type": "number"
+    },
+    "targetPrice": {
+      "title": "Targetprice",
+      "type": "number"
+    },
+    "exitBarIndex": {
+      "minimum": 0,
+      "title": "Exitbarindex",
+      "type": "integer"
+    },
+    "exitTimestamp": {
+      "format": "date-time",
+      "title": "Exittimestamp",
+      "type": "string"
+    },
+    "exitPrice": {
+      "title": "Exitprice",
+      "type": "number"
+    },
+    "exitReason": {
+      "enum": [
+        "target",
+        "stop",
+        "max_hold_time",
+        "session_close"
+      ],
+      "title": "Exitreason",
+      "type": "string"
+    },
+    "holdBars": {
+      "minimum": 0,
+      "title": "Holdbars",
+      "type": "integer"
+    },
+    "pnlPoints": {
+      "title": "Pnlpoints",
+      "type": "number"
+    },
+    "pnlR": {
+      "description": "pnl_points / initial risk in points",
+      "title": "Pnlr",
+      "type": "number"
+    },
+    "mfePoints": {
+      "description": "Max favorable excursion",
+      "minimum": 0,
+      "title": "Mfepoints",
+      "type": "number"
+    },
+    "maePoints": {
+      "description": "Max adverse excursion",
+      "minimum": 0,
+      "title": "Maepoints",
+      "type": "number"
+    },
+    "timeToExitBars": {
+      "minimum": 0,
+      "title": "Timetoexitbars",
+      "type": "integer"
+    },
+    "session": {
+      "enum": [
+        "RTH",
+        "ETH"
+      ],
+      "title": "Session",
+      "type": "string"
+    },
+    "dayOfWeek": {
+      "enum": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+      ],
+      "title": "Dayofweek",
+      "type": "string"
+    },
+    "hourOfDay": {
+      "description": "Entry hour, in the instrument's local exchange timezone",
+      "maximum": 23,
+      "minimum": 0,
+      "title": "Hourofday",
+      "type": "integer"
+    },
+    "costsAssumedPoints": {
+      "description": "Slippage + fees assumed per trade, in points \u2014 always explicit, never hidden",
+      "minimum": 0,
+      "title": "Costsassumedpoints",
+      "type": "number"
+    },
+    "isOutOfSample": {
+      "title": "Isoutofsample",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "setupId",
+    "setupVersion",
+    "symbol",
+    "direction",
+    "edgeScoreAtEntry",
+    "entryBarIndex",
+    "entryTimestamp",
+    "entryPrice",
+    "stopPrice",
+    "targetPrice",
+    "exitBarIndex",
+    "exitTimestamp",
+    "exitPrice",
+    "exitReason",
+    "holdBars",
+    "pnlPoints",
+    "pnlR",
+    "mfePoints",
+    "maePoints",
+    "timeToExitBars",
+    "session",
+    "dayOfWeek",
+    "hourOfDay",
+    "costsAssumedPoints",
+    "isOutOfSample"
+  ],
+  "title": "BacktestTrade",
+  "type": "object"
+}

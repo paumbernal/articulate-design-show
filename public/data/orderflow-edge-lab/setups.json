@@ -1,0 +1,36 @@
+[
+  {
+    "id": "liquidity-sweep-absorption-reversal",
+    "name": "Liquidity Sweep + Absorption Reversal",
+    "description": "Price sweeps a prior session's high or low on elevated volume, the opposing side absorbs the aggressive flow without price following through, and cumulative delta diverges from the new price extreme. Tests whether this combination has historically preceded a reversion back inside the prior range \u2014 not assumed to be profitable.",
+    "version": 1,
+    "rules": [
+      {
+        "signalType": "liquidity_sweep",
+        "weight": 35.0,
+        "required": true,
+        "sequenceWithinBars": 5,
+        "params": {}
+      },
+      {
+        "signalType": "absorption",
+        "weight": 35.0,
+        "required": true,
+        "sequenceWithinBars": null,
+        "params": {}
+      },
+      {
+        "signalType": "delta_divergence",
+        "weight": 30.0,
+        "required": false,
+        "sequenceWithinBars": 5,
+        "params": {}
+      }
+    ],
+    "minEdgeScoreDefault": 70.0,
+    "entryMethodology": "close_of_trigger_bar",
+    "stopMethodology": "swept_level_plus_buffer",
+    "targetMethodology": "fixed_r_multiple",
+    "maxHoldBars": 24
+  }
+]
