@@ -7,11 +7,9 @@ const Footer = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="border-t border-border-default"
     >
-      <div className="max-w-7xl mx-auto px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto px-8 py-8 flex justify-end items-center">
         <span className="text-sm text-text-muted">© Pau Martinez Bernal</span>
-        <span className="text-sm text-text-muted">Made in Manchester</span>
       </div>
     </motion.footer>
   );
