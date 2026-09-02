@@ -71,7 +71,7 @@ def test_detected_condition_evidence_is_flexible() -> None:
         timeframe="5m",
         bar_index=42,
         timestamp=datetime(2026, 3, 2, 14, 35, tzinfo=UTC),
-        signal_type="liquidity_sweep",
+        signal_type="poc_sweep",
         direction="bullish",
         strength=0.8,
         evidence={"swept_level": 5098.5, "volume_multiple": 3.2, "note": "prior session low"},
@@ -81,11 +81,11 @@ def test_detected_condition_evidence_is_flexible() -> None:
 
 def test_setup_definition_max_score_and_default_validation() -> None:
     setup = SetupDefinition(
-        id="liquidity-sweep-absorption-reversal",
+        id="poc-sweep-absorption-reversal",
         name="Liquidity Sweep + Absorption Reversal",
         description="Sweep of a prior high/low followed by absorption and failure to continue.",
         rules=[
-            WeightedRule(signal_type="liquidity_sweep", weight=20, required=True),
+            WeightedRule(signal_type="poc_sweep", weight=20, required=True),
             WeightedRule(signal_type="absorption", weight=20, required=True, sequence_within_bars=3),
             WeightedRule(signal_type="delta_divergence", weight=15, sequence_within_bars=3),
             WeightedRule(signal_type="failed_auction", weight=20, sequence_within_bars=3),
@@ -107,7 +107,7 @@ def test_setup_definition_rejects_default_above_max_score() -> None:
             id="broken-setup",
             name="Broken",
             description="min_edge_score_default too high",
-            rules=[WeightedRule(signal_type="liquidity_sweep", weight=20)],
+            rules=[WeightedRule(signal_type="poc_sweep", weight=20)],
             min_edge_score_default=999,
             entry_methodology="close_of_trigger_bar",
             stop_methodology="atr_multiple",
@@ -118,7 +118,7 @@ def test_setup_definition_rejects_default_above_max_score() -> None:
 
 def test_edge_score_result_component_scores() -> None:
     result = EdgeScoreResult(
-        setup_id="liquidity-sweep-absorption-reversal",
+        setup_id="poc-sweep-absorption-reversal",
         setup_version=1,
         symbol="MES",
         timeframe="5m",
@@ -129,7 +129,7 @@ def test_edge_score_result_component_scores() -> None:
         max_score=100,
         met_required_rules=True,
         component_scores=[
-            ComponentScore(signal_type="liquidity_sweep", weight=20, present=True, contribution=20),
+            ComponentScore(signal_type="poc_sweep", weight=20, present=True, contribution=20),
             ComponentScore(signal_type="absorption", weight=20, present=True, contribution=20),
         ],
     )

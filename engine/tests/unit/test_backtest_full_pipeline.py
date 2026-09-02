@@ -10,7 +10,7 @@ from edge_lab.backtest.statistics import compute_statistics
 from edge_lab.backtest.validation import build_validation_summary, split_out_of_sample_index
 from edge_lab.config import get_instrument
 from edge_lab.data.synthetic_generator import GeneratorConfig, generate_dataset
-from edge_lab.hypotheses.setups.liquidity_sweep_absorption_reversal import (
+from edge_lab.hypotheses.setups.poc_sweep_absorption_reversal import (
     ANCHOR_SIGNAL_TYPE,
     build_setup,
 )

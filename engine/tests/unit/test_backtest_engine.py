@@ -6,7 +6,7 @@ from edge_lab.backtest.engine import run_backtest, simulate_exit
 from edge_lab.backtest.fills import FillResult, compute_entry_stop_target
 from edge_lab.config import get_instrument
 from edge_lab.hypotheses.edge_score import score_trigger
-from edge_lab.hypotheses.setups.liquidity_sweep_absorption_reversal import (
+from edge_lab.hypotheses.setups.poc_sweep_absorption_reversal import (
     ANCHOR_SIGNAL_TYPE,
     build_setup,
 )
@@ -96,7 +96,7 @@ def test_compute_entry_stop_target_uses_swept_level_and_buffer() -> None:
     setup = build_setup()
     bars = _flat_session(day=2, n=5, base=5100.0)
     conditions = [
-        _cond("liquidity_sweep", 0, "bullish", {"swept_level": 5098.0}),
+        _cond("poc_sweep", 0, "bullish", {"swept_level": 5098.0}),
         _cond("absorption", 2, "bullish"),
     ]
     trigger = score_trigger(setup, trigger_bar_index=2, direction="bullish", conditions=conditions)
@@ -115,7 +115,7 @@ def test_run_backtest_end_to_end_produces_expected_trade_fields() -> None:
     bars = _flat_session(day=2, n=20, base=5100.0)
     bars[6] = _bar(6, 2, 5100, 5200, 5099, 5200)  # far above target -> hits target next bar check window
     conditions = [
-        _cond("liquidity_sweep", 2, "bullish", {"swept_level": 5098.0}),
+        _cond("poc_sweep", 2, "bullish", {"swept_level": 5098.0}),
         _cond("absorption", 4, "bullish"),  # trigger bar
     ]
     trades = run_backtest(setup, ANCHOR_SIGNAL_TYPE, bars, conditions, SPEC, min_edge_score=0)
@@ -142,7 +142,7 @@ def test_run_backtest_skips_trades_with_near_zero_risk() -> None:
         # -- below the default min_risk_ticks=2.0 * TICK=0.25 -> 0.5 floor
         # boundary; nudge it just under with a tighter buffer via a level
         # equal to entry price (worst case: risk == buffer exactly).
-        _cond("liquidity_sweep", 0, "bullish", {"swept_level": 5100.0}),
+        _cond("poc_sweep", 0, "bullish", {"swept_level": 5100.0}),
         _cond("absorption", 2, "bullish"),
     ]
     trades = run_backtest(
@@ -159,7 +159,7 @@ def test_run_backtest_skips_trades_with_near_zero_risk() -> None:
 def test_run_backtest_respects_min_edge_score_filter() -> None:
     setup = build_setup()
     bars = _flat_session(day=2, n=10, base=5100.0)
-    # Only absorption present -> required liquidity_sweep missing -> met_required_rules False.
+    # Only absorption present -> required poc_sweep missing -> met_required_rules False.
     conditions = [_cond("absorption", 4, "bullish")]
     trades = run_backtest(setup, ANCHOR_SIGNAL_TYPE, bars, conditions, SPEC, min_edge_score=0)
     assert trades == []
@@ -169,9 +169,9 @@ def test_run_backtest_skips_overlapping_triggers() -> None:
     setup = build_setup()
     bars = _flat_session(day=2, n=30, base=5100.0)  # nothing hits stop/target -> long max_hold_time exits
     conditions = [
-        _cond("liquidity_sweep", 0, "bullish", {"swept_level": 5098.0}),
+        _cond("poc_sweep", 0, "bullish", {"swept_level": 5098.0}),
         _cond("absorption", 2, "bullish"),
-        _cond("liquidity_sweep", 3, "bullish", {"swept_level": 5098.0}),
+        _cond("poc_sweep", 3, "bullish", {"swept_level": 5098.0}),
         _cond("absorption", 5, "bullish"),  # would overlap with the first trade's holding window
     ]
     trades = run_backtest(setup, ANCHOR_SIGNAL_TYPE, bars, conditions, SPEC, min_edge_score=0)
@@ -183,7 +183,7 @@ def test_run_backtest_marks_out_of_sample_by_split_index() -> None:
     setup = build_setup()
     bars = _flat_session(day=2, n=15, base=5100.0)
     conditions = [
-        _cond("liquidity_sweep", 0, "bullish", {"swept_level": 5098.0}),
+        _cond("poc_sweep", 0, "bullish", {"swept_level": 5098.0}),
         _cond("absorption", 2, "bullish"),
     ]
     trades = run_backtest(

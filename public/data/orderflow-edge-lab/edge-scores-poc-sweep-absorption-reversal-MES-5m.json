@@ -1,8 +1,8 @@
 [
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 56,
     "triggerTimestamp": "2026-05-11T18:10:00Z",
@@ -12,7 +12,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -32,22 +32,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 95,
     "triggerTimestamp": "2026-05-12T14:55:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -64,22 +64,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 96,
     "triggerTimestamp": "2026-05-12T15:00:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -96,9 +96,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 200,
     "triggerTimestamp": "2026-05-13T17:10:00Z",
@@ -108,7 +108,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -128,9 +128,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 253,
     "triggerTimestamp": "2026-05-14T15:05:00Z",
@@ -140,7 +140,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -160,9 +160,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 255,
     "triggerTimestamp": "2026-05-14T15:15:00Z",
@@ -172,7 +172,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -192,9 +192,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 328,
     "triggerTimestamp": "2026-05-15T14:50:00Z",
@@ -204,7 +204,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -224,9 +224,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 363,
     "triggerTimestamp": "2026-05-15T17:45:00Z",
@@ -236,7 +236,7 @@
     "metRequiredRules": true,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": true,
         "contribution": 35.0
@@ -256,9 +256,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 387,
     "triggerTimestamp": "2026-05-15T19:45:00Z",
@@ -268,7 +268,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -288,9 +288,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 419,
     "triggerTimestamp": "2026-05-18T15:55:00Z",
@@ -300,7 +300,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -320,9 +320,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 455,
     "triggerTimestamp": "2026-05-18T18:55:00Z",
@@ -332,7 +332,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -352,9 +352,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 461,
     "triggerTimestamp": "2026-05-18T19:25:00Z",
@@ -364,7 +364,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -384,22 +384,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 511,
     "triggerTimestamp": "2026-05-19T17:05:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -416,22 +416,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 565,
     "triggerTimestamp": "2026-05-20T15:05:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -448,22 +448,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 568,
     "triggerTimestamp": "2026-05-20T15:20:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -480,9 +480,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 598,
     "triggerTimestamp": "2026-05-20T17:50:00Z",
@@ -492,7 +492,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -512,9 +512,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 605,
     "triggerTimestamp": "2026-05-20T18:25:00Z",
@@ -524,7 +524,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -544,9 +544,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 651,
     "triggerTimestamp": "2026-05-21T15:45:00Z",
@@ -556,7 +556,7 @@
     "metRequiredRules": true,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": true,
         "contribution": 35.0
@@ -576,9 +576,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 652,
     "triggerTimestamp": "2026-05-21T15:50:00Z",
@@ -588,7 +588,7 @@
     "metRequiredRules": true,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": true,
         "contribution": 35.0
@@ -608,9 +608,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 668,
     "triggerTimestamp": "2026-05-21T17:10:00Z",
@@ -620,7 +620,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -640,22 +640,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 733,
     "triggerTimestamp": "2026-05-22T16:05:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -672,9 +672,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 734,
     "triggerTimestamp": "2026-05-22T16:10:00Z",
@@ -684,7 +684,7 @@
     "metRequiredRules": true,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": true,
         "contribution": 35.0
@@ -704,9 +704,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 755,
     "triggerTimestamp": "2026-05-22T17:55:00Z",
@@ -716,7 +716,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -736,9 +736,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 757,
     "triggerTimestamp": "2026-05-22T18:05:00Z",
@@ -748,7 +748,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -768,115 +768,19 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 809,
     "triggerTimestamp": "2026-05-25T15:55:00Z",
-    "direction": "bearish",
-    "score": 70.0,
-    "maxScore": 100.0,
-    "metRequiredRules": true,
-    "componentScores": [
-      {
-        "signalType": "liquidity_sweep",
-        "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
-      },
-      {
-        "signalType": "absorption",
-        "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
-      },
-      {
-        "signalType": "delta_divergence",
-        "weight": 30.0,
-        "present": false,
-        "contribution": 0.0
-      }
-    ]
-  },
-  {
-    "setupId": "liquidity-sweep-absorption-reversal",
-    "setupVersion": 1,
-    "symbol": "MNQ",
-    "timeframe": "5m",
-    "triggerBarIndex": 810,
-    "triggerTimestamp": "2026-05-25T16:00:00Z",
-    "direction": "bearish",
-    "score": 70.0,
-    "maxScore": 100.0,
-    "metRequiredRules": true,
-    "componentScores": [
-      {
-        "signalType": "liquidity_sweep",
-        "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
-      },
-      {
-        "signalType": "absorption",
-        "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
-      },
-      {
-        "signalType": "delta_divergence",
-        "weight": 30.0,
-        "present": false,
-        "contribution": 0.0
-      }
-    ]
-  },
-  {
-    "setupId": "liquidity-sweep-absorption-reversal",
-    "setupVersion": 1,
-    "symbol": "MNQ",
-    "timeframe": "5m",
-    "triggerBarIndex": 811,
-    "triggerTimestamp": "2026-05-25T16:05:00Z",
-    "direction": "bearish",
-    "score": 70.0,
-    "maxScore": 100.0,
-    "metRequiredRules": true,
-    "componentScores": [
-      {
-        "signalType": "liquidity_sweep",
-        "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
-      },
-      {
-        "signalType": "absorption",
-        "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
-      },
-      {
-        "signalType": "delta_divergence",
-        "weight": 30.0,
-        "present": false,
-        "contribution": 0.0
-      }
-    ]
-  },
-  {
-    "setupId": "liquidity-sweep-absorption-reversal",
-    "setupVersion": 1,
-    "symbol": "MNQ",
-    "timeframe": "5m",
-    "triggerBarIndex": 838,
-    "triggerTimestamp": "2026-05-25T18:20:00Z",
     "direction": "bearish",
     "score": 35.0,
     "maxScore": 100.0,
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -896,9 +800,105 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "triggerBarIndex": 810,
+    "triggerTimestamp": "2026-05-25T16:00:00Z",
+    "direction": "bearish",
+    "score": 35.0,
+    "maxScore": 100.0,
+    "metRequiredRules": false,
+    "componentScores": [
+      {
+        "signalType": "poc_sweep",
+        "weight": 35.0,
+        "present": false,
+        "contribution": 0.0
+      },
+      {
+        "signalType": "absorption",
+        "weight": 35.0,
+        "present": true,
+        "contribution": 35.0
+      },
+      {
+        "signalType": "delta_divergence",
+        "weight": 30.0,
+        "present": false,
+        "contribution": 0.0
+      }
+    ]
+  },
+  {
+    "setupId": "poc-sweep-absorption-reversal",
+    "setupVersion": 1,
+    "symbol": "MES",
+    "timeframe": "5m",
+    "triggerBarIndex": 811,
+    "triggerTimestamp": "2026-05-25T16:05:00Z",
+    "direction": "bearish",
+    "score": 35.0,
+    "maxScore": 100.0,
+    "metRequiredRules": false,
+    "componentScores": [
+      {
+        "signalType": "poc_sweep",
+        "weight": 35.0,
+        "present": false,
+        "contribution": 0.0
+      },
+      {
+        "signalType": "absorption",
+        "weight": 35.0,
+        "present": true,
+        "contribution": 35.0
+      },
+      {
+        "signalType": "delta_divergence",
+        "weight": 30.0,
+        "present": false,
+        "contribution": 0.0
+      }
+    ]
+  },
+  {
+    "setupId": "poc-sweep-absorption-reversal",
+    "setupVersion": 1,
+    "symbol": "MES",
+    "timeframe": "5m",
+    "triggerBarIndex": 838,
+    "triggerTimestamp": "2026-05-25T18:20:00Z",
+    "direction": "bearish",
+    "score": 70.0,
+    "maxScore": 100.0,
+    "metRequiredRules": true,
+    "componentScores": [
+      {
+        "signalType": "poc_sweep",
+        "weight": 35.0,
+        "present": true,
+        "contribution": 35.0
+      },
+      {
+        "signalType": "absorption",
+        "weight": 35.0,
+        "present": true,
+        "contribution": 35.0
+      },
+      {
+        "signalType": "delta_divergence",
+        "weight": 30.0,
+        "present": false,
+        "contribution": 0.0
+      }
+    ]
+  },
+  {
+    "setupId": "poc-sweep-absorption-reversal",
+    "setupVersion": 1,
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 841,
     "triggerTimestamp": "2026-05-25T18:35:00Z",
@@ -908,7 +908,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -928,9 +928,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 880,
     "triggerTimestamp": "2026-05-26T15:20:00Z",
@@ -940,7 +940,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -960,9 +960,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 902,
     "triggerTimestamp": "2026-05-26T17:10:00Z",
@@ -972,7 +972,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -992,22 +992,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 905,
     "triggerTimestamp": "2026-05-26T17:25:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1024,9 +1024,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 934,
     "triggerTimestamp": "2026-05-26T19:50:00Z",
@@ -1036,7 +1036,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1056,9 +1056,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 977,
     "triggerTimestamp": "2026-05-27T16:55:00Z",
@@ -1068,7 +1068,7 @@
     "metRequiredRules": true,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": true,
         "contribution": 35.0
@@ -1088,9 +1088,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 990,
     "triggerTimestamp": "2026-05-27T18:00:00Z",
@@ -1100,7 +1100,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1120,9 +1120,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 995,
     "triggerTimestamp": "2026-05-27T18:25:00Z",
@@ -1132,7 +1132,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1152,9 +1152,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1029,
     "triggerTimestamp": "2026-05-28T14:45:00Z",
@@ -1164,7 +1164,7 @@
     "metRequiredRules": true,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": true,
         "contribution": 35.0
@@ -1184,22 +1184,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1117,
     "triggerTimestamp": "2026-05-29T15:35:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1216,22 +1216,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1149,
     "triggerTimestamp": "2026-05-29T18:15:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1248,22 +1248,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1153,
     "triggerTimestamp": "2026-05-29T18:35:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1280,22 +1280,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1198,
     "triggerTimestamp": "2026-06-01T15:50:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1312,9 +1312,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1266,
     "triggerTimestamp": "2026-06-02T15:00:00Z",
@@ -1324,7 +1324,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1344,22 +1344,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1274,
     "triggerTimestamp": "2026-06-02T15:40:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1376,9 +1376,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1341,
     "triggerTimestamp": "2026-06-03T14:45:00Z",
@@ -1388,7 +1388,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1408,9 +1408,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1342,
     "triggerTimestamp": "2026-06-03T14:50:00Z",
@@ -1420,7 +1420,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1440,9 +1440,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1385,
     "triggerTimestamp": "2026-06-03T18:25:00Z",
@@ -1452,7 +1452,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1472,9 +1472,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1391,
     "triggerTimestamp": "2026-06-03T18:55:00Z",
@@ -1484,7 +1484,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1504,19 +1504,19 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1432,
     "triggerTimestamp": "2026-06-04T15:50:00Z",
     "direction": "bearish",
-    "score": 35.0,
+    "score": 65.0,
     "maxScore": 100.0,
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1530,15 +1530,15 @@
       {
         "signalType": "delta_divergence",
         "weight": 30.0,
-        "present": false,
-        "contribution": 0.0
+        "present": true,
+        "contribution": 30.0
       }
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1445,
     "triggerTimestamp": "2026-06-04T16:55:00Z",
@@ -1548,7 +1548,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1568,9 +1568,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1453,
     "triggerTimestamp": "2026-06-04T17:35:00Z",
@@ -1580,7 +1580,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1600,9 +1600,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1470,
     "triggerTimestamp": "2026-06-04T19:00:00Z",
@@ -1612,7 +1612,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1632,9 +1632,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1479,
     "triggerTimestamp": "2026-06-04T19:45:00Z",
@@ -1644,7 +1644,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1664,9 +1664,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1543,
     "triggerTimestamp": "2026-06-05T18:35:00Z",
@@ -1676,7 +1676,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1696,22 +1696,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1586,
     "triggerTimestamp": "2026-06-08T15:40:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1728,22 +1728,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1587,
     "triggerTimestamp": "2026-06-08T15:45:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1760,22 +1760,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1654,
     "triggerTimestamp": "2026-06-09T14:50:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1792,22 +1792,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1655,
     "triggerTimestamp": "2026-06-09T14:55:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1824,9 +1824,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1816,
     "triggerTimestamp": "2026-06-11T15:20:00Z",
@@ -1836,7 +1836,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1856,22 +1856,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1851,
     "triggerTimestamp": "2026-06-11T18:15:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1888,9 +1888,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1864,
     "triggerTimestamp": "2026-06-11T19:20:00Z",
@@ -1900,7 +1900,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -1920,22 +1920,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1885,
     "triggerTimestamp": "2026-06-12T14:35:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1952,22 +1952,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1886,
     "triggerTimestamp": "2026-06-12T14:40:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -1984,9 +1984,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 1918,
     "triggerTimestamp": "2026-06-12T17:20:00Z",
@@ -1996,7 +1996,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -2016,22 +2016,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2002,
     "triggerTimestamp": "2026-06-15T17:50:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2048,22 +2048,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2004,
     "triggerTimestamp": "2026-06-15T18:00:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2080,22 +2080,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2015,
     "triggerTimestamp": "2026-06-15T18:55:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2112,22 +2112,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2230,
     "triggerTimestamp": "2026-06-18T17:20:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2144,22 +2144,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2231,
     "triggerTimestamp": "2026-06-18T17:25:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2176,22 +2176,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2232,
     "triggerTimestamp": "2026-06-18T17:30:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2208,9 +2208,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2238,
     "triggerTimestamp": "2026-06-18T18:00:00Z",
@@ -2220,7 +2220,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -2240,9 +2240,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2247,
     "triggerTimestamp": "2026-06-18T18:45:00Z",
@@ -2252,7 +2252,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -2272,22 +2272,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2357,
     "triggerTimestamp": "2026-06-22T14:55:00Z",
     "direction": "bullish",
-    "score": 100.0,
+    "score": 65.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2304,22 +2304,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2358,
     "triggerTimestamp": "2026-06-22T15:00:00Z",
     "direction": "bullish",
-    "score": 100.0,
+    "score": 65.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2336,9 +2336,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2394,
     "triggerTimestamp": "2026-06-22T18:00:00Z",
@@ -2348,7 +2348,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -2368,9 +2368,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2403,
     "triggerTimestamp": "2026-06-22T18:45:00Z",
@@ -2380,7 +2380,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -2400,9 +2400,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2413,
     "triggerTimestamp": "2026-06-22T19:35:00Z",
@@ -2412,7 +2412,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -2432,22 +2432,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2440,
     "triggerTimestamp": "2026-06-23T15:20:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2464,22 +2464,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2443,
     "triggerTimestamp": "2026-06-23T15:35:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2496,22 +2496,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2444,
     "triggerTimestamp": "2026-06-23T15:40:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2528,9 +2528,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2468,
     "triggerTimestamp": "2026-06-23T17:40:00Z",
@@ -2540,7 +2540,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -2560,9 +2560,9 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2473,
     "triggerTimestamp": "2026-06-23T18:05:00Z",
@@ -2572,7 +2572,7 @@
     "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "present": false,
         "contribution": 0.0
@@ -2592,22 +2592,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2553,
     "triggerTimestamp": "2026-06-24T18:15:00Z",
     "direction": "bullish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",
@@ -2624,22 +2624,22 @@
     ]
   },
   {
-    "setupId": "liquidity-sweep-absorption-reversal",
+    "setupId": "poc-sweep-absorption-reversal",
     "setupVersion": 1,
-    "symbol": "MNQ",
+    "symbol": "MES",
     "timeframe": "5m",
     "triggerBarIndex": 2612,
     "triggerTimestamp": "2026-06-25T16:40:00Z",
     "direction": "bearish",
-    "score": 70.0,
+    "score": 35.0,
     "maxScore": 100.0,
-    "metRequiredRules": true,
+    "metRequiredRules": false,
     "componentScores": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
-        "present": true,
-        "contribution": 35.0
+        "present": false,
+        "contribution": 0.0
       },
       {
         "signalType": "absorption",

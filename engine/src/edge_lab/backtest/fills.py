@@ -41,10 +41,10 @@ def compute_entry_stop_target(
     entry_price = entry_bar.close
 
     conditions_by_type = group_conditions_by_type(conditions)
-    sweep_rule = next(r for r in setup.rules if r.signal_type == "liquidity_sweep")
+    sweep_rule = next(r for r in setup.rules if r.signal_type == "poc_sweep")
     sweep_condition = find_supporting_condition(
         conditions_by_type,
-        "liquidity_sweep",
+        "poc_sweep",
         sweep_rule.sequence_within_bars,
         trigger.trigger_bar_index,
         trigger.direction,

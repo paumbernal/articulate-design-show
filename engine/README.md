@@ -15,7 +15,7 @@ uv sync                 # from this directory, or `npm run engine:setup` from th
 ## Running
 
 ```bash
-uv run pytest                                          # 78 tests
+uv run pytest                                          # 80 tests
 uv run ruff check . && uv run ruff format --check .     # lint + format check
 uv run uvicorn edge_lab.api.app:app --reload --port 8000   # dev API server
 uv run python -m edge_lab.cli.export_artifacts          # regenerate public/data/orderflow-edge-lab/*.json
@@ -43,14 +43,14 @@ src/edge_lab/
   features/           Pure calculation functions: volume_profile.py (POC/VAH/VAL/HVN/LVN),
                       market_structure.py (swing points, breaks of structure),
                       orderflow_features.py (rolling volume, effort-vs-result, divergence).
-  signals/            Detectors (liquidity_sweep, absorption, delta_divergence) over a
+  signals/            Detectors (poc_sweep, absorption, delta_divergence) over a
                       shared DetectionContext (base.py) built once per dataset.
                       registry.py is where a new detector gets wired in.
   hypotheses/
     edge_score.py      Scores a SetupDefinition's weighted rules against nearby
                       DetectedConditions. Never computes a probability of profit —
                       that's a deliberate omission, not an oversight.
-    setups/liquidity_sweep_absorption_reversal.py   The one hypothesis this MVP tests.
+    setups/poc_sweep_absorption_reversal.py   The one hypothesis this MVP tests.
   backtest/
     fills.py           Entry/stop/target construction from a setup's methodology strings.
     engine.py           Trade simulation — the documented assumptions (no pyramiding,

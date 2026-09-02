@@ -29,6 +29,7 @@ const MarketDataPane = ({ symbol }: MarketDataPaneProps) => {
 
   const [selectedSession, setSelectedSession] = useState<string | null>(null);
   const [profileRange, setProfileRange] = useState<ProfileRange>("session");
+  const [highlightPrice, setHighlightPrice] = useState<number | null>(null);
 
   useEffect(() => {
     if (sessionDates.length > 0 && selectedSession === null) {
@@ -65,7 +66,7 @@ const MarketDataPane = ({ symbol }: MarketDataPaneProps) => {
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div className="flex items-center gap-3">
           <h3 className="font-mono text-xs uppercase tracking-wide text-text-muted">
-            {spec.name} · {selectedSession ?? "—"}
+            {spec.name} · {selectedSession ?? "N/A"}
           </h3>
         </div>
         {selectedSession && (
@@ -80,6 +81,7 @@ const MarketDataPane = ({ symbol }: MarketDataPaneProps) => {
             conditions={sessionConditions}
             tickSize={spec.tickSize}
             timezone={spec.timezone}
+            highlightPrice={highlightPrice}
           />
         </div>
         <div className="border border-foreground/10 rounded-xl p-4 bg-foreground/[0.02] flex flex-col gap-3">
@@ -99,7 +101,12 @@ const MarketDataPane = ({ symbol }: MarketDataPaneProps) => {
               </button>
             ))}
           </div>
-          <VolumeProfilePanel bars={profileBars} tickSize={spec.tickSize} height={360} />
+          <VolumeProfilePanel
+            bars={profileBars}
+            tickSize={spec.tickSize}
+            height={360}
+            onHoverPrice={setHighlightPrice}
+          />
         </div>
       </div>
     </div>

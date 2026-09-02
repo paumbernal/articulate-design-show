@@ -1,10 +1,10 @@
 import { useMemo } from "react";
-import { Badge } from "@/components/ui/badge";
 import { useEdgeScores, useSetups } from "../../hooks/useOrderFlowData";
 import { CHART_WINDOW } from "../../lib/dataWindow";
 import { INSTRUMENTS } from "../../lib/instrumentSpecs";
 import { formatDate, formatTime } from "../../lib/formatters";
 import type { InstrumentSymbol } from "../../types";
+import DirectionBadge from "../DirectionBadge";
 import EdgeScoreBadge from "./EdgeScoreBadge";
 import SetupDefinitionPanel from "./SetupDefinitionPanel";
 
@@ -35,15 +35,15 @@ const EdgeEnginePane = ({ symbol }: EdgeEnginePaneProps) => {
   return (
     <div className="flex flex-col gap-4">
       <p className="text-sm text-text-muted max-w-2xl">
-        Which predefined setup conditions are currently satisfied — the Edge Score is a configurable count of
-        those conditions, not a prediction. Whether a high score has actually meant anything historically is
-        answered in Research Results, not here.
+        This is where the detected conditions get weighed against a hypothesis. The score just counts how many
+        of the predefined conditions showed up, nothing more. Whether that combination has actually meant
+        anything is a separate question, answered over in Research Results.
       </p>
 
       <SetupDefinitionPanel setup={setup} />
 
       <h3 className="font-mono text-xs uppercase tracking-wide text-text-muted mt-2">
-        Scored triggers — {spec.name}, last six weeks
+        Scored triggers, {spec.name}, last six weeks
       </h3>
 
       {scoresLoading ? (
@@ -54,9 +54,7 @@ const EdgeEnginePane = ({ symbol }: EdgeEnginePaneProps) => {
             <div key={`${s.setupId}-${s.triggerBarIndex}`} className="flex items-center justify-between gap-4 p-4 flex-wrap">
               <div className="flex flex-col gap-1 min-w-[140px]">
                 <div className="flex items-center gap-2">
-                  <Badge variant={s.direction === "bullish" ? "default" : "destructive"} className="font-mono text-[10px]">
-                    {s.direction}
-                  </Badge>
+                  <DirectionBadge direction={s.direction} />
                   {s.metRequiredRules ? (
                     <span className="font-mono text-[10px] text-emerald-500">confirmed</span>
                   ) : (

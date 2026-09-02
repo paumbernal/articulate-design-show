@@ -10,7 +10,7 @@ def _trade(i: int, pnl_r: float, is_out_of_sample: bool) -> BacktestTrade:
     ts = datetime(2026, 3, 2, 14, 30, tzinfo=UTC) + timedelta(minutes=5 * i)
     return BacktestTrade(
         id=f"trade-{i}",
-        setup_id="liquidity-sweep-absorption-reversal",
+        setup_id="poc-sweep-absorption-reversal",
         setup_version=1,
         symbol="MES",
         direction="bullish",

@@ -5,7 +5,7 @@ interface SetupDefinitionPanelProps {
 }
 
 const SIGNAL_LABELS: Record<string, string> = {
-  liquidity_sweep: "Liquidity Sweep",
+  poc_sweep: "POC Sweep",
   absorption: "Absorption",
   delta_divergence: "Delta Divergence",
 };

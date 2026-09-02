@@ -1,24 +1,24 @@
 import { useMemo, useState } from "react";
-import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { useConditions } from "../../hooks/useOrderFlowData";
 import { CHART_WINDOW } from "../../lib/dataWindow";
 import { INSTRUMENTS } from "../../lib/instrumentSpecs";
 import { formatDate, formatTime } from "../../lib/formatters";
 import type { InstrumentSymbol } from "../../types";
+import DirectionBadge from "../DirectionBadge";
 
 interface DetectedConditionsPaneProps {
   symbol: InstrumentSymbol;
 }
 
 const SIGNAL_LABELS: Record<string, string> = {
-  liquidity_sweep: "Liquidity Sweep",
+  poc_sweep: "POC Sweep",
   absorption: "Absorption",
   delta_divergence: "Delta Divergence",
 };
 
 const SIGNAL_DOT: Record<string, string> = {
-  liquidity_sweep: "bg-amber-500",
+  poc_sweep: "bg-amber-500",
   absorption: "bg-violet-500",
   delta_divergence: "bg-sky-500",
 };
@@ -31,7 +31,7 @@ const DetectedConditionsPane = ({ symbol }: DetectedConditionsPaneProps) => {
   );
   const { data: conditions, isLoading } = useConditions(query);
   const [activeTypes, setActiveTypes] = useState<Set<string>>(
-    new Set(["liquidity_sweep", "absorption", "delta_divergence"]),
+    new Set(["poc_sweep", "absorption", "delta_divergence"]),
   );
 
   const filtered = useMemo(() => {
@@ -61,8 +61,8 @@ const DetectedConditionsPane = ({ symbol }: DetectedConditionsPaneProps) => {
   return (
     <div className="flex flex-col gap-4">
       <p className="text-sm text-text-muted max-w-2xl">
-        Raw signal-detector output over the last six weeks of {spec.name} — this is what fired, independent of
-        whether it forms part of any hypothesis. The Edge Engine tab is where these get combined and weighted.
+        Everything the detectors picked up on {spec.name} over the last six weeks, whether or not it ends up
+        mattering for a setup. Head to Edge Engine to see how these actually get combined and scored.
       </p>
 
       <div className="flex flex-wrap gap-2">
@@ -105,9 +105,7 @@ const DetectedConditionsPane = ({ symbol }: DetectedConditionsPaneProps) => {
                     {SIGNAL_LABELS[c.signalType] ?? c.signalType}
                   </TableCell>
                   <TableCell>
-                    <Badge variant={c.direction === "bullish" ? "default" : "destructive"} className="font-mono text-[10px]">
-                      {c.direction}
-                    </Badge>
+                    <DirectionBadge direction={c.direction} />
                   </TableCell>
                   <TableCell className="font-mono text-xs text-text-muted">{formatDate(c.timestamp, spec.timezone)}</TableCell>
                   <TableCell className="font-mono text-xs text-text-muted">{formatTime(c.timestamp, spec.timezone)}</TableCell>

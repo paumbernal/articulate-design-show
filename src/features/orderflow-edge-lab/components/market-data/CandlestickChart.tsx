@@ -8,17 +8,26 @@ interface CandlestickChartProps {
   tickSize: number;
   timezone: string;
   height?: number;
+  /** Draws an amber reference line at this price, e.g. from hovering the volume profile. */
+  highlightPrice?: number | null;
 }
 
 const SIGNAL_COLORS: Record<string, string> = {
-  liquidity_sweep: "hsl(38 92% 50%)",
+  poc_sweep: "hsl(38 92% 50%)",
   absorption: "hsl(271 81% 66%)",
   delta_divergence: "hsl(199 89% 58%)",
 };
 
 const PADDING = { left: 8, right: 56, top: 12 };
 
-const CandlestickChart = ({ bars, conditions = [], tickSize, timezone, height = 420 }: CandlestickChartProps) => {
+const CandlestickChart = ({
+  bars,
+  conditions = [],
+  tickSize,
+  timezone,
+  height = 420,
+  highlightPrice,
+}: CandlestickChartProps) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
@@ -175,6 +184,29 @@ const CandlestickChart = ({ bars, conditions = [], tickSize, timezone, height = 
               className="stroke-foreground/25"
               strokeDasharray="2,2"
             />
+          </g>
+        )}
+
+        {/* Volume-profile hover reference line */}
+        {highlightPrice != null && (
+          <g pointerEvents="none">
+            <line
+              x1={PADDING.left}
+              x2={width - PADDING.right}
+              y1={priceScale(highlightPrice)}
+              y2={priceScale(highlightPrice)}
+              stroke="hsl(38 92% 50%)"
+              strokeWidth={1}
+              strokeDasharray="4,2"
+            />
+            <text
+              x={width - PADDING.right + 6}
+              y={priceScale(highlightPrice) + 3}
+              className="text-[9px] font-mono font-bold"
+              fill="hsl(38 92% 50%)"
+            >
+              {formatPrice(highlightPrice, tickSize)}
+            </text>
           </g>
         )}
       </svg>

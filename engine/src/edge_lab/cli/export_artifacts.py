@@ -19,13 +19,14 @@ from typing import Any
 
 from pydantic import BaseModel
 
+from edge_lab.api.routers.meta import DISCLAIMER
 from edge_lab.backtest.engine import run_backtest
 from edge_lab.backtest.statistics import compute_statistics
 from edge_lab.backtest.validation import build_validation_summary, split_out_of_sample_index
 from edge_lab.config import InstrumentSymbol, get_instrument
 from edge_lab.data.synthetic_provider import SyntheticMarketDataProvider
 from edge_lab.hypotheses.edge_score import find_setup_triggers
-from edge_lab.hypotheses.setups.liquidity_sweep_absorption_reversal import (
+from edge_lab.hypotheses.setups.poc_sweep_absorption_reversal import (
     ANCHOR_SIGNAL_TYPE,
     build_setup,
 )
@@ -131,11 +132,7 @@ def main() -> None:
         "meta",
         {
             "isSyntheticData": True,
-            "disclaimer": (
-                "All market data in this application is synthetically generated for "
-                "methodology demonstration. It is not real market data and must not be "
-                "treated as such."
-            ),
+            "disclaimer": DISCLAIMER,
             "assumptionsMarkdown": assumptions,
             "supportedSymbols": SYMBOLS,
         },

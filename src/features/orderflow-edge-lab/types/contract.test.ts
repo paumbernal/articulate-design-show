@@ -75,7 +75,7 @@ describe("Python <-> TS model contract", () => {
       timeframe: "5m",
       barIndex: 42,
       timestamp: "2026-03-02T14:35:00Z",
-      signalType: "liquidity_sweep",
+      signalType: "poc_sweep",
       direction: "bullish",
       strength: 0.8,
       evidence: { sweptLevel: 5098.5, volumeMultiple: 3.2 },
@@ -85,12 +85,12 @@ describe("Python <-> TS model contract", () => {
 
   it("SetupDefinition fixture matches schema", () => {
     const setup: SetupDefinition = {
-      id: "liquidity-sweep-absorption-reversal",
-      name: "Liquidity Sweep + Absorption Reversal",
+      id: "poc-sweep-absorption-reversal",
+      name: "POC Sweep + Absorption Reversal",
       description: "Sweep of a prior high/low followed by absorption and failure to continue.",
       version: 1,
       rules: [
-        { signalType: "liquidity_sweep", weight: 20, required: true, params: {} },
+        { signalType: "poc_sweep", weight: 20, required: true, params: {} },
         { signalType: "absorption", weight: 20, required: true, sequenceWithinBars: 3, params: {} },
       ],
       minEdgeScoreDefault: 60,
@@ -104,7 +104,7 @@ describe("Python <-> TS model contract", () => {
 
   it("EdgeScoreResult fixture matches schema", () => {
     const result: EdgeScoreResult = {
-      setupId: "liquidity-sweep-absorption-reversal",
+      setupId: "poc-sweep-absorption-reversal",
       setupVersion: 1,
       symbol: "MES",
       timeframe: "5m",
@@ -115,7 +115,7 @@ describe("Python <-> TS model contract", () => {
       maxScore: 100,
       metRequiredRules: true,
       componentScores: [
-        { signalType: "liquidity_sweep", weight: 20, present: true, contribution: 20 },
+        { signalType: "poc_sweep", weight: 20, present: true, contribution: 20 },
       ],
     };
     expectValid("EdgeScoreResult", result);
@@ -124,7 +124,7 @@ describe("Python <-> TS model contract", () => {
   it("BacktestTrade fixture matches schema", () => {
     const trade: BacktestTrade = {
       id: "trade-1",
-      setupId: "liquidity-sweep-absorption-reversal",
+      setupId: "poc-sweep-absorption-reversal",
       setupVersion: 1,
       symbol: "MES",
       direction: "bullish",
@@ -160,7 +160,7 @@ describe("Python <-> TS model contract", () => {
         dateRangeStart: "2026-01-01T00:00:00Z",
         dateRangeEnd: "2026-03-01T00:00:00Z",
         session: "RTH",
-        setupId: "liquidity-sweep-absorption-reversal",
+        setupId: "poc-sweep-absorption-reversal",
         setupVersion: 1,
         minEdgeScore: 60,
         entryMethodology: "close_of_trigger_bar",

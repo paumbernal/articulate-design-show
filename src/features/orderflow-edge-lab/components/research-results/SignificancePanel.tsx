@@ -23,7 +23,7 @@ const SignificancePanel = ({ validation }: SignificancePanelProps) => {
         <div>
           <p className="font-mono text-[10px] uppercase text-text-muted mb-1">p-value</p>
           <p className={`font-mono font-bold ${isSignificant ? "text-emerald-500" : ""}`}>
-            {significance.pValue != null ? significance.pValue.toFixed(3) : "—"}
+            {significance.pValue != null ? significance.pValue.toFixed(3) : "N/A"}
           </p>
         </div>
         <div>
@@ -31,15 +31,15 @@ const SignificancePanel = ({ validation }: SignificancePanelProps) => {
           <p className="font-mono font-bold">
             {significance.ciLow != null && significance.ciHigh != null
               ? `${significance.ciLow.toFixed(2)} to ${significance.ciHigh.toFixed(2)}`
-              : "—"}
+              : "N/A"}
           </p>
         </div>
         <div>
           <p className="font-mono text-[10px] uppercase text-text-muted mb-1">Win Rate 95% CI</p>
           <p className="font-mono font-bold">
             {significance.winRateCiLow != null && significance.winRateCiHigh != null
-              ? `${formatPercent(significance.winRateCiLow)} – ${formatPercent(significance.winRateCiHigh)}`
-              : "—"}
+              ? `${formatPercent(significance.winRateCiLow)} to ${formatPercent(significance.winRateCiHigh)}`
+              : "N/A"}
           </p>
         </div>
         <div>

@@ -56,13 +56,13 @@ def test_list_setups_returns_the_mvp_setup() -> None:
     assert response.status_code == 200
     setups = response.json()
     assert len(setups) == 1
-    assert setups[0]["id"] == "liquidity-sweep-absorption-reversal"
+    assert setups[0]["id"] == "poc-sweep-absorption-reversal"
     assert "maxScore" not in setups[0]  # derived client-side, not sent over the wire
 
 
 def test_get_edge_scores_for_known_setup() -> None:
     response = client.get(
-        "/api/setups/liquidity-sweep-absorption-reversal/edge-scores",
+        "/api/setups/poc-sweep-absorption-reversal/edge-scores",
         params={"symbol": "MES", "timeframe": "5m", "start": "2026-01-05", "end": "2026-04-24"},
     )
     assert response.status_code == 200
@@ -87,7 +87,7 @@ def test_run_backtest_returns_trades_and_statistics() -> None:
             "timeframe": "5m",
             "start": "2026-01-05",
             "end": "2026-06-26",
-            "setupId": "liquidity-sweep-absorption-reversal",
+            "setupId": "poc-sweep-absorption-reversal",
         },
     )
     assert response.status_code == 200

@@ -1,14 +1,15 @@
 """Synthetic OHLCV + order-flow data generator.
 
 Honesty by design (see SYNTHETIC_DATA_ASSUMPTIONS.md for the full writeup):
-a pure random walk cannot support a genuine test of the Liquidity Sweep +
+a pure random walk cannot support a genuine test of the POC Sweep +
 Absorption Reversal hypothesis — the pattern would either never occur (no
 usable sample) or a naive generator would make the win rate suspiciously
 perfect. This module uses two layers instead:
 
 1. A regime-switching random walk with session-aware intraday seasonality,
-   producing a plausible base price path with real session highs/lows for
-   later bars to reference.
+   producing a plausible base price path. Each session's point of control
+   (POC) is computed from its own volume profile for later bars to
+   reference as a level worth sweeping.
 2. A transparent, rate-controlled scenario injector that explicitly
    constructs the target microstructure sequence (sweep -> absorption ->
    delta divergence -> reversion) at a documented rate, with the reversion
@@ -30,6 +31,7 @@ import numpy as np
 
 from edge_lab.config import InstrumentSpec, InstrumentSymbol, get_instrument
 from edge_lab.data.session_calendar import session_bounds_utc, trading_days_between
+from edge_lab.features.volume_profile import compute_volume_profile
 from edge_lab.models import OHLCVBar, SyntheticOrderFlowBar
 from edge_lab.models.enums import Direction, Timeframe
 
@@ -453,31 +455,30 @@ def _maybe_inject_scenarios(
     config: GeneratorConfig,
     spec: InstrumentSpec,
     session_index: int,
-    prev_session_high: float | None,
-    prev_session_low: float | None,
+    prev_session_poc: float | None,
 ) -> list[InjectedScenario]:
     n = len(session_bars)
     lo, hi = int(n * 0.15), int(n * 0.75)
     scenarios: list[InjectedScenario] = []
 
-    if prev_session_high is not None and prev_session_low is not None and hi > lo:
+    if prev_session_poc is not None and hi > lo:
         n_positive = int(rng.random() < config.injection_rate) + int(
             rng.random() < config.injection_rate * 0.3
         )
         for _ in range(n_positive):
             idx = int(rng.integers(lo, hi))
             sweep_side: SweepSide = rng.choice(["low", "high"])  # type: ignore[assignment]
-            level = prev_session_low if sweep_side == "low" else prev_session_high
-            result = _inject_target_reversal(rng, session_bars, spec.tick_size, idx, level, sweep_side)
+            result = _inject_target_reversal(
+                rng, session_bars, spec.tick_size, idx, prev_session_poc, sweep_side
+            )
             if result is not None:
                 scenarios.append(result)
 
         if rng.random() < config.injection_rate * config.negative_control_rate:
             idx = int(rng.integers(lo, hi))
             sweep_side = rng.choice(["low", "high"])  # type: ignore[assignment]
-            level = prev_session_low if sweep_side == "low" else prev_session_high
             result = _inject_negative_sweep_continuation(
-                rng, session_bars, spec.tick_size, idx, level, sweep_side
+                rng, session_bars, spec.tick_size, idx, prev_session_poc, sweep_side
             )
             if result is not None:
                 scenarios.append(result)
@@ -511,8 +512,7 @@ def generate_dataset(config: GeneratorConfig) -> SyntheticDataset:
     n_per_session = BARS_PER_SESSION[config.timeframe]
     price = config.starting_price or DEFAULT_START_PRICE[config.symbol]
     regime: Regime = "ranging"
-    prev_session_high: float | None = None
-    prev_session_low: float | None = None
+    prev_session_poc: float | None = None
 
     all_bars: list[OHLCVBar] = []
     all_of: list[SyntheticOrderFlowBar] = []
@@ -527,13 +527,12 @@ def generate_dataset(config: GeneratorConfig) -> SyntheticDataset:
         session_bars = _generate_session_bars(
             rng, spec, config, params, price, n_per_session, session_open_utc
         )
-        scenarios = _maybe_inject_scenarios(
-            rng, session_bars, config, spec, session_idx, prev_session_high, prev_session_low
-        )
+        scenarios = _maybe_inject_scenarios(rng, session_bars, config, spec, session_idx, prev_session_poc)
         all_scenarios.extend(scenarios)
 
-        session_high = max(b.high for b in session_bars)
-        session_low = min(b.low for b in session_bars)
+        # _RawBar exposes the same .low/.high/.volume shape compute_volume_profile
+        # needs; no conversion to OHLCVBar required just to find the session POC.
+        session_poc = compute_volume_profile(session_bars, spec.tick_size, bucket_ticks=4).poc  # type: ignore[arg-type]
         cumulative_delta = 0.0
         for i, rb in enumerate(session_bars):
             delta = rb.ask_volume - rb.bid_volume
@@ -567,7 +566,7 @@ def generate_dataset(config: GeneratorConfig) -> SyntheticDataset:
                 )
             )
         bar_index += n_per_session
-        prev_session_high, prev_session_low = session_high, session_low
+        prev_session_poc = session_poc
         price = session_bars[-1].close
 
     return SyntheticDataset(bars=all_bars, orderflow=all_of, injected_scenarios=all_scenarios)

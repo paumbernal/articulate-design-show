@@ -3,7 +3,7 @@ from datetime import date
 from edge_lab.config import get_instrument
 from edge_lab.data.synthetic_generator import GeneratorConfig, generate_dataset
 from edge_lab.hypotheses.edge_score import find_setup_triggers
-from edge_lab.hypotheses.setups.liquidity_sweep_absorption_reversal import (
+from edge_lab.hypotheses.setups.poc_sweep_absorption_reversal import (
     ANCHOR_SIGNAL_TYPE,
     build_setup,
 )
@@ -35,7 +35,7 @@ def test_full_pipeline_produces_sane_detection_and_trigger_counts() -> None:
     for c in conditions:
         by_type.setdefault(c.signal_type, []).append(c)
 
-    assert 0 < len(by_type.get("liquidity_sweep", [])) < n_sessions * 3
+    assert 0 < len(by_type.get("poc_sweep", [])) < n_sessions * 3
     assert 0 < len(by_type.get("absorption", [])) < n_sessions * 20
     # delta_divergence is not engineered as tightly as the other two; only
     # assert it's not pathologically absent or exploding.

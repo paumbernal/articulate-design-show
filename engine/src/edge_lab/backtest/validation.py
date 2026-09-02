@@ -72,23 +72,23 @@ def build_validation_summary(trades: Sequence[BacktestTrade]) -> ValidationSumma
 
     warnings: list[str] = [
         "This is a research backtest on synthetic data, not a live-trading simulation.",
-        "Fills assume no slippage beyond the fixed cost assumption on every trade — "
-        "real fills may be worse, especially in fast markets.",
+        "Fills assume no slippage beyond the fixed cost assumption on every trade. "
+        "Real fills may be worse, especially in fast markets.",
         "When a bar touches both the stop and target, the stop is conservatively assumed "
         "to fill first; the true intrabar sequence is unknowable from OHLC bars.",
         "Detected conditions and Edge Scores are retrospective pattern matches, not "
-        "forecasts — a high score describes the past, not the future.",
+        "forecasts. A high score describes the past, not the future.",
     ]
 
     if len(trades) < MIN_SAMPLE_SIZE_FOR_SIGNIFICANCE:
         warnings.append(
-            f"Total sample size ({len(trades)}) is below {MIN_SAMPLE_SIZE_FOR_SIGNIFICANCE} — "
-            "treat any statistic here as exploratory, not conclusive."
+            f"Total sample size ({len(trades)}) is below {MIN_SAMPLE_SIZE_FOR_SIGNIFICANCE}. "
+            "Treat any statistic here as exploratory, not conclusive."
         )
     if len(out_of_sample) < MIN_OUT_OF_SAMPLE_SIZE:
         warnings.append(
-            f"Out-of-sample count ({len(out_of_sample)}) is below {MIN_OUT_OF_SAMPLE_SIZE} — "
-            "in-sample performance may not generalize; this is a primary overfitting risk."
+            f"Out-of-sample count ({len(out_of_sample)}) is below {MIN_OUT_OF_SAMPLE_SIZE}. "
+            "In-sample performance may not generalize; this is a primary overfitting risk."
         )
     if len(in_sample) == 0 or len(out_of_sample) == 0:
         warnings.append(

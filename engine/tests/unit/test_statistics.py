@@ -20,7 +20,7 @@ def _trade(
     ts = datetime(2026, 3, 2, 14, 30, tzinfo=UTC) + timedelta(minutes=5 * i)
     return BacktestTrade(
         id=f"trade-{i}",
-        setup_id="liquidity-sweep-absorption-reversal",
+        setup_id="poc-sweep-absorption-reversal",
         setup_version=1,
         symbol="MES",
         direction="bullish",
@@ -54,7 +54,7 @@ def _config() -> BacktestConfigSnapshot:
         date_range_start=datetime(2026, 1, 1, tzinfo=UTC),
         date_range_end=datetime(2026, 3, 1, tzinfo=UTC),
         session="RTH",
-        setup_id="liquidity-sweep-absorption-reversal",
+        setup_id="poc-sweep-absorption-reversal",
         setup_version=1,
         min_edge_score=70,
         entry_methodology="close_of_trigger_bar",

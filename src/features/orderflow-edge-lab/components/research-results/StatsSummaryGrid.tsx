@@ -11,17 +11,17 @@ const StatsSummaryGrid = ({ stats }: StatsSummaryGridProps) => {
     { label: "Win Rate", value: formatPercent(stats.winRate), accent: true },
     { label: "Avg R", value: formatR(stats.avgR) },
     { label: "Expectancy", value: formatR(stats.expectancy) },
-    { label: "Profit Factor", value: stats.profitFactor != null ? stats.profitFactor.toFixed(2) : "—" },
+    { label: "Profit Factor", value: stats.profitFactor != null ? stats.profitFactor.toFixed(2) : "N/A" },
     { label: "Max Drawdown", value: formatSigned(stats.maxDrawdownR, 2) + "R" },
     { label: "Avg MFE", value: formatSigned(stats.avgMfePoints, 2) + " pts" },
     { label: "Avg MAE", value: formatSigned(stats.avgMaePoints, 2) + " pts" },
     {
       label: "Time to Target",
-      value: stats.avgTimeToTargetBars != null ? `${stats.avgTimeToTargetBars.toFixed(1)} bars` : "—",
+      value: stats.avgTimeToTargetBars != null ? `${stats.avgTimeToTargetBars.toFixed(1)} bars` : "N/A",
     },
     {
       label: "Time to Stop",
-      value: stats.avgTimeToStopBars != null ? `${stats.avgTimeToStopBars.toFixed(1)} bars` : "—",
+      value: stats.avgTimeToStopBars != null ? `${stats.avgTimeToStopBars.toFixed(1)} bars` : "N/A",
     },
   ];
 

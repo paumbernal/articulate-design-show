@@ -10,7 +10,7 @@ from __future__ import annotations
 from collections.abc import Callable, Sequence
 
 from edge_lab.models import DetectedCondition, OHLCVBar, SyntheticOrderFlowBar
-from edge_lab.signals import absorption, delta_divergence, liquidity_sweep
+from edge_lab.signals import absorption, delta_divergence, poc_sweep
 from edge_lab.signals.base import DetectionContext
 
 DetectFn = Callable[
@@ -18,7 +18,7 @@ DetectFn = Callable[
 ]
 
 REGISTRY: dict[str, DetectFn] = {
-    liquidity_sweep.signal_type: liquidity_sweep.detect,
+    poc_sweep.signal_type: poc_sweep.detect,
     absorption.signal_type: absorption.detect,
     delta_divergence.signal_type: delta_divergence.detect,
 }

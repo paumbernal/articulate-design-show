@@ -8,7 +8,7 @@ export interface DetectedCondition {
   barIndex: number;
   /** ISO 8601, UTC */
   timestamp: string;
-  /** Key into the signal registry, e.g. 'liquidity_sweep', 'absorption' */
+  /** Key into the signal registry, e.g. 'poc_sweep', 'absorption' */
   signalType: SignalType;
   direction: Direction;
   /** Detector's own confidence (0-1), independent of Edge Score weight */

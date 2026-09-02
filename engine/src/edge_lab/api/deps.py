@@ -7,7 +7,7 @@ from __future__ import annotations
 from functools import lru_cache
 
 from edge_lab.data.synthetic_provider import SyntheticMarketDataProvider
-from edge_lab.hypotheses.setups.liquidity_sweep_absorption_reversal import build_setup
+from edge_lab.hypotheses.setups.poc_sweep_absorption_reversal import build_setup
 from edge_lab.models import SetupDefinition
 
 
@@ -33,4 +33,4 @@ def get_setup(setup_id: str) -> SetupDefinition:
     return SETUPS[setup_id]
 
 
-ANCHOR_SIGNAL_TYPES: dict[str, str] = {"liquidity-sweep-absorption-reversal": "absorption"}
+ANCHOR_SIGNAL_TYPES: dict[str, str] = {"poc-sweep-absorption-reversal": "absorption"}

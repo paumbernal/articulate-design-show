@@ -4,17 +4,17 @@ export function formatPrice(price: number, tickSize: number): string {
 }
 
 export function formatPercent(value: number | null | undefined, decimals = 0): string {
-  if (value == null) return "—";
+  if (value == null) return "N/A";
   return `${(value * 100).toFixed(decimals)}%`;
 }
 
 export function formatR(value: number | null | undefined, decimals = 2): string {
-  if (value == null) return "—";
+  if (value == null) return "N/A";
   return `${value >= 0 ? "+" : ""}${value.toFixed(decimals)}R`;
 }
 
 export function formatSigned(value: number | null | undefined, decimals = 2): string {
-  if (value == null) return "—";
+  if (value == null) return "N/A";
   return `${value >= 0 ? "+" : ""}${value.toFixed(decimals)}`;
 }
 

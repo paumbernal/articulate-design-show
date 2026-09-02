@@ -1,6 +1,6 @@
 [
   {
-    "id": "005ca693-c5e8-4b53-9422-bb7f2a3d70b4",
+    "id": "1d57bc31-62d1-47db-9d55-accefe386c94",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 49,
@@ -13,7 +13,7 @@
     }
   },
   {
-    "id": "08b9a265-d49c-4ab0-96f4-dab76b002ee3",
+    "id": "df872f21-0f85-4e9b-999d-0fa6e3fe6648",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 56,
@@ -28,7 +28,7 @@
     }
   },
   {
-    "id": "7c3cab04-4084-4f8c-a9c3-c1d99743e364",
+    "id": "8b9ab06a-9248-41f8-b248-0d31c9f8a738",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 56,
@@ -41,7 +41,7 @@
     }
   },
   {
-    "id": "5c2cda90-1bf3-4d51-becc-ce983a18045d",
+    "id": "ccc076aa-688d-4f49-a673-1bbc8e774ab6",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 57,
@@ -54,7 +54,7 @@
     }
   },
   {
-    "id": "7aa6d155-09a1-460e-b03c-ebc9a42dc626",
+    "id": "1633cb2c-9e31-4fbe-8466-1324df03823c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 58,
@@ -67,7 +67,7 @@
     }
   },
   {
-    "id": "8bc09955-bc5f-4c0f-8301-c5b4e09377f3",
+    "id": "e083e6cc-30de-4a22-9762-a177b6a941a7",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 76,
@@ -80,7 +80,7 @@
     }
   },
   {
-    "id": "32a98e60-fd01-4835-8ce1-c5a5068b692d",
+    "id": "f0a640bd-adb5-48c3-bda1-cf09877d7a09",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 78,
@@ -93,7 +93,7 @@
     }
   },
   {
-    "id": "d9494e86-8d13-4166-b7d7-1ea1ad6aa715",
+    "id": "d18c4c46-711c-49de-8576-d45943b13046",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 79,
@@ -106,7 +106,7 @@
     }
   },
   {
-    "id": "d5256659-1a0c-4519-90fd-a2905cbca263",
+    "id": "e3b7f004-35d9-47c0-b0a8-ae390189792e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 80,
@@ -119,7 +119,7 @@
     }
   },
   {
-    "id": "dec99820-4a84-408b-bf78-2f1e153800a7",
+    "id": "66d14982-0062-4f02-8b1c-a55a5f574678",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 87,
@@ -132,7 +132,7 @@
     }
   },
   {
-    "id": "d5891964-cc94-463f-9356-273cd392dd85",
+    "id": "5adaf241-2386-43c5-8b85-13f937adc2f4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 88,
@@ -145,22 +145,7 @@
     }
   },
   {
-    "id": "01481d73-c6c8-4b55-9d15-7b2bbdebf8ac",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 93,
-    "timestamp": "2026-05-12T14:45:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.5930914187408958,
-    "evidence": {
-      "swept_level": 5192.091300159918,
-      "volume_multiple": 2.135129107467225,
-      "pierce_ticks": 8.110884274483396
-    }
-  },
-  {
-    "id": "87c1e6a6-6031-4d9e-a3d6-957891893b15",
+    "id": "2c1a4c9a-b882-4c89-8987-ef39c9ea2d98",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 93,
@@ -173,7 +158,7 @@
     }
   },
   {
-    "id": "f18dec7b-5aa7-4634-9088-240b42236a69",
+    "id": "fa3f9a7e-afe9-426a-a9fe-4fe4d9f1238f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 94,
@@ -186,7 +171,7 @@
     }
   },
   {
-    "id": "6143b30a-239c-489b-a68b-527bc8f4e27d",
+    "id": "76ad7d7b-94db-48b5-adb4-4187e6f14755",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 95,
@@ -201,7 +186,7 @@
     }
   },
   {
-    "id": "f536bd8a-b177-41b5-9bcb-27b3e325c23c",
+    "id": "832cd09f-83eb-4f45-b262-e77acc27bcc0",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 95,
@@ -214,7 +199,7 @@
     }
   },
   {
-    "id": "b1e426cd-a855-493b-b370-58a7c17157fb",
+    "id": "8c290590-803f-4cb9-b86d-2f661abc2a4e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 96,
@@ -229,7 +214,7 @@
     }
   },
   {
-    "id": "af181148-b10d-4435-bf90-1efd02e0ce26",
+    "id": "ea172b17-6ae1-46b0-96a3-9e280a1a266d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 96,
@@ -242,7 +227,7 @@
     }
   },
   {
-    "id": "d43283da-ce98-475c-8c66-6bc835b424a9",
+    "id": "6e80aa0b-a61a-4624-be94-8fbe85a04619",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 97,
@@ -255,7 +240,7 @@
     }
   },
   {
-    "id": "3ec34147-580e-4f1e-b9c9-e9eceb0ab89a",
+    "id": "409ce9d3-09a3-4b59-b1fe-11594c71e734",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 98,
@@ -268,7 +253,7 @@
     }
   },
   {
-    "id": "c58293f4-5c4b-45fa-afd2-6cd1f343c313",
+    "id": "16548fb2-7cbd-4451-947a-e3e01347f35e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 104,
@@ -281,7 +266,7 @@
     }
   },
   {
-    "id": "25aa064c-aedb-46e6-ab91-8d7961cb0d5b",
+    "id": "fd51cac2-c98f-4313-9b08-3b4b62a6e50e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 105,
@@ -294,7 +279,7 @@
     }
   },
   {
-    "id": "45ca17b5-2694-4335-95b5-4de08549e108",
+    "id": "3cccb598-6212-4878-8691-167375e9dbe4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 107,
@@ -307,7 +292,7 @@
     }
   },
   {
-    "id": "45cbf823-40dc-4684-b547-16b4a12811c4",
+    "id": "06e4e06c-ea27-4dbd-a0a1-d2ec08010d9f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 122,
@@ -320,7 +305,7 @@
     }
   },
   {
-    "id": "4b811488-0a72-415c-8f1d-1ac6456d2c2f",
+    "id": "ff51fc10-5a75-46f7-ace5-34bb04562b12",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 125,
@@ -333,7 +318,7 @@
     }
   },
   {
-    "id": "b77e4011-333d-4632-8144-8fcdb9ec91ff",
+    "id": "e90510d6-acab-4d70-b2cd-26fd1fdb0d7a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 142,
@@ -346,7 +331,7 @@
     }
   },
   {
-    "id": "ffbeaec1-be62-4964-8531-1853eb7cfbcc",
+    "id": "97640367-c010-4802-861f-a0a5b15e0e64",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 146,
@@ -359,7 +344,7 @@
     }
   },
   {
-    "id": "e81da92a-6490-4623-97df-473e4cf4dcf0",
+    "id": "fd387163-5aaf-46ab-9e18-64765f97b122",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 160,
@@ -372,7 +357,7 @@
     }
   },
   {
-    "id": "51967e7a-dc26-4b8e-8cc7-df90a319a660",
+    "id": "99aa3075-d4f7-4fe7-ae0a-3df3f04ce988",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 192,
@@ -385,7 +370,7 @@
     }
   },
   {
-    "id": "f4b532eb-ca35-4750-8af9-d5bf8eeb2891",
+    "id": "42dbced3-70cf-42b6-93ea-bc5a92508a04",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 200,
@@ -400,7 +385,7 @@
     }
   },
   {
-    "id": "41e2fd16-20e9-4e6f-8958-70d2e3729e0f",
+    "id": "56c3f538-8d89-4c1c-ad2a-361a472f5f10",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 201,
@@ -413,7 +398,7 @@
     }
   },
   {
-    "id": "31cc97fd-e580-41f6-8987-c69eccbd7ca8",
+    "id": "db24307a-ee68-4461-a7e5-76f47d16cb76",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 202,
@@ -426,7 +411,7 @@
     }
   },
   {
-    "id": "cfcfb471-ee9c-42ea-9adf-698a04e0f4f6",
+    "id": "51d31f02-45a0-4b0e-9653-ddbe3ad7f18b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 205,
@@ -439,7 +424,7 @@
     }
   },
   {
-    "id": "f7ecc2d0-5d59-4587-b3ec-620d1045e518",
+    "id": "2539583e-8a7e-46e6-bdcb-027fd5bfb951",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 206,
@@ -452,7 +437,7 @@
     }
   },
   {
-    "id": "4f65eb70-7949-4fab-b99f-009167539344",
+    "id": "6ddf75fa-2b09-4918-8d43-6b2bf2a89303",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 221,
@@ -465,22 +450,7 @@
     }
   },
   {
-    "id": "57b63e36-1449-4ccc-9f42-27fa93db046a",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 234,
-    "timestamp": "2026-05-14T13:30:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.5541977427598762,
-    "evidence": {
-      "swept_level": 5178.138658250328,
-      "volume_multiple": 1.9951118739355542,
-      "pierce_ticks": 0.5138189334320487
-    }
-  },
-  {
-    "id": "953c683a-3e7a-45e0-8bb4-3b34703fc510",
+    "id": "28b57dbf-c4b7-44bc-95f9-2417e2e0b99c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 248,
@@ -493,7 +463,7 @@
     }
   },
   {
-    "id": "857e8d20-5185-4c90-8c8f-1a01b408cd23",
+    "id": "ed61c341-e050-4c7b-aadc-3777861ab547",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 252,
@@ -506,7 +476,7 @@
     }
   },
   {
-    "id": "de8049c2-8752-40f7-9935-d7e69c335ead",
+    "id": "43c56669-772a-4b2e-bc6d-1656ca66809b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 253,
@@ -521,7 +491,7 @@
     }
   },
   {
-    "id": "9dc302b1-83ba-436b-aa2a-f15e88216897",
+    "id": "5981f868-58ce-4eb8-9575-06c1be21f786",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 253,
@@ -534,7 +504,7 @@
     }
   },
   {
-    "id": "a512c838-d9d5-4891-8d97-c0d0a583e79a",
+    "id": "84aa41a4-dbec-462d-a388-567b462000ce",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 255,
@@ -549,7 +519,7 @@
     }
   },
   {
-    "id": "dfd37ae4-8683-487f-b2a1-20a3e7a25c83",
+    "id": "acc1c43b-b27f-4f38-9747-cac2af68351e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 262,
@@ -562,7 +532,7 @@
     }
   },
   {
-    "id": "2e0a01c3-9e1d-4c2a-8d8e-9d83d92cf9ed",
+    "id": "2cd6bfe2-9464-44a9-886e-7aed58a7a2ab",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 271,
@@ -575,7 +545,7 @@
     }
   },
   {
-    "id": "a89b2ec5-8424-46c7-a474-e6cbb157dfb6",
+    "id": "ab868315-0546-478e-a46b-e571f962a6fb",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 272,
@@ -588,7 +558,7 @@
     }
   },
   {
-    "id": "ed6bcbeb-5111-4d65-a8f1-9f0b1244b526",
+    "id": "cdb5574f-d0fa-49e0-b762-6e8d5990a3e7",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 273,
@@ -601,7 +571,7 @@
     }
   },
   {
-    "id": "5f729de5-846b-47f9-b182-b7d1ad32bb6c",
+    "id": "be6f3cb4-673c-4a7b-add4-ea5668a9baf5",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 295,
@@ -614,7 +584,7 @@
     }
   },
   {
-    "id": "03d1ea4b-1589-4b4d-be0d-9db6b9e74d7e",
+    "id": "0210832f-0360-409a-9f78-092e88ac0bbf",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 303,
@@ -627,7 +597,7 @@
     }
   },
   {
-    "id": "8eb64ab1-61fa-452f-96a9-673e6f4a6772",
+    "id": "1ccdbb6f-bce1-44cf-95f7-66072a75319f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 312,
@@ -640,7 +610,7 @@
     }
   },
   {
-    "id": "9be733c9-87cf-4198-8bf1-29f7ec5e316b",
+    "id": "ae5e83b9-421d-4498-98bf-b6d008240651",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 313,
@@ -653,7 +623,7 @@
     }
   },
   {
-    "id": "92242e1d-abdc-4512-b2d1-072a8bbf66dd",
+    "id": "a51ece65-5bcf-4ad6-a4a5-fdb7c1786dd3",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 314,
@@ -666,7 +636,7 @@
     }
   },
   {
-    "id": "17f8d8d7-e633-46e5-8c9f-ffa175aac35a",
+    "id": "1c133c07-4d39-44e2-b422-7a930eaea70f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 321,
@@ -679,7 +649,7 @@
     }
   },
   {
-    "id": "9a65d71a-9004-4767-897f-109b13060953",
+    "id": "89915e07-052b-4861-a85c-6697830d82ca",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 328,
@@ -694,7 +664,7 @@
     }
   },
   {
-    "id": "068789de-353c-4598-ac9b-0c0e00f3ccb2",
+    "id": "6b55c060-40df-4e10-880b-34e03788d734",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 360,
@@ -707,22 +677,35 @@
     }
   },
   {
-    "id": "33e1e6b1-af22-4e47-8ce4-c1596689f20f",
+    "id": "ca97d0b1-073c-44dd-8e01-db7ea41882de",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 362,
     "timestamp": "2026-05-15T17:40:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.6525170079257833,
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
     "evidence": {
-      "swept_level": 5167.633674561358,
-      "volume_multiple": 2.3490612285328196,
-      "pierce_ticks": 3.0
+      "cumulative_delta": -594.116931652596
     }
   },
   {
-    "id": "50d7f96b-ee20-49f8-bc87-89fdfdb08d53",
+    "id": "01a74709-34e8-4cd0-bde4-feef831457fa",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 363,
+    "timestamp": "2026-05-15T17:45:00Z",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
+    "strength": 0.5364901487790973,
+    "evidence": {
+      "swept_level": 5174.0,
+      "volume_multiple": 1.9313645356047502,
+      "pierce_ticks": 0.8994524233239645
+    }
+  },
+  {
+    "id": "ca5131d6-baf7-47c7-84bf-f7c95368d6ce",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 363,
@@ -737,7 +720,46 @@
     }
   },
   {
-    "id": "f4ecbd11-c05b-4626-840f-592940800ee6",
+    "id": "373228bb-bb61-4be3-a239-fec24fc12937",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 363,
+    "timestamp": "2026-05-15T17:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1264.9365574690682
+    }
+  },
+  {
+    "id": "50103a66-93c0-4bef-8e8f-4e2c4eb378b1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 364,
+    "timestamp": "2026-05-15T17:50:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1709.3367900236315
+    }
+  },
+  {
+    "id": "afb9f37d-24de-43bf-942e-8871664365ef",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 365,
+    "timestamp": "2026-05-15T17:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1521.6665455752093
+    }
+  },
+  {
+    "id": "50208ea8-a833-4e6c-a983-95668476cef5",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 366,
@@ -750,7 +772,7 @@
     }
   },
   {
-    "id": "ec94a33d-bdc9-46a3-89bf-2b5e141931d1",
+    "id": "190c6353-5e13-4ef6-a9ee-3d09c6d1fd3d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 372,
@@ -763,7 +785,7 @@
     }
   },
   {
-    "id": "e44de3bb-7709-44cb-847f-464b3f7a6d22",
+    "id": "c5a17294-b344-4eae-aca2-f9a4b881a541",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 373,
@@ -776,7 +798,7 @@
     }
   },
   {
-    "id": "9cd41063-2bf8-471d-9d44-c36c6fc9e7ae",
+    "id": "0100f32e-e14a-4b6f-bbad-c5ebcdda2146",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 387,
@@ -791,7 +813,7 @@
     }
   },
   {
-    "id": "c0f6ee1c-07e4-4d57-9d48-f9ec60425a45",
+    "id": "e5a5e81a-3737-4ac8-b000-dd6fe93abcb3",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 397,
@@ -804,7 +826,7 @@
     }
   },
   {
-    "id": "5fce747d-db04-4e2d-9718-d6b48edfdaa1",
+    "id": "91996ec4-7e92-421c-ba5d-4e0d61d1f7b2",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 398,
@@ -817,7 +839,7 @@
     }
   },
   {
-    "id": "9343ac87-6793-4273-8b3b-27ecbb6a8cfe",
+    "id": "7bc945b1-7ff9-4e38-beef-74858b2a2309",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 400,
@@ -830,7 +852,7 @@
     }
   },
   {
-    "id": "480d8850-208d-4de1-832d-e42dc95f8b94",
+    "id": "fc34e9cf-2d3c-402e-8952-8d1b0b4f79d0",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 401,
@@ -843,7 +865,7 @@
     }
   },
   {
-    "id": "f3890a38-9da2-4426-8882-d49de5922952",
+    "id": "cb27c973-66d6-40eb-9c13-7a72d6370fd3",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 402,
@@ -856,22 +878,22 @@
     }
   },
   {
-    "id": "fb719404-a9fd-407d-ac98-7aaf957c1d8a",
+    "id": "f0a0f4aa-8123-41eb-b6f3-fa1f2c9f7001",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 413,
     "timestamp": "2026-05-18T15:25:00Z",
-    "signalType": "liquidity_sweep",
+    "signalType": "poc_sweep",
     "direction": "bullish",
     "strength": 0.6471860374023407,
     "evidence": {
-      "swept_level": 5163.828193638773,
+      "swept_level": 5167.0,
       "volume_multiple": 2.3298697346484265,
       "pierce_ticks": 2.0
     }
   },
   {
-    "id": "dce0f698-b912-4753-8378-54346e5f398b",
+    "id": "ca3b86e9-74be-4089-88c3-f9084ff6b769",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 419,
@@ -886,7 +908,7 @@
     }
   },
   {
-    "id": "384b03dc-0472-4a51-90b7-0ddd6bfb4440",
+    "id": "6d1d63a0-ce56-4ab1-bd48-e1a75a1205e4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 432,
@@ -899,7 +921,7 @@
     }
   },
   {
-    "id": "71a16f21-19ea-4fb4-8b1e-efd6bae6f366",
+    "id": "102cd732-3690-4f3c-a6a7-4af3829d361b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 434,
@@ -912,20 +934,46 @@
     }
   },
   {
-    "id": "e375fc6d-011f-450b-a0d4-3694b993dc81",
+    "id": "3e161d69-2b6e-46d4-bdb6-1c387d18f415",
     "symbol": "MES",
     "timeframe": "5m",
-    "barIndex": 441,
-    "timestamp": "2026-05-18T17:45:00Z",
+    "barIndex": 436,
+    "timestamp": "2026-05-18T17:20:00Z",
     "signalType": "delta_divergence",
     "direction": "bullish",
     "strength": 0.6,
     "evidence": {
-      "cumulative_delta": 4400.387262114882
+      "cumulative_delta": 3076.530798564732
     }
   },
   {
-    "id": "692c751d-9e0a-42c9-a51c-e493c8437538",
+    "id": "337eb884-16aa-48f7-ac99-731c3939963e",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 437,
+    "timestamp": "2026-05-18T17:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3330.103041707744
+    }
+  },
+  {
+    "id": "c14e6ff1-a988-47fd-8da4-570470becc22",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 443,
+    "timestamp": "2026-05-18T17:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 4171.383215286777
+    }
+  },
+  {
+    "id": "576b4e8b-320e-4b8a-8d11-074fbd650bc8",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 455,
@@ -940,7 +988,7 @@
     }
   },
   {
-    "id": "bfaa1f7a-0bc9-4f94-af4d-266cc761e71e",
+    "id": "282c5139-3ab9-4c75-95c5-273067cdd73d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 461,
@@ -955,7 +1003,7 @@
     }
   },
   {
-    "id": "4e03cb55-351a-4477-9961-1d9c54fcbd1f",
+    "id": "4762772b-914e-48ac-9306-7cf8e809ec30",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 463,
@@ -968,7 +1016,7 @@
     }
   },
   {
-    "id": "64951d23-3701-45c8-bd38-a82d8ed98511",
+    "id": "8ee0ba80-22a5-4718-be1f-2546d7aa69cb",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 482,
@@ -981,7 +1029,7 @@
     }
   },
   {
-    "id": "06ec89c7-91ba-4add-85ed-5bad410cf743",
+    "id": "5f14ca34-67f4-4cb9-9b45-0fc9b64721d9",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 491,
@@ -994,22 +1042,22 @@
     }
   },
   {
-    "id": "ae4abb53-486e-4703-a0c6-7e6cc771cbb2",
+    "id": "cf312386-a0f4-4bec-bc3a-51cc8c40a634",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 509,
     "timestamp": "2026-05-19T16:55:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
+    "signalType": "poc_sweep",
+    "direction": "bearish",
     "strength": 0.8784872700490245,
     "evidence": {
-      "swept_level": 5163.328193638773,
+      "swept_level": 5168.0,
       "volume_multiple": 3.1625541721764883,
-      "pierce_ticks": 3.0
+      "pierce_ticks": 3.341396466814331
     }
   },
   {
-    "id": "85b0e922-f873-4bac-af48-848c59adf9e1",
+    "id": "adab83b0-e3b2-472b-97c7-380297e52f02",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 511,
@@ -1024,7 +1072,7 @@
     }
   },
   {
-    "id": "22c658b4-327d-4cfe-af7f-bd48a90d6ee0",
+    "id": "84e2ae02-8ae4-4fc7-9d65-187f6a185d38",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 513,
@@ -1037,20 +1085,7 @@
     }
   },
   {
-    "id": "fe3dfc8d-e609-40d6-9733-6fe47a5a6384",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 519,
-    "timestamp": "2026-05-19T17:45:00Z",
-    "signalType": "delta_divergence",
-    "direction": "bearish",
-    "strength": 0.6,
-    "evidence": {
-      "cumulative_delta": 402.40811133067257
-    }
-  },
-  {
-    "id": "98f2f98d-ef20-44de-80e3-88001e72e625",
+    "id": "36a141c9-8d90-49da-8236-08da81caa4f1",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 527,
@@ -1063,7 +1098,7 @@
     }
   },
   {
-    "id": "e0e16dd5-0e5a-413e-913e-0ae23e741bcc",
+    "id": "1d1ebc54-e647-4602-a9ba-1f7dc832545b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 547,
@@ -1076,7 +1111,7 @@
     }
   },
   {
-    "id": "833d5cc9-ccef-497c-a648-b4e967d3bc82",
+    "id": "859a7d8b-e87c-4154-8bc6-1376a5812571",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 559,
@@ -1089,22 +1124,20 @@
     }
   },
   {
-    "id": "093a49d9-de51-4806-aeac-0e2a4a43bb40",
+    "id": "827efb94-23b5-4981-a2fb-86a0e550229f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 564,
     "timestamp": "2026-05-20T15:00:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.6829060101714937,
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
     "evidence": {
-      "swept_level": 5162.578193638773,
-      "volume_multiple": 2.4584616366173773,
-      "pierce_ticks": 1.0
+      "cumulative_delta": -712.8763675281169
     }
   },
   {
-    "id": "d7499190-5518-40ac-822b-5a5513e99a02",
+    "id": "6a5c3a4f-c09c-497a-8bc2-f1ac325fb165",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 565,
@@ -1119,7 +1152,20 @@
     }
   },
   {
-    "id": "0be4190d-3c07-4ac7-b636-9d22cfd143cf",
+    "id": "d63ff161-9458-4174-ad26-a216da83128a",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 565,
+    "timestamp": "2026-05-20T15:05:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": -1518.3095852687302
+    }
+  },
+  {
+    "id": "7c9a396f-51f0-4202-a586-194c392aa417",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 568,
@@ -1134,33 +1180,7 @@
     }
   },
   {
-    "id": "dc6ce8c2-f933-44fd-8738-00b3d5ea3db0",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 569,
-    "timestamp": "2026-05-20T15:25:00Z",
-    "signalType": "delta_divergence",
-    "direction": "bearish",
-    "strength": 0.6,
-    "evidence": {
-      "cumulative_delta": -3433.6268333514336
-    }
-  },
-  {
-    "id": "5db15e20-0fc3-4358-b3a8-711cb0c4f59e",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 570,
-    "timestamp": "2026-05-20T15:30:00Z",
-    "signalType": "delta_divergence",
-    "direction": "bearish",
-    "strength": 0.6,
-    "evidence": {
-      "cumulative_delta": -3793.1113515575116
-    }
-  },
-  {
-    "id": "481a9968-0156-4aba-8d49-0977b62ae31a",
+    "id": "1bf42e26-030e-4163-a4f5-56d2b72e8e55",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 598,
@@ -1175,7 +1195,7 @@
     }
   },
   {
-    "id": "c2fce08d-387b-4cab-9395-6812e1a1bbb0",
+    "id": "eb081765-20cf-4ead-af94-1cbc639d5523",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 600,
@@ -1188,7 +1208,7 @@
     }
   },
   {
-    "id": "65f68df8-2dee-46d1-bcff-a738d077dd5a",
+    "id": "848534ac-2750-436b-9d9c-78a495d51c01",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 605,
@@ -1203,7 +1223,7 @@
     }
   },
   {
-    "id": "0ed64bb6-9430-4ea8-85c2-60ac88fe7e81",
+    "id": "daecd57d-6e8c-40c9-9b06-1a332314cec9",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 612,
@@ -1216,7 +1236,7 @@
     }
   },
   {
-    "id": "a259337c-2d56-4ccc-8140-807d3442c775",
+    "id": "310e55ba-f1a8-4c4e-af68-9b79fc9b19c0",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 618,
@@ -1229,22 +1249,7 @@
     }
   },
   {
-    "id": "9dffcfa2-4d4d-4eaf-b59d-d465057530d7",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 624,
-    "timestamp": "2026-05-21T13:30:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.704142785679216,
-    "evidence": {
-      "swept_level": 5160.053126958805,
-      "volume_multiple": 2.5349140284451774,
-      "pierce_ticks": 1.984131016964966
-    }
-  },
-  {
-    "id": "8fe5b0f1-adab-4b71-98b1-1459f492202b",
+    "id": "c4914bf7-dca1-4b41-9467-73d74e519b81",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 624,
@@ -1257,7 +1262,7 @@
     }
   },
   {
-    "id": "854cf56e-7861-4fad-b70d-a0d9e1b98ec3",
+    "id": "0c6ff7db-c158-4a24-9bbf-f3e92702ebc7",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 625,
@@ -1270,7 +1275,7 @@
     }
   },
   {
-    "id": "09bae9a2-e146-40ab-ab39-ad3b758eb951",
+    "id": "78035848-db2b-4480-83ea-821ecb83d703",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 626,
@@ -1283,22 +1288,22 @@
     }
   },
   {
-    "id": "bb1e3291-ede3-41d2-a060-9c65272507e0",
+    "id": "8952af85-47ab-4c6e-b705-bd5c351c47ae",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 650,
     "timestamp": "2026-05-21T15:40:00Z",
-    "signalType": "liquidity_sweep",
+    "signalType": "poc_sweep",
     "direction": "bearish",
     "strength": 0.762108269193567,
     "evidence": {
-      "swept_level": 5165.519843143965,
+      "swept_level": 5164.0,
       "volume_multiple": 2.7435897690968414,
       "pierce_ticks": 2.0
     }
   },
   {
-    "id": "ea4e94fa-453d-45e2-9218-c6600ddf7fc2",
+    "id": "a298b92f-5095-4eb7-abc4-cc3d49bbc60e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 651,
@@ -1313,7 +1318,7 @@
     }
   },
   {
-    "id": "d1dc7e41-3477-4d35-b6fa-d7e608d8d4bc",
+    "id": "1d7061e8-5e6d-4b5b-9047-2a786eb95846",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 652,
@@ -1328,7 +1333,7 @@
     }
   },
   {
-    "id": "ee380fbd-bf4a-4629-83d0-14b22f3f859a",
+    "id": "a35ecc13-fa46-4929-b619-69778eacc75b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 654,
@@ -1341,7 +1346,7 @@
     }
   },
   {
-    "id": "fe4156ca-fc7c-4ed3-b37e-0acfaeba5c67",
+    "id": "3fd6d1bf-4428-4660-87d2-1dde415b5825",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 667,
@@ -1354,7 +1359,7 @@
     }
   },
   {
-    "id": "b6ef6fe2-bc30-4f13-8ca3-b33ec3fef73b",
+    "id": "46d3398a-1863-4574-b440-85c9328a4970",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 668,
@@ -1369,7 +1374,7 @@
     }
   },
   {
-    "id": "806274fd-7345-40f2-ad24-db0eda3f07d6",
+    "id": "5ac33ff5-6e51-45de-b8a2-7d6fbff6d09a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 685,
@@ -1382,7 +1387,7 @@
     }
   },
   {
-    "id": "7bd8c38b-8b4c-4cd9-926d-cce11b876195",
+    "id": "612169ac-ef09-411b-bcc1-925b59e49fd3",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 694,
@@ -1395,7 +1400,7 @@
     }
   },
   {
-    "id": "ca50c34b-bc63-4ea0-95bf-645cd5d91e34",
+    "id": "423416b3-f2a0-4ba9-ba2b-53f95a40085d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 703,
@@ -1408,7 +1413,7 @@
     }
   },
   {
-    "id": "99eda7a6-343e-4294-8b73-c1901a7b66a1",
+    "id": "8f81f9e6-6f71-4f53-b740-50d125f8b64c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 704,
@@ -1421,37 +1426,22 @@
     }
   },
   {
-    "id": "668ec118-db2a-43e9-86b2-31ff146de8e2",
+    "id": "6b51184a-45e8-44c5-8b92-79141bcaf8c5",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 732,
     "timestamp": "2026-05-22T16:00:00Z",
-    "signalType": "liquidity_sweep",
+    "signalType": "poc_sweep",
     "direction": "bullish",
     "strength": 0.6139761983745449,
     "evidence": {
-      "swept_level": 5144.404797018807,
+      "swept_level": 5152.0,
       "volume_multiple": 2.2103143141483614,
-      "pierce_ticks": 2.7494401037583884
+      "pierce_ticks": 33.130252028531686
     }
   },
   {
-    "id": "24de426d-7513-4e3d-943a-767fb3b86d60",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 732,
-    "timestamp": "2026-05-22T16:00:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.6139761983745449,
-    "evidence": {
-      "swept_level": 5166.019843143965,
-      "volume_multiple": 2.2103143141483614,
-      "pierce_ticks": 1.0
-    }
-  },
-  {
-    "id": "8431dd05-3c1e-4e79-9e4d-79984af78dbc",
+    "id": "6ac31802-d405-4496-8e2b-c65cc415154a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 733,
@@ -1466,7 +1456,22 @@
     }
   },
   {
-    "id": "66d37c83-05b0-433c-a298-2bacb10db041",
+    "id": "362d9406-3ccc-4c46-b923-a28346ba7666",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 734,
+    "timestamp": "2026-05-22T16:10:00Z",
+    "signalType": "poc_sweep",
+    "direction": "bearish",
+    "strength": 0.519682077676021,
+    "evidence": {
+      "swept_level": 5152.0,
+      "volume_multiple": 1.8708554796336756,
+      "pierce_ticks": 0.44351911926059984
+    }
+  },
+  {
+    "id": "77b64bd7-1632-452e-a063-97b0e1695e6f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 734,
@@ -1481,7 +1486,7 @@
     }
   },
   {
-    "id": "30ebed2a-688a-4263-aaa0-3e25ebdf2f6d",
+    "id": "0ffa72e7-e12e-41c7-860f-335a8e8884d1",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 736,
@@ -1494,7 +1499,7 @@
     }
   },
   {
-    "id": "4645ce78-79e1-4285-a4e8-a41e3175fba6",
+    "id": "60b30e44-1afa-43f5-99a2-f9fd4e29ccf6",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 754,
@@ -1507,7 +1512,7 @@
     }
   },
   {
-    "id": "ac51d8bc-9169-4dcc-b533-d55211148e7f",
+    "id": "792b272a-4e81-40ee-9bf3-618c5c5a117d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 755,
@@ -1522,7 +1527,7 @@
     }
   },
   {
-    "id": "e8c46f7f-f634-4202-9129-5ceaf9bb6eb7",
+    "id": "6e7819f3-6d5d-4c37-9ad5-937f43fba8ef",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 755,
@@ -1535,7 +1540,7 @@
     }
   },
   {
-    "id": "982a8560-3561-4302-b3f4-194ab7118f3e",
+    "id": "12b4817a-1cfe-4ee1-a0d1-5b76b6fba78b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 757,
@@ -1550,7 +1555,7 @@
     }
   },
   {
-    "id": "4a128ba5-e57c-4700-9f0d-875f36e79b52",
+    "id": "73c39cdb-6b71-4810-b29a-ca625f61a6d9",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 766,
@@ -1563,7 +1568,7 @@
     }
   },
   {
-    "id": "78c3c28b-ec60-4114-a8ea-39e69ba3c4dc",
+    "id": "b7205022-103e-47b0-ad60-713c9afffafe",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 768,
@@ -1576,7 +1581,7 @@
     }
   },
   {
-    "id": "0ded000b-1cea-495f-b361-7f8069e2b04e",
+    "id": "a9d09b9e-2431-4c82-b347-d6a7768771a4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 774,
@@ -1589,37 +1594,22 @@
     }
   },
   {
-    "id": "2a1dcac4-a6dc-45e5-ab8d-a6e8ee88e9f2",
+    "id": "bd144a7e-33ee-4ca7-8d71-c2199bb1fae9",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 808,
     "timestamp": "2026-05-25T15:50:00Z",
-    "signalType": "liquidity_sweep",
+    "signalType": "poc_sweep",
     "direction": "bullish",
     "strength": 0.5444352091227208,
     "evidence": {
-      "swept_level": 5135.050061808733,
+      "swept_level": 5142.0,
       "volume_multiple": 1.9599667528417948,
-      "pierce_ticks": 11.710214865579474
+      "pierce_ticks": 39.509967630649044
     }
   },
   {
-    "id": "864b3790-5d74-4e1f-86a6-61ca08289f2c",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 808,
-    "timestamp": "2026-05-25T15:50:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.5444352091227208,
-    "evidence": {
-      "swept_level": 5166.368762544161,
-      "volume_multiple": 1.9599667528417948,
-      "pierce_ticks": 3.0
-    }
-  },
-  {
-    "id": "7dc2e07d-086c-4edb-80a0-0c39fc49babd",
+    "id": "9bf32c4e-5a49-4d30-9015-388af2855bba",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 809,
@@ -1634,7 +1624,7 @@
     }
   },
   {
-    "id": "882894da-3fb5-44ca-9b6a-db84e2aa6172",
+    "id": "38e1c597-4e21-4748-93f5-9ac2cfaf405d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 810,
@@ -1649,7 +1639,7 @@
     }
   },
   {
-    "id": "1344fe09-09a4-4ccd-9e09-6903162487a1",
+    "id": "35faa60a-1e17-42d0-a0f5-292119ae6991",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 811,
@@ -1664,7 +1654,7 @@
     }
   },
   {
-    "id": "99941311-bfb6-4bed-89ea-7909179ef238",
+    "id": "7f38fea1-dc9d-41f4-b651-95a8ab7531d2",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 812,
@@ -1677,7 +1667,7 @@
     }
   },
   {
-    "id": "25abb57d-50bb-4dcf-8a81-ac11bdfcbce0",
+    "id": "3e2450d1-ae53-496f-91ad-9237378d0286",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 813,
@@ -1690,7 +1680,7 @@
     }
   },
   {
-    "id": "3c9d3a6e-6ba7-4a72-b8c3-e70cea17fa04",
+    "id": "9b5d79fd-6ef7-4149-a6f2-149dbc890454",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 832,
@@ -1703,7 +1693,22 @@
     }
   },
   {
-    "id": "3d926339-8b29-48da-a926-a8cfd743be47",
+    "id": "cf3117f2-893c-4b45-80fe-872a33d9d9e4",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 837,
+    "timestamp": "2026-05-25T18:15:00Z",
+    "signalType": "poc_sweep",
+    "direction": "bearish",
+    "strength": 0.8640056921205929,
+    "evidence": {
+      "swept_level": 5142.0,
+      "volume_multiple": 3.1104204916341343,
+      "pierce_ticks": 2.0
+    }
+  },
+  {
+    "id": "9ae90f28-5648-46e1-b0a6-95a63de3bc61",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 838,
@@ -1718,7 +1723,7 @@
     }
   },
   {
-    "id": "69cdae9c-39f6-44eb-92bd-5f379bc7fbd5",
+    "id": "d5d56263-500b-49e3-b01f-5ff00c374c8f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 841,
@@ -1733,7 +1738,7 @@
     }
   },
   {
-    "id": "8b2b9222-d125-429a-9a33-a79cc63e3282",
+    "id": "9c25588f-b877-4f2c-9e3a-4aa100bb0cfa",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 842,
@@ -1746,7 +1751,7 @@
     }
   },
   {
-    "id": "e0608baa-70ff-4660-9ce8-b9dc0655a936",
+    "id": "d14ac3af-1f3f-427a-818f-9487872f079f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 858,
@@ -1759,7 +1764,7 @@
     }
   },
   {
-    "id": "335803dd-be85-4c06-9751-6b56e556445b",
+    "id": "6117004a-f995-423c-9267-b818f0831b4d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 859,
@@ -1772,7 +1777,7 @@
     }
   },
   {
-    "id": "9f960980-cf85-41c1-9615-7fd298adee32",
+    "id": "e8d4450c-8980-401c-9aab-89dbfe13996b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 864,
@@ -1785,7 +1790,7 @@
     }
   },
   {
-    "id": "f7a53849-bcda-4aec-bb31-1f2f329384fa",
+    "id": "5a4e7eab-bc14-4b36-912e-2d5fdc911b28",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 879,
@@ -1798,7 +1803,7 @@
     }
   },
   {
-    "id": "69770308-6722-42cd-8493-001a6262df7f",
+    "id": "43afa9ed-a9af-42cb-9f0c-a96001054fc6",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 880,
@@ -1813,7 +1818,7 @@
     }
   },
   {
-    "id": "e914f69b-3a19-478b-8878-cbba812fa4d4",
+    "id": "6ed2706e-c9c4-49ef-96ae-3adc29fd8fbc",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 880,
@@ -1826,7 +1831,7 @@
     }
   },
   {
-    "id": "93f74819-47a4-4581-b24d-74bb7f33e491",
+    "id": "f390eca0-5a99-4388-b57d-96161002fe0b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 885,
@@ -1839,7 +1844,7 @@
     }
   },
   {
-    "id": "f72ef29d-32d2-4a9c-b29c-c3e95e068cc2",
+    "id": "3571741e-c8c6-4d90-8e19-0b9694601956",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 902,
@@ -1854,22 +1859,20 @@
     }
   },
   {
-    "id": "34b5eb6c-7fc9-4ce3-9b11-4df7990ae6f5",
+    "id": "635410c3-6e47-4f1e-a127-889825e24c0f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 904,
     "timestamp": "2026-05-26T17:20:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.8679274070283886,
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
     "evidence": {
-      "swept_level": 5123.46174686376,
-      "volume_multiple": 3.124538665302199,
-      "pierce_ticks": 2.0
+      "cumulative_delta": 2339.3832962068595
     }
   },
   {
-    "id": "1a24e630-8606-4de2-970f-5b35692a3159",
+    "id": "dc933940-186b-4c58-94e8-a96265e608e0",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 905,
@@ -1884,7 +1887,59 @@
     }
   },
   {
-    "id": "3c47c7e1-09b7-4481-9ec2-7bf6d7b2e205",
+    "id": "a8b6374a-b54a-4841-8acd-34f4bfc07654",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 905,
+    "timestamp": "2026-05-26T17:25:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1864.9659236879024
+    }
+  },
+  {
+    "id": "8275e55d-b0fd-413e-bb69-a0796600bf5c",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 906,
+    "timestamp": "2026-05-26T17:30:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1994.0821104109307
+    }
+  },
+  {
+    "id": "0cb4a800-1b55-4c60-bb5a-75dd28ce2560",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 907,
+    "timestamp": "2026-05-26T17:35:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2204.2207744178036
+    }
+  },
+  {
+    "id": "8c46e467-63b2-4206-bb5b-56cc4399b720",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 911,
+    "timestamp": "2026-05-26T17:55:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 3115.7391597614705
+    }
+  },
+  {
+    "id": "a86c6265-faa3-47c5-b335-69b962ea0c73",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 934,
@@ -1899,7 +1954,7 @@
     }
   },
   {
-    "id": "0665a744-f6c6-4fa1-93bd-a6358608ed5b",
+    "id": "fc662f6f-ae89-48ba-915a-2fa0a83fbbcc",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 934,
@@ -1912,7 +1967,7 @@
     }
   },
   {
-    "id": "807ec8a0-107a-483b-9053-d1b68ed978b1",
+    "id": "2b58d453-9f0a-4f9e-89f4-afc2978a7cfb",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 974,
@@ -1925,22 +1980,22 @@
     }
   },
   {
-    "id": "5f03ceaa-e7c1-44a5-9762-c49bc1351e30",
+    "id": "fa0aff71-fadc-4c0a-af97-27036e971361",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 975,
     "timestamp": "2026-05-27T16:45:00Z",
-    "signalType": "liquidity_sweep",
+    "signalType": "poc_sweep",
     "direction": "bearish",
     "strength": 1.0,
     "evidence": {
-      "swept_level": 5129.372223419515,
+      "swept_level": 5124.0,
       "volume_multiple": 3.6347438549682782,
-      "pierce_ticks": 5.876832851208746
+      "pierce_ticks": 27.365726529267704
     }
   },
   {
-    "id": "18369b46-c9cb-4089-a8a8-2dcae0188b93",
+    "id": "a2486d43-43c3-4f05-8b90-5c3df2eea951",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 975,
@@ -1953,7 +2008,7 @@
     }
   },
   {
-    "id": "772cf455-1c9f-4555-93fb-7df176329429",
+    "id": "0d1e5931-fc17-4067-b345-f26952e222d8",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 976,
@@ -1966,7 +2021,7 @@
     }
   },
   {
-    "id": "a5a1b6bf-4a9d-4f42-b980-1d847969275b",
+    "id": "cbd88fbf-872d-4456-8c5c-b5ed2deb78f0",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 977,
@@ -1981,7 +2036,7 @@
     }
   },
   {
-    "id": "e1f250b0-f286-4539-b58a-392a5d76ea80",
+    "id": "35dc8960-3977-4f04-97be-d75dad90e578",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 978,
@@ -1994,7 +2049,7 @@
     }
   },
   {
-    "id": "12f4d3ef-cd91-445b-9a3f-2fb976e7dd47",
+    "id": "402afb88-01d6-4ddc-afcd-5d176a37b22b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 979,
@@ -2007,7 +2062,7 @@
     }
   },
   {
-    "id": "7b67efdf-5c32-4340-8f8d-fc8c58f81d4d",
+    "id": "afbb5a7a-9aa5-45a0-bb0c-a5a5ada2cd46",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 983,
@@ -2020,7 +2075,7 @@
     }
   },
   {
-    "id": "99ddc758-ae53-4536-bbd2-b2f13c473de1",
+    "id": "7b881f8b-6889-45df-93f5-19578bafc457",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 990,
@@ -2035,7 +2090,7 @@
     }
   },
   {
-    "id": "17b0cd59-c14a-4f1a-a761-7b769c153512",
+    "id": "00bdb7d0-271f-4551-b406-a7885c62dc6a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 995,
@@ -2050,7 +2105,7 @@
     }
   },
   {
-    "id": "9edf889f-3ae3-4ac7-8e78-cee0b5deaf31",
+    "id": "23285bb6-eeae-46d8-820c-9f2a3955c51d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1026,
@@ -2063,22 +2118,22 @@
     }
   },
   {
-    "id": "3a750a3e-c8b3-4246-9d57-fc123be01b69",
+    "id": "8c02ef3b-21c1-41bb-8b90-4b7993977a75",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1028,
     "timestamp": "2026-05-28T14:40:00Z",
-    "signalType": "liquidity_sweep",
+    "signalType": "poc_sweep",
     "direction": "bearish",
     "strength": 0.7565571911026515,
     "evidence": {
-      "swept_level": 5132.782699719468,
+      "swept_level": 5132.0,
       "volume_multiple": 2.7236058879695455,
       "pierce_ticks": 3.0
     }
   },
   {
-    "id": "4b579c88-9551-4727-9c95-8505d3f0ebea",
+    "id": "d052ef54-625e-45ba-a107-8e799d9cd64c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1029,
@@ -2093,7 +2148,7 @@
     }
   },
   {
-    "id": "5fb53376-053b-4662-9252-c71f069589b7",
+    "id": "caaf6af0-2468-4986-b5ed-b6e17b2f418e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1036,
@@ -2106,7 +2161,7 @@
     }
   },
   {
-    "id": "2fed824c-f6b8-4cfc-9bc3-2a0f1241e79b",
+    "id": "37b9d939-dd95-4028-b895-e6d3373094b9",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1051,
@@ -2119,7 +2174,7 @@
     }
   },
   {
-    "id": "459ee532-8bdc-4c09-962e-8e083ac86ad6",
+    "id": "68960144-e422-441f-80e3-c91dcb680b94",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1052,
@@ -2132,7 +2187,22 @@
     }
   },
   {
-    "id": "8abe4806-c8c5-4046-83e0-552029601507",
+    "id": "723367cf-4530-42b7-8239-90f0645e4f59",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1085,
+    "timestamp": "2026-05-28T19:25:00Z",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
+    "strength": 0.5713918289505338,
+    "evidence": {
+      "swept_level": 5132.0,
+      "volume_multiple": 2.0570105842219215,
+      "pierce_ticks": 0.2888535151796532
+    }
+  },
+  {
+    "id": "b0f5329c-3315-4d0f-8611-ba9ab53b7c30",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1092,
@@ -2145,7 +2215,7 @@
     }
   },
   {
-    "id": "5fe81c17-4267-46bf-801e-af7f573bfe0d",
+    "id": "7cf67bbb-7446-4825-ac6b-fbb51f13eb4b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1093,
@@ -2158,7 +2228,7 @@
     }
   },
   {
-    "id": "137061d7-80c5-47df-9436-9fb537ead7af",
+    "id": "55c91f6a-da8b-4dfe-8e84-e9526dd944de",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1097,
@@ -2171,22 +2241,7 @@
     }
   },
   {
-    "id": "730a2120-dd00-4d01-8f83-d0c5306f5d3f",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1117,
-    "timestamp": "2026-05-29T15:35:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.7328590818444529,
-    "evidence": {
-      "swept_level": 5138.434996702199,
-      "volume_multiple": 2.6382926946400307,
-      "pierce_ticks": 7.130428338550701
-    }
-  },
-  {
-    "id": "b587bd99-ff44-4cbb-8b78-4a866ca6acc9",
+    "id": "44738bff-820e-4700-a646-a6a415da2377",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1117,
@@ -2201,7 +2256,7 @@
     }
   },
   {
-    "id": "80eecf9c-144c-4610-b9d6-613b7d820195",
+    "id": "aab2e256-5855-4221-bc1e-699a1506bec5",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1130,
@@ -2214,22 +2269,22 @@
     }
   },
   {
-    "id": "033be06d-0d81-439a-bec7-6d966cd1575c",
+    "id": "2163c40e-de9f-4630-9648-c3668fd37b6c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1148,
     "timestamp": "2026-05-29T18:10:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
+    "signalType": "poc_sweep",
+    "direction": "bearish",
     "strength": 0.7500666397338607,
     "evidence": {
-      "swept_level": 5128.215319544564,
+      "swept_level": 5130.0,
       "volume_multiple": 2.7002399030418984,
-      "pierce_ticks": 3.0
+      "pierce_ticks": 31.44247930491474
     }
   },
   {
-    "id": "e4b69108-8cf4-4d99-a6de-59fac2085183",
+    "id": "8704bac0-8648-4712-be28-e434f8ff89e4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1149,
@@ -2244,7 +2299,7 @@
     }
   },
   {
-    "id": "2dd3c13d-3a04-45a2-8495-b4aef48b164a",
+    "id": "3e3522cd-8603-40de-830b-e2fa71c9574b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1153,
@@ -2259,7 +2314,7 @@
     }
   },
   {
-    "id": "90fb1882-57c0-4cb6-84fc-c75983fbed33",
+    "id": "72f233ef-a542-4f29-a12c-c06d7ffd55b0",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1155,
@@ -2272,7 +2327,7 @@
     }
   },
   {
-    "id": "f708a098-bea2-4253-9e7d-be8e75901b4b",
+    "id": "8058870d-9110-49f4-8ae5-be63158f2935",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1162,
@@ -2285,7 +2340,7 @@
     }
   },
   {
-    "id": "5a3d8fb1-db6f-4bb7-9227-2e027870ffa4",
+    "id": "6c11eb31-53f7-428f-a490-89619d0ca8df",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1170,
@@ -2298,22 +2353,22 @@
     }
   },
   {
-    "id": "7b517ca8-fb07-466f-a6bf-98f8ebcaeb09",
+    "id": "4f1fc09f-b9a7-432b-94f2-c2c9ce20a4b3",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1197,
     "timestamp": "2026-06-01T15:45:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
     "strength": 0.5318396197622363,
     "evidence": {
-      "swept_level": 5140.492638611682,
+      "swept_level": 5138.0,
       "volume_multiple": 1.9146226311440506,
-      "pierce_ticks": 3.0
+      "pierce_ticks": 37.89321027639744
     }
   },
   {
-    "id": "2af116e5-4ef7-4e9d-a0d7-357547cd78c0",
+    "id": "2246f912-8060-456e-85bf-7edf30fa0407",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1198,
@@ -2328,7 +2383,7 @@
     }
   },
   {
-    "id": "b8a43a54-08d1-4d67-a54e-195068484314",
+    "id": "d3b7bcbc-6e47-423f-862b-ac27191df425",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1235,
@@ -2341,7 +2396,22 @@
     }
   },
   {
-    "id": "7bd2d077-038d-42c5-ac3c-b726d7bb98be",
+    "id": "cd44e575-a704-451e-913e-b8b62399c412",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1248,
+    "timestamp": "2026-06-02T13:30:00Z",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
+    "strength": 0.783856318779819,
+    "evidence": {
+      "swept_level": 5130.0,
+      "volume_multiple": 2.8218827476073485,
+      "pierce_ticks": 2.682638411195512
+    }
+  },
+  {
+    "id": "7cea9337-b89e-41bd-9c84-8892a9c66863",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1266,
@@ -2356,22 +2426,22 @@
     }
   },
   {
-    "id": "65971d55-0352-46d2-bf8a-ffbbb8c31b38",
+    "id": "d992ed5b-ef80-4f0a-b71c-f50a32915f8f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1273,
     "timestamp": "2026-06-02T15:35:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
+    "signalType": "poc_sweep",
+    "direction": "bearish",
     "strength": 0.7884460074689774,
     "evidence": {
-      "swept_level": 5127.058171158058,
+      "swept_level": 5130.0,
       "volume_multiple": 2.838405626888319,
-      "pierce_ticks": 1.0
+      "pierce_ticks": 14.919961436044105
     }
   },
   {
-    "id": "0461d2c7-c4f8-4f1b-a604-aa11272e7dc6",
+    "id": "c9f0a678-3788-41d2-994b-0ae38c7ef608",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1274,
@@ -2386,7 +2456,7 @@
     }
   },
   {
-    "id": "a2954739-f11d-40fd-9505-d2b48b93dff9",
+    "id": "5db2286a-c084-455c-b47b-b6e746b12200",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1282,
@@ -2399,22 +2469,7 @@
     }
   },
   {
-    "id": "1f52d15f-72ec-4b2a-b231-8aedab966c81",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1308,
-    "timestamp": "2026-06-02T18:30:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.5004753150535165,
-    "evidence": {
-      "swept_level": 5141.242638611682,
-      "volume_multiple": 1.8017111341926595,
-      "pierce_ticks": 8.519499358837493
-    }
-  },
-  {
-    "id": "149adaec-05d4-4e75-8fb3-2f292002ead0",
+    "id": "681b57e7-4880-49b1-8b23-47b18a99fc0a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1315,
@@ -2427,7 +2482,7 @@
     }
   },
   {
-    "id": "2d8c8719-058f-484c-9813-2fe872df0d98",
+    "id": "f87da632-6f6f-4e69-b9e8-d19056979107",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1322,
@@ -2440,7 +2495,7 @@
     }
   },
   {
-    "id": "8cf2f85a-31d9-4b62-8882-2f0bc5c59736",
+    "id": "7ea08ec8-b144-42dd-9b02-41acf24e5a63",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1328,
@@ -2453,22 +2508,7 @@
     }
   },
   {
-    "id": "eb08d9e8-af5a-4157-8925-e1e428be00bb",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1329,
-    "timestamp": "2026-06-03T13:45:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.5193741479490843,
-    "evidence": {
-      "swept_level": 5151.0976823365145,
-      "volume_multiple": 1.8697469326167038,
-      "pierce_ticks": 1.1392710951076879
-    }
-  },
-  {
-    "id": "7b130833-865b-4da9-9deb-63110b5ee798",
+    "id": "4ce379e7-df6b-490c-ba90-90e28db05d0a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1340,
@@ -2481,7 +2521,7 @@
     }
   },
   {
-    "id": "6fb97fda-d7cd-461a-8336-34875da6f6ff",
+    "id": "3026ede2-57c9-4bf4-a806-7229c7034afb",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1341,
@@ -2496,7 +2536,7 @@
     }
   },
   {
-    "id": "a40ffe46-7a9d-4486-8274-61eea5cd261c",
+    "id": "f7d66993-0bf3-4588-95d6-1c733392f138",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1341,
@@ -2509,7 +2549,7 @@
     }
   },
   {
-    "id": "fd610d3a-282c-4d1d-9f3c-48533a9de984",
+    "id": "608dbae9-c77f-48af-8a00-2d0f789231a2",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1342,
@@ -2524,7 +2564,7 @@
     }
   },
   {
-    "id": "6078cfd9-f42a-4af1-91a8-813f8e5f3a30",
+    "id": "fde6ec5e-17a5-4cce-9f9a-8e2e196ec708",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1342,
@@ -2537,7 +2577,7 @@
     }
   },
   {
-    "id": "43c5ee12-73e9-4b7a-af25-d3c392d22b01",
+    "id": "8742791c-ed57-4d48-a3b5-ab5186edf1dc",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1343,
@@ -2550,7 +2590,7 @@
     }
   },
   {
-    "id": "53a5e630-c581-48c9-a21c-a7e06aef6a93",
+    "id": "5abdfee5-6ed4-4c7e-86d8-b73ac3540c9a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1344,
@@ -2563,7 +2603,7 @@
     }
   },
   {
-    "id": "c723cc5a-d3b7-40fb-a1f4-29641be5b4d0",
+    "id": "deb714ec-c5db-48c3-a26d-e4c17607535b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1348,
@@ -2576,7 +2616,7 @@
     }
   },
   {
-    "id": "dc45529c-3421-45dc-93ef-3c5388a1028e",
+    "id": "fc856b62-154a-418e-8d51-8bbe1aae70c8",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1359,
@@ -2589,7 +2629,7 @@
     }
   },
   {
-    "id": "168cb599-bf4b-4e68-aa6e-eaf649badd73",
+    "id": "809b9e48-3b91-4381-acf6-4ff2a1f335f2",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1363,
@@ -2602,7 +2642,7 @@
     }
   },
   {
-    "id": "e26ed808-9813-4e3f-a9a6-3bb5fd3b1095",
+    "id": "21289a06-1dfe-434c-ba4e-fa829f5b7da6",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1385,
@@ -2617,7 +2657,7 @@
     }
   },
   {
-    "id": "f9dc2b68-f118-4bef-a4d7-d358d8be5f4d",
+    "id": "1a99c1d4-d44a-4a88-8349-2cccad500be3",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1391,
@@ -2632,7 +2672,7 @@
     }
   },
   {
-    "id": "610b53c8-99fb-4e51-aad3-c8f70d78c18d",
+    "id": "6a60c84c-0915-408c-9dae-7d4e35f8e289",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1401,
@@ -2645,7 +2685,7 @@
     }
   },
   {
-    "id": "3bd294e4-ebb7-4178-9ce8-37ee75715910",
+    "id": "2b6bd906-885f-4015-b57e-51f5c0b8e45a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1402,
@@ -2658,7 +2698,7 @@
     }
   },
   {
-    "id": "b622bdab-9d9d-49e2-832d-12708dd2ac2b",
+    "id": "dba9b5af-5011-4f28-8be3-ee4027cf7e9b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1408,
@@ -2671,7 +2711,7 @@
     }
   },
   {
-    "id": "742bc73d-8f2d-4843-8521-49b5b69aaff7",
+    "id": "c01e5d8c-c9fb-436d-84c6-cdd85d541d67",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1419,
@@ -2684,22 +2724,20 @@
     }
   },
   {
-    "id": "433eb05e-b18a-4004-b724-f9e5d0a3e2fb",
+    "id": "2eb0998b-586c-405e-8176-2ee5b392504a",
     "symbol": "MES",
     "timeframe": "5m",
-    "barIndex": 1432,
-    "timestamp": "2026-06-04T15:50:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.5772450135658846,
+    "barIndex": 1431,
+    "timestamp": "2026-06-04T15:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
     "evidence": {
-      "swept_level": 5147.28612439213,
-      "volume_multiple": 2.0780820488371847,
-      "pierce_ticks": 3.29748351100352
+      "cumulative_delta": -2996.0223100811354
     }
   },
   {
-    "id": "a26b71d5-6d4b-4544-8bea-e3ae2d9e987b",
+    "id": "598b9388-ad2a-4c5b-a0f9-4ddb23f63a38",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1432,
@@ -2714,46 +2752,20 @@
     }
   },
   {
-    "id": "34ffb3e4-1261-441e-ac91-4d15e8354b89",
+    "id": "4624f23e-d8f0-4cf9-b369-414b279d3822",
     "symbol": "MES",
     "timeframe": "5m",
-    "barIndex": 1434,
-    "timestamp": "2026-06-04T16:00:00Z",
-    "signalType": "delta_divergence",
-    "direction": "bullish",
-    "strength": 0.6,
-    "evidence": {
-      "cumulative_delta": -2845.4553173007967
-    }
-  },
-  {
-    "id": "7565118a-3634-4066-a963-003446f60b2a",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1436,
-    "timestamp": "2026-06-04T16:10:00Z",
+    "barIndex": 1432,
+    "timestamp": "2026-06-04T15:50:00Z",
     "signalType": "delta_divergence",
     "direction": "bearish",
     "strength": 0.6,
     "evidence": {
-      "cumulative_delta": -3322.5122097540084
+      "cumulative_delta": -2286.081972232033
     }
   },
   {
-    "id": "6fcb4b80-55ba-494f-8b47-207bd1d05e6d",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1437,
-    "timestamp": "2026-06-04T16:15:00Z",
-    "signalType": "delta_divergence",
-    "direction": "bearish",
-    "strength": 0.6,
-    "evidence": {
-      "cumulative_delta": -3063.664194559928
-    }
-  },
-  {
-    "id": "e6888455-066b-4adb-98a6-835ff2fad34d",
+    "id": "0590ba8f-463c-4ce3-acaa-e2a9bb5a2452",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1445,
@@ -2768,7 +2780,7 @@
     }
   },
   {
-    "id": "2bd202fc-5efe-4107-b574-01c521ae1e2e",
+    "id": "e5a818b2-1a5a-43c2-897a-6aecd70f3a90",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1453,
@@ -2783,7 +2795,7 @@
     }
   },
   {
-    "id": "79c864cc-8891-42b6-b2a6-a9a7969f1583",
+    "id": "31aa736d-9406-476e-a208-44369c2ac9e5",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1470,
@@ -2798,7 +2810,7 @@
     }
   },
   {
-    "id": "cb6d1c47-f547-4fb8-9e44-7194d8865a06",
+    "id": "b4992877-864b-4ade-bbd1-5cf06f414304",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1479,
@@ -2813,7 +2825,7 @@
     }
   },
   {
-    "id": "85ca9112-f148-4660-9fe2-e45eaa2e4221",
+    "id": "a81f6b2a-3803-4152-a991-112d0d842381",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1479,
@@ -2826,7 +2838,7 @@
     }
   },
   {
-    "id": "15d2a99d-b8b5-4d1d-b0e6-fb182a43ba19",
+    "id": "ba696b97-8bde-4f0a-9e68-19d5cb7620c4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1480,
@@ -2839,7 +2851,7 @@
     }
   },
   {
-    "id": "74dac548-6442-4c2f-ad63-ed0d54ca6053",
+    "id": "745cb7bb-0b79-4006-bf43-1b7f7a9e70f4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1481,
@@ -2852,7 +2864,7 @@
     }
   },
   {
-    "id": "579bf6fb-87c3-4d1b-87aa-7d0194932645",
+    "id": "37f83224-b796-4c29-bf2b-2f8e96a14376",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1483,
@@ -2865,7 +2877,7 @@
     }
   },
   {
-    "id": "08733f7d-f32a-4000-8d40-713f81027918",
+    "id": "6542e382-5976-4db9-b190-5753c54cc976",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1492,
@@ -2878,7 +2890,7 @@
     }
   },
   {
-    "id": "1e665703-2fcd-4b19-b8a0-481f3cf1491e",
+    "id": "cdfc3c5c-b5fe-45c9-aa46-084d229dc532",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1493,
@@ -2891,7 +2903,7 @@
     }
   },
   {
-    "id": "af62a7cf-1ac8-4452-a1dc-36a035bb6a56",
+    "id": "d8e4933e-f04a-4a23-9fb2-d085395f2e8c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1520,
@@ -2904,7 +2916,7 @@
     }
   },
   {
-    "id": "ca431f6e-f490-450d-ba23-a893b579fa97",
+    "id": "8b53451d-7ac5-44e6-ad9a-f2b1603761fc",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1528,
@@ -2917,22 +2929,7 @@
     }
   },
   {
-    "id": "4d8edd44-b23c-4776-902b-f703a49ad43b",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1529,
-    "timestamp": "2026-06-05T17:25:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.5086857454250281,
-    "evidence": {
-      "swept_level": 5145.375646278634,
-      "volume_multiple": 1.831268683530101,
-      "pierce_ticks": 6.936265766737051
-    }
-  },
-  {
-    "id": "3d6fef7e-a5b8-4a9c-b396-3c4546c1324a",
+    "id": "09c9260d-2f58-4b03-ae66-90e25fc679a8",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1539,
@@ -2945,7 +2942,7 @@
     }
   },
   {
-    "id": "1c3b9549-b790-493a-9393-7c52a6a096b9",
+    "id": "5e741272-08b7-46da-aa98-9ecc375a5939",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1541,
@@ -2958,7 +2955,7 @@
     }
   },
   {
-    "id": "97e635e2-6cdd-44aa-b82f-a6f2ebc3a83f",
+    "id": "91382314-78b8-4b86-9b9d-dd799503fd8f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1543,
@@ -2973,7 +2970,7 @@
     }
   },
   {
-    "id": "5e51645b-dbe1-4334-a8e3-8273d7736286",
+    "id": "0a1342e3-eb95-41d4-ab8f-5bc0554337f0",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1547,
@@ -2986,22 +2983,22 @@
     }
   },
   {
-    "id": "e86c7948-2ebd-43ce-931b-256a3d28f285",
+    "id": "1b39170c-2b02-4248-b4e0-ade496dedf63",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1585,
     "timestamp": "2026-06-08T15:35:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
     "strength": 0.6891009758490821,
     "evidence": {
-      "swept_level": 5151.963134106552,
+      "swept_level": 5144.0,
       "volume_multiple": 2.480763513056696,
-      "pierce_ticks": 3.0
+      "pierce_ticks": 7.209171833539585
     }
   },
   {
-    "id": "1b3da3c2-7221-48d8-8d70-92900de07142",
+    "id": "edc4e527-56a9-49c1-907a-7fd8c9db06ef",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1586,
@@ -3016,7 +3013,7 @@
     }
   },
   {
-    "id": "e7473652-b5bf-461f-a9ea-39ad65d8b325",
+    "id": "ef64cb1a-05ee-4210-b3be-18e3e41f33d1",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1587,
@@ -3031,7 +3028,7 @@
     }
   },
   {
-    "id": "240e0e03-4e9f-4499-98e7-e92844ac0822",
+    "id": "93a82994-ceae-4b8f-baf3-f50c285161fb",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1589,
@@ -3044,22 +3041,85 @@
     }
   },
   {
-    "id": "0c9f80a5-c9b7-47e4-9145-a62ffad5b0b7",
+    "id": "3135e723-2b3c-414b-9c64-c2237b8913ec",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1593,
+    "timestamp": "2026-06-08T16:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2711.8595431508184
+    }
+  },
+  {
+    "id": "a14277fc-f1f8-4e9f-9f39-9ef33b86a520",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1604,
     "timestamp": "2026-06-08T17:10:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.513553531648729,
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
     "evidence": {
-      "swept_level": 5138.907468734804,
-      "volume_multiple": 1.8487927139354243,
-      "pierce_ticks": 3.0
+      "cumulative_delta": 2228.0249047043735
     }
   },
   {
-    "id": "abb01d56-c011-4855-8cdd-5ba0deff4fd2",
+    "id": "6043af70-6086-4dff-8869-ea968d3b7eeb",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1605,
+    "timestamp": "2026-06-08T17:15:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1851.8182350043326
+    }
+  },
+  {
+    "id": "0847da23-12ee-4ede-9245-d6f5b017c93d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1606,
+    "timestamp": "2026-06-08T17:20:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bearish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 1984.4192253555036
+    }
+  },
+  {
+    "id": "36a3a8c5-9f94-4d1c-9825-a6d7eb8ffd43",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1610,
+    "timestamp": "2026-06-08T17:40:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2423.1544555015153
+    }
+  },
+  {
+    "id": "a226209c-9673-4147-9634-21904d89155d",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1611,
+    "timestamp": "2026-06-08T17:45:00Z",
+    "signalType": "delta_divergence",
+    "direction": "bullish",
+    "strength": 0.6,
+    "evidence": {
+      "cumulative_delta": 2479.797362592781
+    }
+  },
+  {
+    "id": "7012eac5-2e8d-431d-b03a-6947a9a6f01b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1623,
@@ -3072,7 +3132,7 @@
     }
   },
   {
-    "id": "972758f2-8cec-4548-965e-2c1284688e57",
+    "id": "9900d9af-2b97-4910-bded-94d8cf1659b3",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1638,
@@ -3085,7 +3145,7 @@
     }
   },
   {
-    "id": "4aa405e9-9163-43d2-8264-7fe406136caf",
+    "id": "993ba972-d582-4627-8610-14a91306db2a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1639,
@@ -3098,7 +3158,7 @@
     }
   },
   {
-    "id": "b629238f-44e7-4c76-a4aa-4c6cbd82c14f",
+    "id": "2e43dea0-7f6c-4065-b0db-ae7739d335cc",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1640,
@@ -3111,22 +3171,22 @@
     }
   },
   {
-    "id": "e9aad987-8eb2-49c6-8f35-2e0457bf8a80",
+    "id": "8308121e-7572-4850-b47a-e1ed0ebb53ed",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1653,
     "timestamp": "2026-06-09T14:45:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
     "strength": 0.5993096993857265,
     "evidence": {
-      "swept_level": 5152.713134106552,
+      "swept_level": 5142.0,
       "volume_multiple": 2.1575149177886157,
-      "pierce_ticks": 2.0
+      "pierce_ticks": 6.028344135669613
     }
   },
   {
-    "id": "908c9f0d-1c6d-4f16-9bbc-7503d01eee1c",
+    "id": "603f35f0-0bb6-46f8-9232-747af7b52bbe",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1654,
@@ -3141,7 +3201,7 @@
     }
   },
   {
-    "id": "ba0e8306-7019-4f7b-9e7c-714391b926ee",
+    "id": "94770486-8ee4-41d9-8e29-4e405f894495",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1655,
@@ -3156,7 +3216,7 @@
     }
   },
   {
-    "id": "6727bcfd-0bcb-475b-8bc2-cbd8d70aa291",
+    "id": "093e4b87-9850-4635-9ce0-77d8f521e156",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1657,
@@ -3169,48 +3229,33 @@
     }
   },
   {
-    "id": "b57f0aa1-2232-48d9-971e-732f53706a6d",
+    "id": "f3e23679-4518-40a1-9b8c-ab0308ff74c7",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1676,
     "timestamp": "2026-06-09T16:40:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.5190099852760179,
-    "evidence": {
-      "swept_level": 5138.157468734804,
-      "volume_multiple": 1.8684359469936644,
-      "pierce_ticks": 1.0
-    }
-  },
-  {
-    "id": "3097eece-3b4f-41e2-9bc1-209353a2ca52",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1683,
-    "timestamp": "2026-06-09T17:15:00Z",
     "signalType": "delta_divergence",
     "direction": "bearish",
     "strength": 0.6,
     "evidence": {
-      "cumulative_delta": -1326.0880269756012
+      "cumulative_delta": 631.6740389245258
     }
   },
   {
-    "id": "aa2d469e-dc1e-4521-b84c-c2f22ae68ce2",
+    "id": "bb82e6b8-70a3-4902-91ed-3126a082a28e",
     "symbol": "MES",
     "timeframe": "5m",
-    "barIndex": 1684,
-    "timestamp": "2026-06-09T17:20:00Z",
+    "barIndex": 1677,
+    "timestamp": "2026-06-09T16:45:00Z",
     "signalType": "delta_divergence",
     "direction": "bearish",
     "strength": 0.6,
     "evidence": {
-      "cumulative_delta": -1061.3558241022895
+      "cumulative_delta": 333.84305923794506
     }
   },
   {
-    "id": "fe01b289-3bac-4bc8-8d75-71b9f434f0f2",
+    "id": "086148f7-4a61-44bf-b371-f2056ad191ea",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1716,
@@ -3223,7 +3268,7 @@
     }
   },
   {
-    "id": "b1cc40fc-0640-4263-a0e3-00fc0f49fa32",
+    "id": "53e2213c-2f85-4397-9dd9-bdb03c77c58c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1723,
@@ -3236,7 +3281,7 @@
     }
   },
   {
-    "id": "d46f19ee-da43-4fd7-959a-2ef430e7a7ed",
+    "id": "1a31eac9-da3c-4939-97a7-8a8e010d913d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1745,
@@ -3249,7 +3294,7 @@
     }
   },
   {
-    "id": "e5f58e9b-b6e7-4a84-b4b0-02e77711eefd",
+    "id": "042f5d0e-37b7-4e60-9878-02f1c1bdc27a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1762,
@@ -3262,7 +3307,7 @@
     }
   },
   {
-    "id": "f875f367-775f-4157-93c6-9e43862f1c5c",
+    "id": "d8437e0a-c854-4043-a448-9cc794a0632d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1766,
@@ -3275,7 +3320,7 @@
     }
   },
   {
-    "id": "bdabd24d-a0c0-4b81-a35d-9844c452c07d",
+    "id": "db57f9d7-c648-4b8b-9bc0-5fb9e609c065",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1781,
@@ -3288,7 +3333,7 @@
     }
   },
   {
-    "id": "2e443039-7884-451e-a8ac-8928f28862c7",
+    "id": "88fc4191-65b7-45bd-951f-9faf9eeae95d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1782,
@@ -3301,7 +3346,7 @@
     }
   },
   {
-    "id": "acac2c55-c405-4c73-b186-5aefe212c262",
+    "id": "838b08cd-7eae-429c-b1b5-aee3a19e0437",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1806,
@@ -3314,7 +3359,22 @@
     }
   },
   {
-    "id": "4a734dc6-4a58-4353-877d-6d43f555ab3e",
+    "id": "e70a19ab-059f-4e27-ab9e-4f0a98f6cf15",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 1816,
+    "timestamp": "2026-06-11T15:20:00Z",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
+    "strength": 0.5354803475122598,
+    "evidence": {
+      "swept_level": 5142.0,
+      "volume_multiple": 1.9277292510441353,
+      "pierce_ticks": 1.2647564192229765
+    }
+  },
+  {
+    "id": "e7a32818-3578-4e7b-8403-ae3422f5e5c8",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1816,
@@ -3329,7 +3389,7 @@
     }
   },
   {
-    "id": "762193bc-b393-4dd4-a614-c7838190446b",
+    "id": "258bdc25-22c5-4fd7-975f-0b5afa3cffa5",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1825,
@@ -3342,22 +3402,7 @@
     }
   },
   {
-    "id": "9b1a9b46-9800-4526-be28-a33781f3c84e",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1850,
-    "timestamp": "2026-06-11T18:10:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.9087673260871352,
-    "evidence": {
-      "swept_level": 5145.399936866871,
-      "volume_multiple": 3.2715623739136865,
-      "pierce_ticks": 3.0
-    }
-  },
-  {
-    "id": "a49c2862-4fde-473c-b6c1-c1086b765161",
+    "id": "79be7b79-4779-4c13-a6bd-1a279638c4dd",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1851,
@@ -3372,7 +3417,7 @@
     }
   },
   {
-    "id": "db66e8c3-6dcd-487f-831a-ecdfc49311e4",
+    "id": "2bb2c883-ca93-4596-8af2-8518701ecb1b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1864,
@@ -3387,22 +3432,7 @@
     }
   },
   {
-    "id": "2793dca4-2721-4799-b3bd-5f39edf3b2b3",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1884,
-    "timestamp": "2026-06-12T14:30:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.8494384679019876,
-    "evidence": {
-      "swept_level": 5137.216281034757,
-      "volume_multiple": 3.0579784844471556,
-      "pierce_ticks": 1.0
-    }
-  },
-  {
-    "id": "2988416a-6186-40e5-b4b6-21ab4b1f6ae3",
+    "id": "e7e0970a-c3b9-41e6-8fe4-b56ce83de581",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1885,
@@ -3417,7 +3447,7 @@
     }
   },
   {
-    "id": "c6d7e536-ed1c-41cc-a7f6-2df2b6d20a72",
+    "id": "8e4cb402-0228-41a1-8da5-8b76fb50f56c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1886,
@@ -3432,7 +3462,7 @@
     }
   },
   {
-    "id": "304bcbfc-5d74-4183-ab2f-a2c3a772557b",
+    "id": "26bea7d3-7e20-47ed-b96b-32cf4261eb66",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1888,
@@ -3445,7 +3475,7 @@
     }
   },
   {
-    "id": "f03d8c87-f2ee-435f-9782-a78753dacef0",
+    "id": "d207b71f-aa2d-46a9-9dc8-dae6cbb76687",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1895,
@@ -3458,7 +3488,7 @@
     }
   },
   {
-    "id": "205f6e4f-9924-4ac4-bbbb-f2a118daad7f",
+    "id": "e057457a-0eb4-48f3-b5d9-7c930418abb2",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1896,
@@ -3471,7 +3501,7 @@
     }
   },
   {
-    "id": "2407877b-e5ea-40ae-bcd6-7995e61791cf",
+    "id": "2239e69f-2a04-4a07-be2c-cd7d529a8833",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1918,
@@ -3486,22 +3516,7 @@
     }
   },
   {
-    "id": "1a3fd7e2-a5e0-4ca3-bb74-82b986d8a477",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 1947,
-    "timestamp": "2026-06-12T19:45:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.5904747352753993,
-    "evidence": {
-      "swept_level": 5146.149936866871,
-      "volume_multiple": 2.1257090469914375,
-      "pierce_ticks": 2.7979308306239545
-    }
-  },
-  {
-    "id": "b78fb8d3-54b7-4a27-b5a8-74745acfc778",
+    "id": "a6ad31fa-5956-48c4-a786-b0d234c17fd5",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1950,
@@ -3514,7 +3529,7 @@
     }
   },
   {
-    "id": "075ed906-de4e-40f7-8779-dacfae4069be",
+    "id": "e06b9520-8ae2-4789-9141-7a37b45e34cc",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1951,
@@ -3527,7 +3542,7 @@
     }
   },
   {
-    "id": "03b070a2-c002-40bd-a2d2-5627661add42",
+    "id": "f8037be3-4139-49cf-8e38-2518de548e6b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1952,
@@ -3540,7 +3555,7 @@
     }
   },
   {
-    "id": "0411af6e-466a-4502-b060-57f3a65a45aa",
+    "id": "a17118c2-73dd-4afa-a2e3-a821c6b43428",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1971,
@@ -3553,22 +3568,22 @@
     }
   },
   {
-    "id": "c0e408f2-8a8e-415a-a55d-505e8ce523ae",
+    "id": "fd864dce-8431-4471-a412-77d72235faad",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 1999,
     "timestamp": "2026-06-15T17:35:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
+    "signalType": "poc_sweep",
+    "direction": "bearish",
     "strength": 0.7840544807786654,
     "evidence": {
-      "swept_level": 5134.38189121517,
+      "swept_level": 5142.0,
       "volume_multiple": 2.8225961308031953,
-      "pierce_ticks": 3.0
+      "pierce_ticks": 19.009944134209945
     }
   },
   {
-    "id": "5e2136a7-503a-4731-8e1f-11f3c6315475",
+    "id": "17f37c23-27f4-455c-a60d-6d6bdbd46b1a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2002,
@@ -3583,7 +3598,7 @@
     }
   },
   {
-    "id": "a8d79281-33e6-4a8d-be1a-3597a2e681a7",
+    "id": "de78458a-21eb-4962-a62c-36ef992c5185",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2004,
@@ -3598,7 +3613,7 @@
     }
   },
   {
-    "id": "0e022433-cfcc-4e12-bd12-a95f74c090a1",
+    "id": "5f4a080c-036f-4320-a193-c58b11e206e2",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2004,
@@ -3611,7 +3626,7 @@
     }
   },
   {
-    "id": "79a9cb12-0939-4e8f-9403-ab11f3fd8076",
+    "id": "58b5708f-e2da-4d43-814e-5d4ef63c8374",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2005,
@@ -3624,7 +3639,7 @@
     }
   },
   {
-    "id": "a4e4e634-989c-4ff1-973e-5cc4474f402c",
+    "id": "3183864c-6385-4ee0-bca9-bb65629ad439",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2006,
@@ -3637,22 +3652,7 @@
     }
   },
   {
-    "id": "9bad17f5-d825-4c39-b3d2-479304965bf3",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 2013,
-    "timestamp": "2026-06-15T18:45:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.5517739602566901,
-    "evidence": {
-      "swept_level": 5147.127643473768,
-      "volume_multiple": 1.9863862569240847,
-      "pierce_ticks": 24.829530308532412
-    }
-  },
-  {
-    "id": "fe456024-0001-40fc-b682-a26fffd36288",
+    "id": "f512eb61-3f63-4cee-b578-ef285063755c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2015,
@@ -3667,7 +3667,7 @@
     }
   },
   {
-    "id": "fecee6bd-67bf-49c5-a038-d597ce2776a5",
+    "id": "c17d76de-3e54-4b75-8b26-d80512aa313f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2028,
@@ -3680,7 +3680,7 @@
     }
   },
   {
-    "id": "b3eed2a3-2037-4178-afa7-e2cb09b97cae",
+    "id": "ddef5284-ae22-4b77-bbba-642b25005ad5",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2035,
@@ -3693,7 +3693,7 @@
     }
   },
   {
-    "id": "2ba7b091-0b28-4d90-81bf-aff3df42d44a",
+    "id": "79767e6b-84b5-4f72-a1be-0b1b759aea24",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2056,
@@ -3706,7 +3706,7 @@
     }
   },
   {
-    "id": "6b948d84-91d0-40f2-8dda-fe8dd006781f",
+    "id": "ec1be680-aefa-44a6-8b26-89c1abba0611",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2085,
@@ -3719,7 +3719,7 @@
     }
   },
   {
-    "id": "ecb7f1cd-19cb-4ad6-9769-a90910dbff03",
+    "id": "a08287e3-c334-475e-bef0-7646c679c99a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2093,
@@ -3732,7 +3732,7 @@
     }
   },
   {
-    "id": "fc2e735b-0954-4777-abb9-5e31bcbe71bf",
+    "id": "be463f28-4230-49a1-a3ea-2c385b2a2239",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2100,
@@ -3745,7 +3745,7 @@
     }
   },
   {
-    "id": "347548c7-9553-4a4e-aa1d-b8a93d69a539",
+    "id": "b4632370-718c-4aef-8694-bca6bb460a66",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2101,
@@ -3758,7 +3758,22 @@
     }
   },
   {
-    "id": "6a9504d2-53fc-4f63-bc12-674e8a306546",
+    "id": "2773db76-8379-4680-9511-683f98b87396",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2107,
+    "timestamp": "2026-06-17T13:35:00Z",
+    "signalType": "poc_sweep",
+    "direction": "bearish",
+    "strength": 0.5748195268771107,
+    "evidence": {
+      "swept_level": 5148.0,
+      "volume_multiple": 2.0693502967575985,
+      "pierce_ticks": 5.018288797302375
+    }
+  },
+  {
+    "id": "45283c43-34aa-42e9-9d22-72478fd13a34",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2128,
@@ -3771,37 +3786,7 @@
     }
   },
   {
-    "id": "14196a36-9bca-447d-a218-27dcd7ffb11a",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 2170,
-    "timestamp": "2026-06-17T18:50:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.5523216314879176,
-    "evidence": {
-      "swept_level": 5145.80532185912,
-      "volume_multiple": 1.9883578733565035,
-      "pierce_ticks": 6.110192965712486
-    }
-  },
-  {
-    "id": "0e6eb572-5d1c-4373-9287-b3a6655a15c2",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 2185,
-    "timestamp": "2026-06-18T13:35:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.5102642044278569,
-    "evidence": {
-      "swept_level": 5141.6053749355515,
-      "volume_multiple": 1.8369511359402848,
-      "pierce_ticks": 6.454024666341866
-    }
-  },
-  {
-    "id": "808e9b5c-7a55-4cc3-af83-403bdcb6916c",
+    "id": "dfd02016-e7fa-400f-86dd-f6b3cf32655d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2201,
@@ -3814,7 +3799,7 @@
     }
   },
   {
-    "id": "64ae68eb-6d26-4cf3-88fc-0243e5103e81",
+    "id": "35c8dee6-daf1-44df-9893-7fb06b7214b3",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2208,
@@ -3827,7 +3812,7 @@
     }
   },
   {
-    "id": "f97381cb-ce63-49bd-b915-194c56f72f47",
+    "id": "ea94c89b-4ce5-4f14-a05a-50735a101772",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2215,
@@ -3840,7 +3825,7 @@
     }
   },
   {
-    "id": "abea31f6-8312-40c9-a287-86f5c1485366",
+    "id": "521f85c0-ed65-4a4f-bb88-46a79195e045",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2218,
@@ -3853,22 +3838,22 @@
     }
   },
   {
-    "id": "2225b89a-d58d-4fce-bbcf-67217e7736b8",
+    "id": "6222e7db-b2d1-42c9-a1b6-3207977be329",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2229,
     "timestamp": "2026-06-18T17:15:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
     "strength": 0.6664842692059794,
     "evidence": {
-      "swept_level": 5151.974533738234,
+      "swept_level": 5148.0,
       "volume_multiple": 2.399343369141526,
-      "pierce_ticks": 1.0
+      "pierce_ticks": 47.66205602696573
     }
   },
   {
-    "id": "013d35c5-0c91-4cff-b75c-a0530238c150",
+    "id": "b0f85533-04e8-4a3a-838d-626a5d1c687a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2230,
@@ -3883,7 +3868,7 @@
     }
   },
   {
-    "id": "fe4fe7ae-a742-4866-b4fb-2de9335511d9",
+    "id": "10a12e2d-0cc9-45f7-a561-ec2099dbc61f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2231,
@@ -3898,7 +3883,7 @@
     }
   },
   {
-    "id": "f89cf6d4-a01c-4100-b592-763cb80a12bd",
+    "id": "a8954e34-3523-422f-a021-2c70c041b35b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2232,
@@ -3913,7 +3898,7 @@
     }
   },
   {
-    "id": "b059c19d-50f1-4a14-92ba-48dbf8c18bc7",
+    "id": "a55dcd15-1dd6-4e5a-9fad-2c59afb32559",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2236,
@@ -3926,7 +3911,7 @@
     }
   },
   {
-    "id": "41afe6fc-8079-4f50-988e-3b0a64fba6b9",
+    "id": "344127d0-6e1d-429d-b00d-c1762826ef11",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2238,
@@ -3941,7 +3926,7 @@
     }
   },
   {
-    "id": "4638cbc6-6ebc-4ede-a140-43f56464eaf9",
+    "id": "c5e6ee88-4922-4aa5-9384-5e0003eb4359",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2247,
@@ -3956,7 +3941,7 @@
     }
   },
   {
-    "id": "ba83d038-08af-46f5-aed5-37b72e1b37e4",
+    "id": "996594ec-1034-4ff1-89d1-7e8c9a7f8191",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2253,
@@ -3969,22 +3954,7 @@
     }
   },
   {
-    "id": "7183f0d5-3a17-4227-abc2-97d10c6fbb36",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 2262,
-    "timestamp": "2026-06-19T13:30:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.5227738032726881,
-    "evidence": {
-      "swept_level": 5134.677254977026,
-      "volume_multiple": 1.8819856917816773,
-      "pierce_ticks": 2.0368280012226023
-    }
-  },
-  {
-    "id": "2ae46c04-5223-4bd4-9b2a-32c74c62931f",
+    "id": "f41b455c-e702-4680-a74f-c0ce79827de4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2268,
@@ -3997,7 +3967,7 @@
     }
   },
   {
-    "id": "f3eb0c9d-d6b9-4f71-be0d-64187474f4f5",
+    "id": "acc09a90-e78c-47d0-b1d9-a67224839edc",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2298,
@@ -4010,7 +3980,7 @@
     }
   },
   {
-    "id": "9df79dc1-198d-46a5-85cf-b9320f9edb4d",
+    "id": "671e5419-c832-446f-9fb8-61f65838b03f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2340,
@@ -4023,7 +3993,7 @@
     }
   },
   {
-    "id": "b07cfb7f-baeb-4b68-ba81-43bb28b9f4c2",
+    "id": "ced8208a-bced-4efb-bb5c-e1d76cdb2886",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2341,
@@ -4036,7 +4006,7 @@
     }
   },
   {
-    "id": "af094672-dce7-4a8d-821b-a6e36994c23f",
+    "id": "d5d460eb-b0ed-4f32-974d-5045c3f92281",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2342,
@@ -4049,7 +4019,7 @@
     }
   },
   {
-    "id": "a1edbfee-3042-4d8b-a82a-40cfbf7c6379",
+    "id": "fe9a4aaa-cf2c-4d33-a856-cc5080a5be52",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2354,
@@ -4062,22 +4032,7 @@
     }
   },
   {
-    "id": "c0033f92-f0b9-4914-9176-38b7afd6238a",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 2356,
-    "timestamp": "2026-06-22T14:50:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
-    "strength": 0.6655436948105118,
-    "evidence": {
-      "swept_level": 5111.79127029957,
-      "volume_multiple": 2.3959573013178423,
-      "pierce_ticks": 17.237475093490502
-    }
-  },
-  {
-    "id": "7773a166-bf10-4998-80dd-92b5e0dfb09a",
+    "id": "f65f03a8-3cbb-42f1-873a-455e2dca676f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2356,
@@ -4090,7 +4045,7 @@
     }
   },
   {
-    "id": "cb26eacc-6e40-49b7-9c87-232f0b88eda3",
+    "id": "83713ebf-1bbf-462d-9210-a6d790075c11",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2357,
@@ -4105,7 +4060,7 @@
     }
   },
   {
-    "id": "d2648ab9-62f8-4536-a488-e0c8e4da80f7",
+    "id": "c0520e27-5a9e-4a72-ad37-c25a36519d69",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2357,
@@ -4118,7 +4073,7 @@
     }
   },
   {
-    "id": "3604ac13-be2d-424f-99e2-e32b30c4b2b7",
+    "id": "08ae5416-c120-482f-b62f-819d61e79808",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2358,
@@ -4133,7 +4088,7 @@
     }
   },
   {
-    "id": "65ca8539-ba2f-4633-bfef-b685fb9a24ce",
+    "id": "5e540c68-8082-4e31-9362-7626fbbabb0e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2358,
@@ -4146,7 +4101,7 @@
     }
   },
   {
-    "id": "8e5929df-aeb3-43ff-8c01-ef85b21a6807",
+    "id": "87b93b24-bcc0-4065-9018-651247d1134a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2359,
@@ -4159,7 +4114,7 @@
     }
   },
   {
-    "id": "deafcb39-dfbf-44d0-8215-f776eef9d078",
+    "id": "e1cd3bbd-d570-4310-9f7f-070ed1066f1b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2360,
@@ -4172,7 +4127,7 @@
     }
   },
   {
-    "id": "c93cd488-cc5a-4642-85a6-804fc49a036b",
+    "id": "62270ed0-1d7f-46f9-aaee-67ef41cf3fa7",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2366,
@@ -4185,7 +4140,7 @@
     }
   },
   {
-    "id": "c5346bce-cb2a-4edd-9ef4-dde27a216fda",
+    "id": "9bc0b9ad-0cea-4634-a6b8-adbc75cc68f4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2394,
@@ -4200,7 +4155,7 @@
     }
   },
   {
-    "id": "1f4da514-95fb-47c6-93c9-46d217774ead",
+    "id": "3f8be591-8782-4c83-97cf-4079c0d97023",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2395,
@@ -4213,7 +4168,7 @@
     }
   },
   {
-    "id": "6553f4a5-320f-4f86-8a9f-d4d8a16e2c9f",
+    "id": "a72073e7-0b3f-4976-a1d5-4cdf007a5f6d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2403,
@@ -4228,7 +4183,7 @@
     }
   },
   {
-    "id": "01146a64-76bd-4d66-ad93-f656185fc9d0",
+    "id": "ea06219c-3ced-4d82-82cc-d8ac7643dd0c",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2413,
@@ -4243,7 +4198,7 @@
     }
   },
   {
-    "id": "888a2567-b463-45b6-b057-7589e5b22c94",
+    "id": "cd6c61fd-2bfb-4074-a083-f63822a59362",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2415,
@@ -4256,7 +4211,7 @@
     }
   },
   {
-    "id": "d2103ac5-006f-4245-8476-5c61c6a68788",
+    "id": "250213eb-bcc6-4b2a-b068-11ce15022689",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2426,
@@ -4269,7 +4224,7 @@
     }
   },
   {
-    "id": "a979cf1e-42a8-46ca-8e93-2217b3467c4e",
+    "id": "88841a80-4058-4e5a-9121-7827a9fbc4c4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2431,
@@ -4282,7 +4237,7 @@
     }
   },
   {
-    "id": "b09c7534-2c03-421c-8bc5-ed1ee254ab5f",
+    "id": "1ce9e162-c965-46a4-ae00-cfef5e5630b6",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2432,
@@ -4295,22 +4250,22 @@
     }
   },
   {
-    "id": "0e80b90f-2c32-4bd1-bd07-1c48aa68a073",
+    "id": "6ff3b7ae-a689-4676-9499-f5085092425b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2439,
     "timestamp": "2026-06-23T15:15:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
     "strength": 0.7179017108180157,
     "evidence": {
-      "swept_level": 5116.660952683539,
+      "swept_level": 5107.0,
       "volume_multiple": 2.5844461589448566,
-      "pierce_ticks": 2.0
+      "pierce_ticks": 7.805168295813928
     }
   },
   {
-    "id": "a82a7259-5b64-4139-af5f-71f42f1d9730",
+    "id": "37c22456-4bb4-4f94-a9a9-b1015b60b558",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2440,
@@ -4325,7 +4280,7 @@
     }
   },
   {
-    "id": "f183f5c1-b883-4e24-8560-26b0024de2d0",
+    "id": "3aead7c9-34f9-48b4-98b5-b9005353b869",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2443,
@@ -4340,7 +4295,7 @@
     }
   },
   {
-    "id": "729e059d-5893-48a8-a9a0-0f1d60361080",
+    "id": "abcb7033-cb97-4026-af22-b16b4f170db4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2444,
@@ -4355,7 +4310,7 @@
     }
   },
   {
-    "id": "401aeb39-b2bc-4494-a36e-b9288f1f8b4a",
+    "id": "b9f86518-0b7e-4004-9e22-1233c3864a57",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2445,
@@ -4368,7 +4323,7 @@
     }
   },
   {
-    "id": "1330edff-9ef3-42b4-a408-6245f4043d88",
+    "id": "73cbb3fb-79a9-4581-8fce-4ebe5d7b86ca",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2467,
@@ -4381,7 +4336,7 @@
     }
   },
   {
-    "id": "33c3949e-5f37-4cc1-a6ed-f96fab469d07",
+    "id": "86fa6360-7015-48f1-88ff-d8f841ae54f4",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2468,
@@ -4396,7 +4351,7 @@
     }
   },
   {
-    "id": "49740933-8e04-4cc5-8ce2-5674d6c5e27a",
+    "id": "a61aa0a5-a8db-495f-87dd-61e5de43d428",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2470,
@@ -4409,7 +4364,7 @@
     }
   },
   {
-    "id": "a7442ff1-3a56-42d3-abe8-6e14a455131c",
+    "id": "4e97b508-c0dc-4a76-9a7a-e2b61391e5ac",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2473,
@@ -4424,7 +4379,7 @@
     }
   },
   {
-    "id": "22984d0d-94a9-414a-8d3c-62a9b83cb9c7",
+    "id": "e678e70f-88eb-4455-8ae5-3e76587b14f1",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2479,
@@ -4437,7 +4392,7 @@
     }
   },
   {
-    "id": "b327f468-9637-445c-a932-6f112db9f199",
+    "id": "cc079af0-9c6f-430e-938a-719489df0da9",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2498,
@@ -4450,7 +4405,7 @@
     }
   },
   {
-    "id": "82efb8f3-a298-44e5-aac9-f15b65b86b46",
+    "id": "47fa5ab3-4403-45de-84b6-e8d637780578",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2505,
@@ -4463,7 +4418,7 @@
     }
   },
   {
-    "id": "868c7505-9fc2-454d-afed-223fb12ce238",
+    "id": "baada5fc-ea38-42ea-9de2-bed0c4e58175",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2506,
@@ -4476,7 +4431,7 @@
     }
   },
   {
-    "id": "4d2d4dda-82fd-40f2-980b-228ab60b8376",
+    "id": "d0da8b12-25c7-47dd-bd45-1d01cf55fa84",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2507,
@@ -4489,7 +4444,7 @@
     }
   },
   {
-    "id": "ebbe932f-f62a-42dc-9edf-7172613043f9",
+    "id": "b9eef421-63b7-4a8f-9a4b-5644ee6f72a2",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2515,
@@ -4502,7 +4457,7 @@
     }
   },
   {
-    "id": "3d1a410d-6de7-4f94-a39f-03f3c6c9aaaf",
+    "id": "768b37a6-24b7-4029-98d4-bd5962a36b8a",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2542,
@@ -4515,22 +4470,22 @@
     }
   },
   {
-    "id": "37de144f-37f2-47e1-be0d-8d7193006029",
+    "id": "9e23e2b2-a1fd-4268-9069-6ef3d089f284",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2552,
     "timestamp": "2026-06-24T18:10:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bullish",
+    "signalType": "poc_sweep",
+    "direction": "bearish",
     "strength": 0.667355420268083,
     "evidence": {
-      "swept_level": 5104.139660909499,
+      "swept_level": 5105.0,
       "volume_multiple": 2.402479512965099,
-      "pierce_ticks": 1.0
+      "pierce_ticks": 29.34951177981202
     }
   },
   {
-    "id": "9efa17cd-eadc-4ab2-9337-de23beb8db6f",
+    "id": "a1857a91-761b-4aa4-9939-337427636ba2",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2553,
@@ -4545,7 +4500,7 @@
     }
   },
   {
-    "id": "1ea85d2a-b97c-466e-a324-b3665a26b09c",
+    "id": "f43b50b6-2e65-4123-8afd-f6f734fbcd2f",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2594,
@@ -4558,7 +4513,7 @@
     }
   },
   {
-    "id": "655f7442-1db8-4d78-a9a0-e42f654d42a4",
+    "id": "1039fc35-ccbc-4762-819f-76859f932efd",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2608,
@@ -4571,22 +4526,7 @@
     }
   },
   {
-    "id": "e6dde91a-1321-4aaf-bcbd-a5e571825160",
-    "symbol": "MES",
-    "timeframe": "5m",
-    "barIndex": 2610,
-    "timestamp": "2026-06-25T16:30:00Z",
-    "signalType": "liquidity_sweep",
-    "direction": "bearish",
-    "strength": 0.8829883928492671,
-    "evidence": {
-      "swept_level": 5112.348058155608,
-      "volume_multiple": 3.178758214257362,
-      "pierce_ticks": 16.173579522161162
-    }
-  },
-  {
-    "id": "bdd96c34-66bd-41fd-ad12-04f85991ae2d",
+    "id": "147e7e81-85e7-4124-9d28-b998d26ae586",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2610,
@@ -4599,7 +4539,7 @@
     }
   },
   {
-    "id": "70b979e9-6bf4-4ac6-b5e7-cdbf57be6999",
+    "id": "0a2f2c28-e511-4438-bf8c-bb06edc8b9bc",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2611,
@@ -4612,7 +4552,7 @@
     }
   },
   {
-    "id": "b38aeefe-78bb-4081-bc17-4ea9f64547b0",
+    "id": "790ba349-5eb0-4861-92f5-dc0a75871d10",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2612,
@@ -4627,7 +4567,7 @@
     }
   },
   {
-    "id": "2d5df851-6b33-4f6c-9719-b7bbe8497f75",
+    "id": "9ddb0f57-d38a-42d8-9fdc-67a9ed82ab8d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2618,
@@ -4640,7 +4580,7 @@
     }
   },
   {
-    "id": "86d4be35-b010-41bb-a146-0d6b5b3bbeaf",
+    "id": "45e40430-7ebf-4126-ae9a-5e9140afa16e",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2646,
@@ -4653,7 +4593,7 @@
     }
   },
   {
-    "id": "d95c3cf1-64dd-4f3b-9a2a-7155518a4ad6",
+    "id": "ea540cc4-8fda-42fc-bd63-3e3a3836b27d",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2652,
@@ -4666,7 +4606,7 @@
     }
   },
   {
-    "id": "89743bcb-7b26-4255-abd9-e52703cf060b",
+    "id": "876adfb6-3bea-4101-abc1-e3740a776c8b",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2653,
@@ -4679,7 +4619,22 @@
     }
   },
   {
-    "id": "9f6eebdd-b605-4229-87a8-52198cae94a1",
+    "id": "57f023a9-4c23-4740-a804-72e404409ae1",
+    "symbol": "MES",
+    "timeframe": "5m",
+    "barIndex": 2655,
+    "timestamp": "2026-06-26T13:45:00Z",
+    "signalType": "poc_sweep",
+    "direction": "bullish",
+    "strength": 0.5755969281870666,
+    "evidence": {
+      "swept_level": 5121.0,
+      "volume_multiple": 2.07214894147344,
+      "pierce_ticks": 0.7330195086615277
+    }
+  },
+  {
+    "id": "1a2224b0-5fd5-4e27-b530-bc32c4b45f31",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2690,
@@ -4692,7 +4647,7 @@
     }
   },
   {
-    "id": "4f12e8bb-6fa2-47c0-a284-2398f9e16191",
+    "id": "5507c48b-6c2b-496c-9d06-2f7dc80720b1",
     "symbol": "MES",
     "timeframe": "5m",
     "barIndex": 2723,

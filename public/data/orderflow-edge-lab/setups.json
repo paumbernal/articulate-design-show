@@ -1,12 +1,12 @@
 [
   {
-    "id": "liquidity-sweep-absorption-reversal",
-    "name": "Liquidity Sweep + Absorption Reversal",
-    "description": "Price sweeps a prior session's high or low on elevated volume, the opposing side absorbs the aggressive flow without price following through, and cumulative delta diverges from the new price extreme. Tests whether this combination has historically preceded a reversion back inside the prior range \u2014 not assumed to be profitable.",
+    "id": "poc-sweep-absorption-reversal",
+    "name": "POC Sweep + Absorption Reversal",
+    "description": "Price sweeps through the prior session's point of control on elevated volume, the opposing side absorbs the aggressive flow without price following through, and cumulative delta diverges from the new price extreme. The question this tests is whether that combination has actually preceded a reversion back inside the prior range, without assuming the answer is yes.",
     "version": 1,
     "rules": [
       {
-        "signalType": "liquidity_sweep",
+        "signalType": "poc_sweep",
         "weight": 35.0,
         "required": true,
         "sequenceWithinBars": 5,

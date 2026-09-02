@@ -2,7 +2,7 @@ from datetime import UTC, datetime, timedelta
 
 from edge_lab.config import get_instrument
 from edge_lab.models import OHLCVBar, SyntheticOrderFlowBar
-from edge_lab.signals import absorption, delta_divergence, liquidity_sweep
+from edge_lab.signals import absorption, delta_divergence, poc_sweep
 from edge_lab.signals.base import build_detection_context
 from edge_lab.signals.registry import detect_all
 
@@ -10,12 +10,9 @@ SPEC = get_instrument("MES")
 TICK = SPEC.tick_size
 
 
-def _session_bars(day: int, n: int, base: float, low_at: int | None = None, low_price: float | None = None):
+def _session_bars(day: int, n: int, base: float) -> list[OHLCVBar]:
     bars = []
     for i in range(n):
-        low = base - 1.0
-        if low_at == i and low_price is not None:
-            low = low_price
         bars.append(
             OHLCVBar(
                 symbol="MES",
@@ -23,11 +20,35 @@ def _session_bars(day: int, n: int, base: float, low_at: int | None = None, low_
                 timestamp=datetime(2026, 3, day, 14, 30, tzinfo=UTC) + timedelta(minutes=5 * i),
                 open=base,
                 high=base + 1.0,
-                low=low,
+                low=base - 1.0,
                 close=base,
                 volume=200,
                 session="RTH",
                 bar_index=0,  # overwritten by caller
+            )
+        )
+    return bars
+
+
+def _flat_bars(day: int, n: int, price: float, volume: float = 200) -> list[OHLCVBar]:
+    """No-wick bars trading at a single price -- used to build a
+    deterministic POC (all volume lands in one bucket) and a quiet baseline
+    session that never crosses it on its own.
+    """
+    bars = []
+    for i in range(n):
+        bars.append(
+            OHLCVBar(
+                symbol="MES",
+                timeframe="5m",
+                timestamp=datetime(2026, 3, day, 14, 30, tzinfo=UTC) + timedelta(minutes=5 * i),
+                open=price,
+                high=price,
+                low=price,
+                close=price,
+                volume=volume,
+                session="RTH",
+                bar_index=0,
             )
         )
     return bars
@@ -52,44 +73,74 @@ def _reindex(bars: list[OHLCVBar]) -> list[OHLCVBar]:
     return [b.model_copy(update={"bar_index": i}) for i, b in enumerate(bars)]
 
 
-def test_liquidity_sweep_fires_on_pierce_with_elevated_volume() -> None:
-    session1 = _session_bars(day=2, n=10, base=5100.0)  # session low ~= 5099
-    session2 = _session_bars(day=3, n=10, base=5100.0)
-    # Bar 4 of session 2 pierces session 1's low (5099.0) with a wide low and high volume.
-    session2[4] = session2[4].model_copy(update={"low": 5095.0, "volume": 900})
+def test_poc_sweep_fires_on_pierce_and_reclaim_with_elevated_volume() -> None:
+    session1 = _flat_bars(day=2, n=10, price=5100.0)  # single price -> POC == 5100.0 exactly
+    session2 = _flat_bars(day=3, n=10, price=5100.5)  # trades above POC, never crosses it on its own
+    # Bar 4 pierces below the prior session's POC and closes back above it, on elevated volume.
+    session2[4] = session2[4].model_copy(update={"low": 5099.5, "close": 5100.5, "volume": 900})
     bars = _reindex(session1 + session2)
 
     orderflow = [_of_bar(i, bid=100, ask=100, cumulative_delta=0) for i in range(len(bars))]
     context = build_detection_context(bars, orderflow, SPEC)
-    conditions = liquidity_sweep.detect(bars, orderflow, context)
+    conditions = poc_sweep.detect(bars, orderflow, context)
 
     assert len(conditions) == 1
     assert conditions[0].bar_index == 14  # session2[4] -> global index 10+4
     assert conditions[0].direction == "bullish"
-    assert conditions[0].evidence["swept_level"] == 5099.0
+    assert conditions[0].evidence["swept_level"] == 5100.0
 
 
-def test_liquidity_sweep_does_not_fire_without_elevated_volume() -> None:
-    session1 = _session_bars(day=2, n=10, base=5100.0)
-    session2 = _session_bars(day=3, n=10, base=5100.0)
-    # Pierces the level, but volume is normal -> should not fire.
-    session2[4] = session2[4].model_copy(update={"low": 5095.0, "volume": 210})
+def test_poc_sweep_does_not_fire_without_elevated_volume() -> None:
+    session1 = _flat_bars(day=2, n=10, price=5100.0)
+    session2 = _flat_bars(day=3, n=10, price=5100.5)
+    # Pierces and reclaims, but volume is normal -> should not fire.
+    session2[4] = session2[4].model_copy(update={"low": 5099.5, "close": 5100.5, "volume": 210})
     bars = _reindex(session1 + session2)
     orderflow = [_of_bar(i, bid=100, ask=100, cumulative_delta=0) for i in range(len(bars))]
     context = build_detection_context(bars, orderflow, SPEC)
-    conditions = liquidity_sweep.detect(bars, orderflow, context)
+    conditions = poc_sweep.detect(bars, orderflow, context)
     assert conditions == []
 
 
-def test_liquidity_sweep_fires_only_once_per_session() -> None:
-    session1 = _session_bars(day=2, n=10, base=5100.0)
-    session2 = _session_bars(day=3, n=10, base=5100.0)
-    session2[3] = session2[3].model_copy(update={"low": 5095.0, "volume": 900})
-    session2[6] = session2[6].model_copy(update={"low": 5094.0, "volume": 900})
+def test_poc_sweep_requires_reclaim_not_just_a_pierce() -> None:
+    session1 = _flat_bars(day=2, n=10, price=5100.0)
+    session2 = _flat_bars(day=3, n=10, price=5100.5)
+    # Pierces below POC on high volume, but closes below it too -> no reclaim, should not fire.
+    # Bar is entirely at/below POC (open/high included) so it can't accidentally satisfy the
+    # bearish pierce-from-above condition either.
+    session2[4] = session2[4].model_copy(
+        update={"open": 5099.8, "high": 5099.9, "low": 5099.0, "close": 5099.8, "volume": 900}
+    )
     bars = _reindex(session1 + session2)
     orderflow = [_of_bar(i, bid=100, ask=100, cumulative_delta=0) for i in range(len(bars))]
     context = build_detection_context(bars, orderflow, SPEC)
-    conditions = liquidity_sweep.detect(bars, orderflow, context)
+    conditions = poc_sweep.detect(bars, orderflow, context)
+    assert conditions == []
+
+
+def test_poc_sweep_bearish_direction() -> None:
+    session1 = _flat_bars(day=2, n=10, price=5100.0)
+    session2 = _flat_bars(day=3, n=10, price=5099.5)  # trades below POC
+    # Bar 4 pierces above POC and closes back below it, on elevated volume.
+    session2[4] = session2[4].model_copy(update={"high": 5100.5, "close": 5099.5, "volume": 900})
+    bars = _reindex(session1 + session2)
+    orderflow = [_of_bar(i, bid=100, ask=100, cumulative_delta=0) for i in range(len(bars))]
+    context = build_detection_context(bars, orderflow, SPEC)
+    conditions = poc_sweep.detect(bars, orderflow, context)
+    assert len(conditions) == 1
+    assert conditions[0].direction == "bearish"
+    assert conditions[0].evidence["swept_level"] == 5100.0
+
+
+def test_poc_sweep_fires_only_once_per_session() -> None:
+    session1 = _flat_bars(day=2, n=10, price=5100.0)
+    session2 = _flat_bars(day=3, n=10, price=5100.5)
+    session2[3] = session2[3].model_copy(update={"low": 5099.5, "close": 5100.5, "volume": 900})
+    session2[6] = session2[6].model_copy(update={"low": 5099.0, "close": 5100.5, "volume": 900})
+    bars = _reindex(session1 + session2)
+    orderflow = [_of_bar(i, bid=100, ask=100, cumulative_delta=0) for i in range(len(bars))]
+    context = build_detection_context(bars, orderflow, SPEC)
+    conditions = poc_sweep.detect(bars, orderflow, context)
     assert len(conditions) == 1
     assert conditions[0].bar_index == 13
 
@@ -139,12 +190,12 @@ def test_delta_divergence_detector_wraps_the_feature_correctly() -> None:
 
 
 def test_registry_detect_all_merges_and_sorts_by_bar_index() -> None:
-    session1 = _session_bars(day=2, n=10, base=5100.0)
-    session2 = _session_bars(day=3, n=10, base=5100.0)
-    session2[4] = session2[4].model_copy(update={"low": 5095.0, "volume": 900})
+    session1 = _flat_bars(day=2, n=10, price=5100.0)
+    session2 = _flat_bars(day=3, n=10, price=5100.5)
+    session2[4] = session2[4].model_copy(update={"low": 5099.5, "close": 5100.5, "volume": 900})
     bars = _reindex(session1 + session2)
     orderflow = [_of_bar(i, bid=100, ask=100, cumulative_delta=0) for i in range(len(bars))]
     context = build_detection_context(bars, orderflow, SPEC)
     conditions = detect_all(bars, orderflow, context)
     assert [c.bar_index for c in conditions] == sorted(c.bar_index for c in conditions)
-    assert any(c.signal_type == "liquidity_sweep" for c in conditions)
+    assert any(c.signal_type == "poc_sweep" for c in conditions)

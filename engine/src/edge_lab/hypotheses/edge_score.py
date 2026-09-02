@@ -51,7 +51,7 @@ def score_trigger(
 ) -> EdgeScoreResult:
     """Score one candidate trigger bar. Callers decide what counts as a
     trigger (typically: the bar where the setup's anchor signal, e.g.
-    liquidity_sweep, first fires) — this function only scores it.
+    poc_sweep, first fires) — this function only scores it.
     """
     conditions_by_type = group_conditions_by_type(conditions)
 
@@ -103,7 +103,7 @@ def find_setup_triggers(
     conditions: Sequence[DetectedCondition],
 ) -> list[EdgeScoreResult]:
     """Score every occurrence of the setup's anchor signal (e.g. every
-    liquidity_sweep) as a candidate trigger, in bar order.
+    poc_sweep) as a candidate trigger, in bar order.
     """
     anchors = [c for c in conditions if c.signal_type == anchor_signal_type]
     return [score_trigger(setup, a.bar_index, a.direction, conditions) for a in anchors]

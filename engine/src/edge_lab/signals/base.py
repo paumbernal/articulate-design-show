@@ -14,12 +14,13 @@ from typing import Protocol
 
 from edge_lab.config import InstrumentSpec
 from edge_lab.data.session_calendar import session_index_groups
-from edge_lab.features.market_structure import SwingPoint, find_swing_points, session_high_low
+from edge_lab.features.market_structure import SwingPoint, find_swing_points
 from edge_lab.features.orderflow_features import (
     delta_price_divergence,
     rolling_volume_average,
     volume_multiple,
 )
+from edge_lab.features.volume_profile import compute_volume_profile
 from edge_lab.models import DetectedCondition, OHLCVBar, SyntheticOrderFlowBar
 from edge_lab.models.enums import Direction
 
@@ -31,8 +32,7 @@ class DetectionContext:
     volume_avg: list[float]
     volume_mult: list[float]
     divergence: list[Direction | None]
-    prior_session_high: list[float | None]
-    prior_session_low: list[float | None]
+    prior_session_poc: list[float | None]
 
 
 def build_detection_context(
@@ -43,17 +43,15 @@ def build_detection_context(
     volume_window: int = 20,
     divergence_lookback: int = 3,
 ) -> DetectionContext:
-    prior_high: list[float | None] = [None] * len(bars)
-    prior_low: list[float | None] = [None] * len(bars)
+    prior_poc: list[float | None] = [None] * len(bars)
     groups = session_index_groups(bars)
     for group_idx, (start, end) in enumerate(groups):
         if group_idx == 0:
             continue
         prev_start, prev_end = groups[group_idx - 1]
-        high, low = session_high_low(bars[prev_start:prev_end])
+        poc = compute_volume_profile(bars[prev_start:prev_end], spec.tick_size, bucket_ticks=4).poc
         for i in range(start, end):
-            prior_high[i] = high
-            prior_low[i] = low
+            prior_poc[i] = poc
 
     return DetectionContext(
         spec=spec,
@@ -61,8 +59,7 @@ def build_detection_context(
         volume_avg=rolling_volume_average(bars, window=volume_window),
         volume_mult=volume_multiple(bars, window=volume_window),
         divergence=delta_price_divergence(bars, orderflow, lookback=divergence_lookback),
-        prior_session_high=prior_high,
-        prior_session_low=prior_low,
+        prior_session_poc=prior_poc,
     )
 
 

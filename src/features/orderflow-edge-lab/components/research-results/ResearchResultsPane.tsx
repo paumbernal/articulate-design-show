@@ -44,8 +44,7 @@ const ResearchResultsPane = ({ symbol }: ResearchResultsPaneProps) => {
   return (
     <div className={`flex flex-col gap-6 transition-opacity ${isFetching ? "opacity-60" : ""}`}>
       <p className="text-sm text-text-muted max-w-2xl">
-        Historical performance of {setup.name} over {BACKTEST_WINDOW.start} to {BACKTEST_WINDOW.end}. This
-        answers whether the combination of conditions has actually meant anything — not whether it will again.
+        How {setup.name} actually performed between {BACKTEST_WINDOW.start} and {BACKTEST_WINDOW.end}.
       </p>
 
       <BacktestConfigForm
@@ -84,7 +83,7 @@ const ResearchResultsPane = ({ symbol }: ResearchResultsPaneProps) => {
 
       {statistics.sampleSize === 0 && (
         <p className="text-text-muted text-sm font-mono text-center py-8">
-          No trades match the current filters — try lowering the minimum Edge Score.
+          No trades match the current filters. Try lowering the minimum Edge Score.
         </p>
       )}
     </div>

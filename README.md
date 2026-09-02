@@ -17,7 +17,7 @@ Live in this portfolio at `/orderflow`. Source: [`engine/`](engine/) (Python res
 
 ## Project Overview
 
-OrderFlow Edge Lab detects combinations of order-flow conditions (a liquidity sweep, absorption of aggressive volume, delta divergence) in CME micro futures data, scores how many of a hypothesis's predefined conditions are present at a given moment (the **Edge Score**), and then — separately — backtests whether that combination has actually preceded the outcome the hypothesis predicts, with statistical validation designed to catch the ways backtests lie to you.
+OrderFlow Edge Lab detects combinations of order-flow conditions (a sweep of the prior session's point of control, absorption of aggressive volume, delta divergence) in CME micro futures data, scores how many of a hypothesis's predefined conditions are present at a given moment (the **Edge Score**), and then — separately — backtests whether that combination has actually preceded the outcome the hypothesis predicts, with statistical validation designed to catch the ways backtests lie to you.
 
 The four panes of the research terminal correspond to four different questions, deliberately kept separate:
 
@@ -32,7 +32,7 @@ The four panes of the research terminal correspond to four different questions, 
 
 **Can combinations of order-flow and market-microstructure signals be systematically identified and tested to determine whether they contain statistically meaningful information about subsequent price behaviour?**
 
-The MVP tests one hypothesis end to end — **Liquidity Sweep + Absorption Reversal**: price sweeps a prior session's high or low on elevated volume, the opposing side absorbs the aggressive flow without price following through, and cumulative delta diverges from the new price extreme. The system does not assume this is profitable. It's built to find out.
+The MVP tests one hypothesis end to end — **POC Sweep + Absorption Reversal**: price sweeps through the prior session's point of control (the price where the most volume actually traded, not just a raw session high/low) on elevated volume, the opposing side absorbs the aggressive flow without price following through, and cumulative delta diverges from the new price extreme. The system does not assume this is profitable. It's built to find out.
 
 ## Why I Built It
 
@@ -47,13 +47,13 @@ engine/                          Python research engine
     models/                      pydantic models — the Python <-> TS contract (camelCase JSON)
     data/                        provider.py (interface) + synthetic_provider.py + synthetic_generator.py
     features/                    volume profile, market structure, order-flow features
-    signals/                     liquidity_sweep, absorption, delta_divergence + registry
-    hypotheses/                  edge_score.py + setups/liquidity_sweep_absorption_reversal.py
+    signals/                     poc_sweep, absorption, delta_divergence + registry
+    hypotheses/                  edge_score.py + setups/poc_sweep_absorption_reversal.py
     backtest/                    fills, trade simulation, statistics, IS/OOS validation
     api/                         FastAPI app
     cli/                         export_schemas.py, export_artifacts.py
   schemas/                       JSON Schema exports (checked in, validated by a Vitest contract test)
-  tests/                         78 pytest tests — models, generator, features, signals, Edge Engine, backtest, API
+  tests/                         80 pytest tests — models, generator, features, signals, Edge Engine, backtest, API
 
 src/features/orderflow-edge-lab/ React research terminal
   types/                         Hand-mirrored TS types + contract.test.ts (validates against engine/schemas/)
@@ -93,19 +93,19 @@ Given qualifying triggers (Edge Score ≥ threshold, required conditions met), t
 
 ## Results
 
-From the shipped static build — `Liquidity Sweep + Absorption Reversal`, MES, 2026-01-05 to 2026-06-26, min Edge Score 70:
+From the shipped static build — `POC Sweep + Absorption Reversal`, MES, 2026-01-05 to 2026-06-26, min Edge Score 70:
 
 | | |
 |---|---|
-| Sample size | 49 (34 in-sample, 15 out-of-sample) |
-| Win rate | 89.8% (95% CI: 78.2% – 95.6%) |
-| Avg R | +0.61 (95% CI: 0.28 – 0.93) |
-| Expectancy | +0.61R |
-| Profit factor | 4.37 |
-| Max drawdown | -2.90R |
-| p-value | 0.00044 |
+| Sample size | 27 (18 in-sample, 9 out-of-sample) |
+| Win rate | 74.1% (95% CI: 55.3% – 86.8%) |
+| Avg R | +0.39 (95% CI: -0.12 – 0.91) |
+| Expectancy | +0.39R |
+| Profit factor | 1.68 |
+| Max drawdown | -3.73R |
+| p-value | 0.129 |
 
-These are genuine numbers from the system, on synthetic data — **not evidence of a real edge**, for two compounding reasons: the data is synthetic, and the out-of-sample count (15) is below the engine's own 30-trade threshold for treating a result as more than exploratory. The system says this itself, in the warnings that ship with every result. That's the point — a result that looks this clean *should* make you check the sample size before believing it, and the UI makes sure you can't miss that check.
+These are genuine numbers from the system, on synthetic data, and this time they're a better illustration of the point than a clean result would have been: the p-value is not significant, the confidence interval on average R straddles zero, and the sample is small on both counts the system checks for (27 total, 9 out-of-sample). The honest read is "no conclusion either way" — which is a legitimate, common outcome in real research, and part of why the system is built to say so plainly instead of only ever reporting the flattering number.
 
 ## Engineering Challenges
 
@@ -138,6 +138,6 @@ npm run build && npm run preview   # production build — verify it works with Z
 npm run engine:export          # regenerate public/data/orderflow-edge-lab/*.json after an engine change
 
 npm test                       # frontend tests (vitest)
-npm run engine:test            # engine tests (pytest) — 78 tests
+npm run engine:test            # engine tests (pytest) — 80 tests
 npm run engine:lint            # ruff check + format --check
 ```

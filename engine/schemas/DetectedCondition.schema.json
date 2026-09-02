@@ -35,7 +35,7 @@
       "type": "string"
     },
     "signalType": {
-      "description": "Key into the signal registry, e.g. 'liquidity_sweep', 'absorption'",
+      "description": "Key into the signal registry, e.g. 'poc_sweep', 'absorption'",
       "title": "Signaltype",
       "type": "string"
     },

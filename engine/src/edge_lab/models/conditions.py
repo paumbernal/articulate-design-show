@@ -23,7 +23,7 @@ class DetectedCondition(CamelModel):
     bar_index: int = Field(ge=0)
     timestamp: datetime
     signal_type: SignalType = Field(
-        description="Key into the signal registry, e.g. 'liquidity_sweep', 'absorption'"
+        description="Key into the signal registry, e.g. 'poc_sweep', 'absorption'"
     )
     direction: Direction
     strength: float = Field(

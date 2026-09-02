@@ -126,18 +126,18 @@ export function computeStatistics(
 export function buildValidationWarnings(trades: BacktestTrade[]): string[] {
   const warnings: string[] = [
     "This is a research backtest on synthetic data, not a live-trading simulation.",
-    "Fills assume no slippage beyond the fixed cost assumption on every trade — real fills may be worse, especially in fast markets.",
+    "Fills assume no slippage beyond the fixed cost assumption on every trade. Real fills may be worse, especially in fast markets.",
     "When a bar touches both the stop and target, the stop is conservatively assumed to fill first; the true intrabar sequence is unknowable from OHLC bars.",
-    "Detected conditions and Edge Scores are retrospective pattern matches, not forecasts — a high score describes the past, not the future.",
+    "Detected conditions and Edge Scores are retrospective pattern matches, not forecasts. A high score describes the past, not the future.",
   ];
   const outOfSample = trades.filter((t) => t.isOutOfSample);
   const inSample = trades.filter((t) => !t.isOutOfSample);
   if (trades.length < 30) {
-    warnings.push(`Total sample size (${trades.length}) is below 30 — treat any statistic here as exploratory, not conclusive.`);
+    warnings.push(`Total sample size (${trades.length}) is below 30. Treat any statistic here as exploratory, not conclusive.`);
   }
   if (outOfSample.length < 30) {
     warnings.push(
-      `Out-of-sample count (${outOfSample.length}) is below 30 — in-sample performance may not generalize; this is a primary overfitting risk.`,
+      `Out-of-sample count (${outOfSample.length}) is below 30. In-sample performance may not generalize; this is a primary overfitting risk.`,
     );
   }
   if (inSample.length === 0 || outOfSample.length === 0) {
