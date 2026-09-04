@@ -1,13 +1,9 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Github, ArrowUpRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
-import { MouseEffectBackground } from "@/components/ui/mouse-effect-background";
 import NeonBorder from "@/components/ui/neon-border";
-import FluidText from "@/components/ui/fluid-text";
-import StarfieldButton from "@/components/ui/starfield-button";
-import { useTheme } from "@/hooks/use-theme";
 
 type Project = {
   slug: string;
@@ -19,7 +15,6 @@ type Project = {
   github?: string;
   live?: string;
   visual: "story" | "concept";
-  dotBackground?: boolean;
   compact?: boolean;
   buildStoryUrl?: string;
   storyButtonLabel?: string;
@@ -58,7 +53,6 @@ const projects: Project[] = [
     tech: ["Python", "FastAPI", "React", "TypeScript", "pydantic", "scipy"],
     github: "https://github.com/paumbernal/OrderFlow-Edge-Lab",
     visual: "story",
-    dotBackground: true,
     compact: true,
     buildStoryUrl: "/orderflow",
     storyButtonLabel: "Open Terminal",
@@ -84,33 +78,9 @@ const codeSnippet = `class SetupDefinition(CamelModel):
         score = sum(r.weight for r in conditions)
         return EdgeScoreResult(score=score, max_score=self.max_score)`;
 
-const ProjectsTitle = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [fontSize, setFontSize] = useState(48);
-  const { theme } = useTheme();
-
-  useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-    const update = () => setFontSize(Math.min(72, Math.max(28, el.clientWidth * 0.068)));
-    update();
-    const ro = new ResizeObserver(update);
-    ro.observe(el);
-    return () => ro.disconnect();
-  }, []);
-
-  return (
-    <div ref={containerRef} className="w-full flex justify-center" style={{ height: fontSize * 1.3 }}>
-      <h1 className="sr-only">Projects</h1>
-      <div aria-hidden="true" className="w-full h-full">
-        <FluidText
-          font={{ fontFamily: "Inter", fontWeight: 900, fontSize: `${fontSize}px`, letterSpacing: "-0.03em" }}
-          color={theme === "dark" ? "#FFFFFF" : "#000000"}
-        />
-      </div>
-    </div>
-  );
-};
+const ProjectsTitle = () => (
+  <h1 className="font-display text-center text-[13vw] sm:text-6xl md:text-7xl leading-none">Projects</h1>
+);
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -179,7 +149,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-2 text-foreground hover:text-text-muted transition-colors duration-200"
+                      className="inline-flex items-center gap-2 text-foreground md:hover:text-text-muted transition-colors duration-200"
                     >
                       <Github className="w-4 h-4" />
                       GitHub
@@ -196,13 +166,13 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-2 text-foreground hover:text-text-muted transition-colors duration-200"
+                      className="inline-flex items-center gap-2 text-foreground md:hover:text-text-muted transition-colors duration-200"
                     >
                       Live Demo
                       <ArrowUpRight className="w-4 h-4" />
                     </a>
                   )}
-                  <span className="ml-auto inline-flex items-center gap-1 text-text-muted group-hover:text-foreground group-hover:translate-x-1 transition-all duration-300">
+                  <span className="ml-auto inline-flex items-center gap-1 text-text-muted md:group-hover:text-foreground md:group-hover:translate-x-1 transition-all duration-300">
                     Read more
                     <ArrowUpRight className="w-4 h-4" />
                   </span>
@@ -216,12 +186,9 @@ const Projects = () => {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 + index * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                whileHover={{ y: -4 }}
-                className="group relative rounded-[28px]"
+                className="group relative rounded-[28px] md:hover:-translate-y-1 transition-transform duration-300"
               >
-                {/* Card surface — clipped to the rounded corners; the neon
-                    border below sits outside this so its glow isn't cut off */}
-                <div className="relative rounded-[28px] border border-foreground/10 bg-foreground/[0.03] backdrop-blur-2xl shadow-[inset_0_1px_0_0_hsl(var(--foreground)/0.15),0_8px_40px_-16px_rgba(0,0,0,0.25)] hover:border-foreground/20 hover:bg-foreground/[0.05] transition-colors duration-300 overflow-hidden">
+                <div className="relative rounded-[28px] border border-foreground/10 bg-foreground/[0.03] backdrop-blur-2xl shadow-[inset_0_1px_0_0_hsl(var(--foreground)/0.15),0_8px_40px_-16px_rgba(0,0,0,0.25)] md:hover:border-foreground/20 md:hover:bg-foreground/[0.05] transition-colors duration-300 overflow-hidden">
                 {/* Glass sheen */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-foreground/[0.08] via-transparent to-transparent" />
 
@@ -239,79 +206,33 @@ const Projects = () => {
                   className="relative grid md:grid-cols-2 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-green"
                 >
                   {/* Text side */}
-                  {project.dotBackground ? (
-                    <MouseEffectBackground
-                      className={`${project.compact ? "p-6 md:p-8" : "p-8 md:p-10"} flex flex-col justify-between`}
-                      dotSpacing={22}
-                    >
-                      {textContent}
-                    </MouseEffectBackground>
-                  ) : (
-                    <div className="p-8 md:p-10 flex flex-col justify-between">{textContent}</div>
-                  )}
+                  <div className={`${project.compact ? "p-6 md:p-8" : "p-8 md:p-10"} flex flex-col justify-between`}>
+                    {textContent}
+                  </div>
 
                   {/* Visual side */}
                   {project.visual === "story" && project.buildStoryUrl ? (
-                    <MouseEffectBackground
-                      className={`flex items-center justify-center ${
+                    <div
+                      className={`relative flex items-center justify-center overflow-hidden ${
                         project.compact ? "p-6 min-h-[160px]" : "p-8 min-h-[240px]"
                       }`}
-                      dotSpacing={22}
-                      backdrop={
-                        <pre className="w-full h-full flex items-center justify-center font-mono text-[10px] md:text-[11px] leading-relaxed text-text-muted/20 overflow-hidden whitespace-pre-wrap px-6">
-                          <code>{project.codeSnippet ?? codeSnippet}</code>
-                        </pre>
-                      }
                     >
-                      <StarfieldButton
-                        label={project.storyButtonLabel ?? "How I Built It"}
+                      <pre className="absolute inset-0 flex items-center justify-center font-mono text-[10px] md:text-[11px] leading-relaxed text-text-muted/20 overflow-hidden whitespace-pre-wrap px-6 pointer-events-none select-none">
+                        <code>{project.codeSnippet ?? codeSnippet}</code>
+                      </pre>
+                      <button
+                        type="button"
                         onClick={(e) => {
                           e.preventDefault();
                           e.stopPropagation();
                           navigate(project.buildStoryUrl!);
                         }}
-                        font={{
-                          fontFamily:
-                            "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-                          fontWeight: 500,
-                          fontSize: 14,
-                          textAlign: "left",
-                          lineHeight: "1.5em",
-                          letterSpacing: "0em",
-                        }}
-                        padding="10px 20px 10px 20px"
-                        rounded={100}
-                        colors={{ fill: "rgba(10,10,10,0.85)", textColor: "#FFFFFF" }}
-                        addIcon
-                        gap={8}
-                        icon={{
-                          icon: "arrowdiagonal",
-                          side: "right",
-                          size: 16,
-                          type: "symbol",
-                          color: "#FFFFFF",
-                          symbol: "↗",
-                          padding: 0,
-                          rounded: 0,
-                        }}
-                        border={{
-                          borderColor: "rgba(255,255,255,0.15)",
-                          borderStyle: "solid",
-                          borderWidth: 1,
-                        }}
-                        glow={{ size: 14, color: "#CC9149", opacity: 0 }}
-                        stroke={{
-                          size: 56,
-                          color: "#CC9149",
-                          count: 1,
-                          speed: 50,
-                          movement: "continuous",
-                          direction: "ccw",
-                          thickness: 2,
-                        }}
-                        pixel={{ size: 3, color: "#CC9149", density: 50, brightness: 100 }}
-                      />
-                    </MouseEffectBackground>
+                        className="relative inline-flex items-center gap-2 rounded-full border border-white/15 bg-[rgba(10,10,10,0.85)] px-5 py-2.5 font-mono text-sm text-white transition-colors md:hover:bg-black"
+                      >
+                        {project.storyButtonLabel ?? "How I Built It"}
+                        <ArrowUpRight className="w-4 h-4" />
+                      </button>
+                    </div>
                   ) : (
                     <div
                       className={`border-t md:border-t-0 md:border-l border-foreground/10 bg-foreground/[0.02] flex items-center justify-center ${
@@ -328,15 +249,16 @@ const Projects = () => {
                 </div>
                 </div>
 
-                <NeonBorder
-                  style={{ position: "absolute", inset: 0, zIndex: 10, pointerEvents: "none" }}
-                  color="#CC9149"
-                  rounded={14}
-                  thickness={2}
-                  borderSize={28}
-                  glow={60}
-                  speed={9}
-                />
+                <div className="hidden md:block">
+                  <NeonBorder
+                    style={{ position: "absolute", inset: 0, zIndex: 10, pointerEvents: "none" }}
+                    color="#CC9149"
+                    rounded={14}
+                    thickness={2}
+                    borderSize={28}
+                    glow={60}
+                  />
+                </div>
               </motion.div>
             );
           })}

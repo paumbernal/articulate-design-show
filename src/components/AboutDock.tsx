@@ -5,7 +5,7 @@ import { GithubMark } from "@/components/ui/github-mark";
 
 const iconClass = "h-full w-full text-foreground/70";
 
-const DOCK_ITEMS: DockItem[] = [
+export const DOCK_ITEMS: DockItem[] = [
   { title: "Home", href: "/", icon: <Home className={iconClass} /> },
   { title: "Contact", href: "/contact", icon: <Phone className={iconClass} /> },
   {

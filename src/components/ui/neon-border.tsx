@@ -1,10 +1,11 @@
-// Neon Border — Originkit
-// Using component defaults.
+// Neon Border — Originkit, trimmed to a static glow.
+// The original component animated the glow around the perimeter via a
+// requestAnimationFrame loop; this project only ever uses it frozen in
+// place, so the animation/easing machinery was removed rather than left
+// unused — see git history if the animated version is needed again.
 
 import * as React from "react";
 import { useEffect, useRef, useState } from "react";
-
-type Movement = "continuous" | "step";
 
 type Props = {
     color?: string;
@@ -12,8 +13,6 @@ type Props = {
     thickness?: number;
     borderSize?: number;
     glow?: number;
-    movement?: Movement;
-    speed?: number;
     style?: React.CSSProperties;
 };
 
@@ -23,8 +22,6 @@ const DEFAULTS = {
     thickness: 6,
     borderSize: 50,
     glow: 100,
-    movement: "continuous" as const,
-    speed: 16,
 };
 
 const EDGE_COPIES = 2;
@@ -71,12 +68,6 @@ function perimeterPoint(u: number, w: number, h: number): [number, number] {
     if (d < w + h) return [w, d - w];
     if (d < w * 2 + h) return [w - (d - w - h), h];
     return [0, h - (d - w * 2 - h)];
-}
-
-function cornerLap(k: number, w: number, h: number) {
-    const p = 2 * (w + h);
-    const at = [0, w / p, (w + h) / p, (w * 2 + h) / p];
-    return Math.floor(k / 4) + at[((k % 4) + 4) % 4];
 }
 
 function perimeterAngle(u: number, w: number, h: number) {
@@ -136,39 +127,6 @@ function buildArc(
     )})`;
 }
 
-const SLOWEST_CYCLE = 30;
-const FASTEST_CYCLE = 4;
-const SLOWEST_STEP = 3;
-const FASTEST_STEP = 0.35;
-const STEP_EASE = [0.72, 0.16, 0.18, 1.05];
-const GLIDE_EASE = [0.65, 0, 0.35, 1];
-
-function makeEaseFn(pts: number[]) {
-    const [x1, y1, x2, y2] = pts;
-    if (x1 === y1 && x2 === y2) return (t: number) => t;
-    const bez = (a: number, b: number, t: number) => {
-        const u = 1 - t;
-        return 3 * u * u * t * a + 3 * u * t * t * b + t * t * t;
-    };
-    return (t: number) => {
-        const x = Math.max(0, Math.min(1, t));
-        let s = x;
-        for (let i = 0; i < 8; i++) {
-            const cx = bez(x1, x2, s) - x;
-            const u = 1 - s;
-            const dx =
-                3 * u * u * x1 + 6 * u * s * (x2 - x1) + 3 * s * s * (1 - x2);
-            if (Math.abs(dx) < 1e-6) break;
-            s -= cx / dx;
-            s = Math.max(0, Math.min(1, s));
-        }
-        return bez(y1, y2, s);
-    };
-}
-
-const stepEase = makeEaseFn(STEP_EASE);
-const glideEase = makeEaseFn(GLIDE_EASE);
-
 const BAND_MASK: React.CSSProperties = {
     WebkitMaskImage: "linear-gradient(#fff 0 0), linear-gradient(#fff 0 0)",
     WebkitMaskClip: "content-box, border-box",
@@ -185,16 +143,8 @@ export default function NeonBorder(props: Props) {
         thickness = DEFAULTS.thickness,
         borderSize = DEFAULTS.borderSize,
         glow = DEFAULTS.glow,
-        movement = DEFAULTS.movement,
-        speed = DEFAULTS.speed,
         style,
     } = props;
-
-    const groupARef = useRef<HTMLDivElement>(null);
-    const groupBRef = useRef<HTMLDivElement>(null);
-
-    const live = useRef({ speed, movement, borderSize, color });
-    live.current = { speed, movement, borderSize, color };
 
     const rootRef = useRef<HTMLDivElement>(null);
     const sizeRef = useRef({ w: 0, h: 0 });
@@ -212,67 +162,6 @@ export default function NeonBorder(props: Props) {
         });
         ro.observe(el);
         return () => ro.disconnect();
-    }, []);
-
-    useEffect(() => {
-        let raf = 0;
-        let last = performance.now();
-        let lap = 0;
-        let corner = 0;
-        let stepT = 0;
-
-        const frame = (now: number) => {
-            const dt = Math.min(0.05, Math.max(0, (now - last) / 1000));
-            last = now;
-            const p = live.current;
-            const s = Math.max(0, Math.min(20, p.speed));
-
-            if (s > 0) {
-                const step = p.movement === "step";
-                const beat = step
-                    ? SLOWEST_STEP +
-                      ((FASTEST_STEP - SLOWEST_STEP) * (s - 1)) / 19
-                    : (SLOWEST_CYCLE +
-                          ((FASTEST_CYCLE - SLOWEST_CYCLE) * (s - 1)) / 19) /
-                      4;
-
-                stepT += dt / beat;
-                while (stepT >= 1) {
-                    stepT -= 1;
-                    corner += 1;
-                }
-                const eased = step
-                    ? stepEase(Math.min(1, stepT * 2))
-                    : glideEase(stepT);
-
-                const { w, h } = sizeRef.current;
-                const fw = w > 0 ? w : 100;
-                const fh = h > 0 ? h : 100;
-                const from = cornerLap(corner, fw, fh);
-                const to = cornerLap(corner + 1, fw, fh);
-                lap = from + (to - from) * eased;
-
-                const a = groupARef.current;
-                if (a) {
-                    a.style.setProperty(
-                        "--arc",
-                        buildArc(lap, p.borderSize, w, h, p.color)
-                    );
-                }
-                const b = groupBRef.current;
-                if (b) {
-                    b.style.setProperty(
-                        "--arc",
-                        buildArc(lap + 0.5, p.borderSize, w, h, p.color)
-                    );
-                }
-            }
-
-            raf = requestAnimationFrame(frame);
-        };
-        raf = requestAnimationFrame(frame);
-
-        return () => cancelAnimationFrame(raf);
     }, []);
 
     const thick = Math.max(1, Math.min(10, thickness));
@@ -325,9 +214,11 @@ export default function NeonBorder(props: Props) {
         </div>
     );
 
-    const glowGroup = (start: number, ref: React.Ref<HTMLDivElement>) => (
+    // start = 0 and 0.5 park the two glow arcs at opposite corners of the
+    // perimeter; since there's no animation loop anymore, that's where
+    // they stay.
+    const glowGroup = (start: number) => (
         <div
-            ref={ref}
             style={
                 {
                     position: "absolute",
@@ -369,8 +260,8 @@ export default function NeonBorder(props: Props) {
                 ...style,
             }}
         >
-            {glowGroup(0, groupARef)}
-            {glowGroup(0.5, groupBRef)}
+            {glowGroup(0)}
+            {glowGroup(0.5)}
         </div>
     );
 }
