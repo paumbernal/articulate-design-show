@@ -3,23 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pau Martinez Bernal — Finance & Market Analysis</title>
-    <meta name="description" content="Portfolio of Pau Martinez Bernal, a finance and market analyst from Manchester focused on order flow, options flow, and market positioning." />
+    <title>Pau Martinez Bernal — Quant Research & Market Analysis</title>
+    <meta name="description" content="Portfolio of Pau Martinez Bernal, a researcher and developer building quantitative market research tools — order flow analysis and Monte Carlo risk simulation." />
     <meta name="author" content="Pau Martinez Bernal" />
+    <link rel="canonical" href="https://paumartinez.uk/" />
 
-    <meta property="og:title" content="Pau Martinez Bernal — Finance & Market Analysis" />
-    <meta property="og:description" content="Order flow, options flow, and market positioning analysis." />
+    <meta property="og:title" content="Pau Martinez Bernal — Quant Research & Market Analysis" />
+    <meta property="og:description" content="Order flow analysis and Monte Carlo risk simulation projects." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://paumartinez.uk/" />
+    <meta property="og:image" content="https://paumartinez.uk/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@paumbernal" />
+    <meta name="twitter:title" content="Pau Martinez Bernal — Quant Research & Market Analysis" />
+    <meta name="twitter:description" content="Order flow analysis and Monte Carlo risk simulation projects." />
+    <meta name="twitter:image" content="https://paumartinez.uk/og-image.png" />
 
     <script>
+      // Applies the theme before first paint to avoid a flash of the wrong theme.
+      // Defaults to dark; only an explicit stored "light" opts out.
       (function () {
         try {
           var stored = localStorage.getItem("pmb-theme");
-          if (stored === "dark") document.documentElement.classList.add("dark");
-        } catch (e) {}
+          if (stored !== "light") document.documentElement.classList.add("dark");
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
       })();
     </script>
   </head>

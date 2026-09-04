@@ -10,7 +10,7 @@ const Navigation = () => {
 
   return (
     <>
-      {/* Top Left - Back to Home */}
+      {/* Top Left - Back to Home (non-home pages only) */}
       {!isHomePage && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -33,12 +33,12 @@ const Navigation = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="fixed top-8 right-8 z-50"
+        className="fixed top-8 right-8 z-50 flex items-center gap-1"
       >
         <button
           onClick={toggleTheme}
           aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-className="flex items-center justify-center w-9 h-9 rounded-full text-foreground hover:opacity-70 transition-opacity"
+          className="flex items-center justify-center w-9 h-9 rounded-full text-foreground hover:opacity-70 transition-opacity"
         >
           {theme === "dark" ? (
             <Sun size={16} strokeWidth={2} />

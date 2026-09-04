@@ -55,7 +55,7 @@ const DetectedConditionsPane = ({ symbol }: DetectedConditionsPaneProps) => {
   };
 
   if (isLoading) {
-    return <div className="p-8 text-text-muted text-sm font-mono">Loading detected conditions…</div>;
+    return <div className="p-8 text-text-muted text-sm ">Loading detected conditions…</div>;
   }
 
   return (
@@ -71,7 +71,7 @@ const DetectedConditionsPane = ({ symbol }: DetectedConditionsPaneProps) => {
             key={type}
             type="button"
             onClick={() => toggleType(type)}
-            className={`flex items-center gap-2 font-mono text-xs px-3 py-1.5 rounded-full border transition-colors ${
+            className={`flex items-center gap-2 text-xs px-3 py-1.5 rounded-full border transition-colors ${
               activeTypes.has(type)
                 ? "border-foreground/30 text-foreground"
                 : "border-foreground/10 text-text-faded"
@@ -89,28 +89,28 @@ const DetectedConditionsPane = ({ symbol }: DetectedConditionsPaneProps) => {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="font-mono text-xs">Signal</TableHead>
-                <TableHead className="font-mono text-xs">Direction</TableHead>
-                <TableHead className="font-mono text-xs">Date</TableHead>
-                <TableHead className="font-mono text-xs">Time</TableHead>
-                <TableHead className="font-mono text-xs">Strength</TableHead>
-                <TableHead className="font-mono text-xs">Evidence</TableHead>
+                <TableHead className="text-xs">Signal</TableHead>
+                <TableHead className="text-xs">Direction</TableHead>
+                <TableHead className="text-xs">Date</TableHead>
+                <TableHead className="text-xs">Time</TableHead>
+                <TableHead className="text-xs">Strength</TableHead>
+                <TableHead className="text-xs">Evidence</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {filtered.slice(0, 200).map((c) => (
                 <TableRow key={c.id}>
-                  <TableCell className="font-mono text-xs whitespace-nowrap">
+                  <TableCell className="text-xs whitespace-nowrap">
                     <span className={`inline-block w-1.5 h-1.5 rounded-full mr-2 ${SIGNAL_DOT[c.signalType]}`} />
                     {SIGNAL_LABELS[c.signalType] ?? c.signalType}
                   </TableCell>
                   <TableCell>
                     <DirectionBadge direction={c.direction} />
                   </TableCell>
-                  <TableCell className="font-mono text-xs text-text-muted">{formatDate(c.timestamp, spec.timezone)}</TableCell>
-                  <TableCell className="font-mono text-xs text-text-muted">{formatTime(c.timestamp, spec.timezone)}</TableCell>
-                  <TableCell className="font-mono text-xs">{(c.strength * 100).toFixed(0)}%</TableCell>
-                  <TableCell className="font-mono text-[10px] text-text-muted">
+                  <TableCell className="text-xs text-text-muted">{formatDate(c.timestamp, spec.timezone)}</TableCell>
+                  <TableCell className="text-xs text-text-muted">{formatTime(c.timestamp, spec.timezone)}</TableCell>
+                  <TableCell className="text-xs">{(c.strength * 100).toFixed(0)}%</TableCell>
+                  <TableCell className="text-[10px] text-text-muted">
                     {Object.entries(c.evidence)
                       .map(([k, v]) => `${k}=${typeof v === "number" ? v.toFixed(2) : v}`)
                       .join(", ")}
@@ -122,7 +122,7 @@ const DetectedConditionsPane = ({ symbol }: DetectedConditionsPaneProps) => {
         </div>
       </div>
       {filtered.length === 0 && (
-        <p className="text-text-muted text-sm font-mono text-center py-8">No conditions match the current filter.</p>
+        <p className="text-text-muted text-sm text-center py-8">No conditions match the current filter.</p>
       )}
     </div>
   );

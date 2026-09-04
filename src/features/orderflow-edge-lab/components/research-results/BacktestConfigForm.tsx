@@ -32,10 +32,10 @@ const BacktestConfigForm = ({
     <div className="flex flex-col sm:flex-row sm:items-center gap-6 border border-foreground/10 rounded-xl p-4 bg-foreground/[0.02]">
       <div className="flex-1 min-w-[220px]">
         <div className="flex items-center justify-between mb-2">
-          <label htmlFor="min-edge-score" className="font-mono text-[10px] uppercase tracking-wide text-text-muted">
+          <label htmlFor="min-edge-score" className="text-[10px] uppercase tracking-wide text-text-muted">
             Min Edge Score
           </label>
-          <span className="font-mono text-xs font-bold">{displayValue}</span>
+          <span className="text-xs font-bold">{displayValue}</span>
         </div>
         <Slider
           id="min-edge-score"
@@ -49,16 +49,16 @@ const BacktestConfigForm = ({
       </div>
 
       <div>
-        <label className="font-mono text-[10px] uppercase tracking-wide text-text-muted mb-2 block">Session</label>
+        <label className="text-[10px] uppercase tracking-wide text-text-muted mb-2 block">Session</label>
         <Select value={session} onValueChange={(v) => onSessionChange(v as Session | "ANY")}>
-          <SelectTrigger className="w-[120px] font-mono text-xs h-9">
+          <SelectTrigger className="w-[120px] text-xs h-9">
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="ANY" className="font-mono text-xs">
+            <SelectItem value="ANY" className="text-xs">
               Any
             </SelectItem>
-            <SelectItem value="RTH" className="font-mono text-xs">
+            <SelectItem value="RTH" className="text-xs">
               RTH
             </SelectItem>
           </SelectContent>

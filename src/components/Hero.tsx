@@ -42,14 +42,14 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         className="text-center"
       >
-        <p className="font-mono text-2xl md:text-4xl text-foreground lowercase tracking-tight">
+        <h1 className="font-mono text-[1.625rem] md:text-[2.5rem] text-foreground lowercase tracking-tight">
           {typed}
-        </p>
+        </h1>
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={finished ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-6 flex items-center justify-center gap-6 font-mono text-sm md:text-base lowercase tracking-wide"
+          className="relative -left-[5px] -top-[10px] mt-4 flex items-center justify-center gap-3 font-mono text-sm md:text-base lowercase tracking-wide"
         >
           <Link
             to="/projects"
@@ -63,6 +63,13 @@ const Hero = () => {
             className="inline-block text-foreground hover:text-primary transition-all duration-300 hover:-translate-y-0.5"
           >
             about
+          </Link>
+          <span className="text-text-muted">/</span>
+          <Link
+            to="/contact"
+            className="inline-block text-foreground hover:text-primary transition-all duration-300 hover:-translate-y-0.5"
+          >
+            contact
           </Link>
         </motion.div>
       </motion.div>

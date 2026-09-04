@@ -29,7 +29,7 @@ const EdgeEnginePane = ({ symbol }: EdgeEnginePaneProps) => {
   );
 
   if (setupsLoading || !setup) {
-    return <div className="p-8 text-text-muted text-sm font-mono">Loading setup definition…</div>;
+    return <div className="p-8 text-text-muted text-sm ">Loading setup definition…</div>;
   }
 
   return (
@@ -42,12 +42,12 @@ const EdgeEnginePane = ({ symbol }: EdgeEnginePaneProps) => {
 
       <SetupDefinitionPanel setup={setup} />
 
-      <h3 className="font-mono text-xs uppercase tracking-wide text-text-muted mt-2">
+      <h3 className="text-xs uppercase tracking-wide text-text-muted mt-2">
         Scored triggers, {spec.name}, last six weeks
       </h3>
 
       {scoresLoading ? (
-        <div className="text-text-muted text-sm font-mono">Loading edge scores…</div>
+        <div className="text-text-muted text-sm ">Loading edge scores…</div>
       ) : (
         <div className="flex flex-col divide-y divide-foreground/5 border border-foreground/10 rounded-xl overflow-hidden">
           {sortedScores.slice(0, 100).map((s) => (
@@ -56,12 +56,12 @@ const EdgeEnginePane = ({ symbol }: EdgeEnginePaneProps) => {
                 <div className="flex items-center gap-2">
                   <DirectionBadge direction={s.direction} />
                   {s.metRequiredRules ? (
-                    <span className="font-mono text-[10px] text-emerald-500">confirmed</span>
+                    <span className="text-[10px] text-emerald-500">confirmed</span>
                   ) : (
-                    <span className="font-mono text-[10px] text-text-faded">incomplete</span>
+                    <span className="text-[10px] text-text-faded">incomplete</span>
                   )}
                 </div>
-                <span className="font-mono text-xs text-text-muted">
+                <span className="text-xs text-text-muted">
                   {formatDate(s.triggerTimestamp, spec.timezone)} {formatTime(s.triggerTimestamp, spec.timezone)}
                 </span>
               </div>
@@ -69,7 +69,7 @@ const EdgeEnginePane = ({ symbol }: EdgeEnginePaneProps) => {
             </div>
           ))}
           {sortedScores.length === 0 && (
-            <p className="text-text-muted text-sm font-mono text-center py-8">
+            <p className="text-text-muted text-sm text-center py-8">
               No anchor signal occurrences in the selected range.
             </p>
           )}

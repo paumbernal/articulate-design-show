@@ -11,7 +11,7 @@ const DirectionBadge = ({ direction, className = "" }: DirectionBadgeProps) => {
   return (
     <Badge
       variant={isBullish ? "default" : "destructive"}
-      className={`font-mono text-[10px] ${isBullish ? "bg-emerald-500 text-white hover:bg-emerald-500/80" : ""} ${className}`}
+      className={`text-[10px] ${isBullish ? "bg-emerald-500 text-white hover:bg-emerald-500/80" : ""} ${className}`}
     >
       {direction}
     </Badge>

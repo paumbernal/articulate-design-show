@@ -23,4 +23,13 @@ export default tseslint.config(
       "@typescript-eslint/no-unused-vars": "off",
     },
   },
+  {
+    // Vendored Originkit components — kept as-is to stay easy to diff
+    // against upstream updates.
+    files: ["src/components/ui/fluid-text.tsx", "src/components/ui/starfield-button.tsx"],
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+      "no-empty": "off",
+    },
+  },
 );

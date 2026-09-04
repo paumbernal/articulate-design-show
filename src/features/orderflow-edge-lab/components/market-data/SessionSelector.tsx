@@ -9,12 +9,12 @@ interface SessionSelectorProps {
 const SessionSelector = ({ sessionDates, selected, onChange }: SessionSelectorProps) => {
   return (
     <Select value={selected} onValueChange={onChange}>
-      <SelectTrigger className="w-[160px] font-mono text-xs h-8">
+      <SelectTrigger className="w-[160px] text-xs h-8">
         <SelectValue placeholder="Session" />
       </SelectTrigger>
       <SelectContent>
         {[...sessionDates].reverse().map((date) => (
-          <SelectItem key={date} value={date} className="font-mono text-xs">
+          <SelectItem key={date} value={date} className="text-xs">
             {new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", {
               weekday: "short",
               month: "short",

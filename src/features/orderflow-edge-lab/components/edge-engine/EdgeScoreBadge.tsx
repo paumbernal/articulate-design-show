@@ -18,8 +18,8 @@ const EdgeScoreBadge = ({ score, maxScore, componentScores }: EdgeScoreBadgeProp
   return (
     <div className="flex flex-col gap-1.5 min-w-[180px]">
       <div className="flex items-baseline gap-1.5">
-        <span className="font-mono font-bold text-lg">{score.toFixed(0)}</span>
-        <span className="font-mono text-xs text-text-muted">/ {maxScore.toFixed(0)}</span>
+        <span className="font-bold text-lg">{score.toFixed(0)}</span>
+        <span className="text-xs text-text-muted">/ {maxScore.toFixed(0)}</span>
       </div>
       <div className="w-full h-1.5 rounded-full bg-foreground/10 overflow-hidden">
         <div
@@ -32,7 +32,7 @@ const EdgeScoreBadge = ({ score, maxScore, componentScores }: EdgeScoreBadgeProp
           <span
             key={c.signalType}
             title={`${SIGNAL_LABELS[c.signalType] ?? c.signalType}: ${c.present ? `+${c.weight}` : "absent"}`}
-            className={`font-mono text-[9px] px-1.5 py-0.5 rounded border ${
+            className={`text-[9px] px-1.5 py-0.5 rounded border ${
               c.present
                 ? "border-foreground/25 text-foreground"
                 : "border-foreground/5 text-text-faded line-through"

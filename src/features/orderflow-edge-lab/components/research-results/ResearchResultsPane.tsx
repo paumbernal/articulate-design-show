@@ -35,7 +35,7 @@ const ResearchResultsPane = ({ symbol }: ResearchResultsPaneProps) => {
   const { data, isLoading, isFetching } = useBacktest(request);
 
   if (!setup || isLoading || !data) {
-    return <div className="p-8 text-text-muted text-sm font-mono">Running backtest…</div>;
+    return <div className="p-8 text-text-muted text-sm ">Running backtest…</div>;
   }
 
   const maxScore = setup.rules.reduce((sum, r) => sum + r.weight, 0);
@@ -59,7 +59,7 @@ const ResearchResultsPane = ({ symbol }: ResearchResultsPaneProps) => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="border border-foreground/10 rounded-xl p-4 bg-foreground/[0.02]">
-          <h4 className="font-mono text-[10px] uppercase tracking-wide text-text-muted mb-2">
+          <h4 className="text-[10px] uppercase tracking-wide text-text-muted mb-2">
             Outcome Distribution (R multiples)
           </h4>
           <OutcomeDistributionChart rows={statistics.outcomeDistribution} />
@@ -82,7 +82,7 @@ const ResearchResultsPane = ({ symbol }: ResearchResultsPaneProps) => {
       <SignificancePanel validation={statistics.validation} />
 
       {statistics.sampleSize === 0 && (
-        <p className="text-text-muted text-sm font-mono text-center py-8">
+        <p className="text-text-muted text-sm text-center py-8">
           No trades match the current filters. Try lowering the minimum Edge Score.
         </p>
       )}

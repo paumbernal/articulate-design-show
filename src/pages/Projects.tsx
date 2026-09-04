@@ -1,13 +1,18 @@
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Github, ArrowUpRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { MouseEffectBackground } from "@/components/ui/mouse-effect-background";
+import NeonBorder from "@/components/ui/neon-border";
+import FluidText from "@/components/ui/fluid-text";
+import StarfieldButton from "@/components/ui/starfield-button";
+import { useTheme } from "@/hooks/use-theme";
 
 type Project = {
   slug: string;
   status: string;
-  title: string;
+  title: ReactNode;
   oneLiner?: string;
   blurb?: string;
   tech: string[];
@@ -17,9 +22,35 @@ type Project = {
   dotBackground?: boolean;
   compact?: boolean;
   buildStoryUrl?: string;
+  storyButtonLabel?: string;
+  codeSnippet?: string;
 };
 
 const projects: Project[] = [
+  {
+    slug: "/monte-carlo-var-simulation",
+    status: "Built",
+    title: (
+      <>
+        Monte Carlo <span className="normal-case">VaR</span> Simulation
+      </>
+    ),
+    tech: ["TypeScript", "React", "Monte Carlo", "VaR", "CVaR", "Recharts"],
+    github: "https://github.com/paumbernal/monte-carlo-var-simulation",
+    visual: "story",
+    compact: true,
+    buildStoryUrl: "/monte-carlo-var-simulation",
+    storyButtonLabel: "Open Dashboard",
+    codeSnippet: `export function computeVaR(
+  terminalBalances: ArrayLike<number>,
+  startingBalance: number,
+  confidence: number,
+): number {
+  const pnl = Array.from(terminalBalances, (b) => b - startingBalance);
+  const tailPercentile = (1 - confidence) * 100;
+  return -percentile(pnl, tailPercentile);
+}`,
+  },
   {
     slug: "/orderflow",
     status: "In Development",
@@ -29,17 +60,8 @@ const projects: Project[] = [
     visual: "story",
     dotBackground: true,
     compact: true,
-    buildStoryUrl: "/orderflow/how-i-built-it",
-  },
-  {
-    slug: "/optionsflow",
-    status: "Concept",
-    title: "OPTIONSFLOW EDGE LAB",
-    oneLiner: "An early-stage idea for reading options flow and positioning.",
-    blurb:
-      "Still in the planning stage — no code yet. The idea is to explore how options activity, volume, and open interest can reveal what the market is positioning for.",
-    tech: [],
-    visual: "concept",
+    buildStoryUrl: "/orderflow",
+    storyButtonLabel: "Open Terminal",
   },
 ];
 
@@ -62,7 +84,37 @@ const codeSnippet = `class SetupDefinition(CamelModel):
         score = sum(r.weight for r in conditions)
         return EdgeScoreResult(score=score, max_score=self.max_score)`;
 
+const ProjectsTitle = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [fontSize, setFontSize] = useState(48);
+  const { theme } = useTheme();
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const update = () => setFontSize(Math.min(72, Math.max(28, el.clientWidth * 0.068)));
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
+  return (
+    <div ref={containerRef} className="w-full flex justify-center" style={{ height: fontSize * 1.3 }}>
+      <h1 className="sr-only">Projects</h1>
+      <div aria-hidden="true" className="w-full h-full">
+        <FluidText
+          font={{ fontFamily: "Inter", fontWeight: 900, fontSize: `${fontSize}px`, letterSpacing: "-0.03em" }}
+          color={theme === "dark" ? "#FFFFFF" : "#000000"}
+        />
+      </div>
+    </div>
+  );
+};
+
 const Projects = () => {
+  const navigate = useNavigate();
+
   return (
     <main className="relative min-h-screen bg-background text-foreground overflow-hidden">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
@@ -78,7 +130,9 @@ const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h1 className="font-display text-[13vw] md:text-[6vw] leading-[0.9] mb-20">PROJECTS</h1>
+          <div className="mb-20">
+            <ProjectsTitle />
+          </div>
         </motion.div>
 
         <div className="flex flex-col gap-8">
@@ -163,12 +217,27 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 + index * 0.1, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -4 }}
-                className="group relative rounded-[28px] border border-foreground/10 bg-foreground/[0.03] backdrop-blur-2xl shadow-[inset_0_1px_0_0_hsl(var(--foreground)/0.15),0_8px_40px_-16px_rgba(0,0,0,0.25)] hover:border-foreground/20 hover:bg-foreground/[0.05] transition-all duration-300 overflow-hidden"
+                className="group relative rounded-[28px]"
               >
+                {/* Card surface — clipped to the rounded corners; the neon
+                    border below sits outside this so its glow isn't cut off */}
+                <div className="relative rounded-[28px] border border-foreground/10 bg-foreground/[0.03] backdrop-blur-2xl shadow-[inset_0_1px_0_0_hsl(var(--foreground)/0.15),0_8px_40px_-16px_rgba(0,0,0,0.25)] hover:border-foreground/20 hover:bg-foreground/[0.05] transition-colors duration-300 overflow-hidden">
                 {/* Glass sheen */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-foreground/[0.08] via-transparent to-transparent" />
 
-                <Link to={project.slug} className="relative grid md:grid-cols-2">
+                <div
+                  role="link"
+                  tabIndex={0}
+                  aria-label={`View project: ${typeof project.title === "string" ? project.title : project.slug.replace(/^\//, "")}`}
+                  onClick={() => navigate(project.slug)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      navigate(project.slug);
+                    }
+                  }}
+                  className="relative grid md:grid-cols-2 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-green"
+                >
                   {/* Text side */}
                   {project.dotBackground ? (
                     <MouseEffectBackground
@@ -190,18 +259,58 @@ const Projects = () => {
                       dotSpacing={22}
                       backdrop={
                         <pre className="w-full h-full flex items-center justify-center font-mono text-[10px] md:text-[11px] leading-relaxed text-text-muted/20 overflow-hidden whitespace-pre-wrap px-6">
-                          <code>{codeSnippet}</code>
+                          <code>{project.codeSnippet ?? codeSnippet}</code>
                         </pre>
                       }
                     >
-                      <Link
-                        to={project.buildStoryUrl}
-                        onClick={(e) => e.stopPropagation()}
-                        className="inline-flex items-center gap-2 font-mono text-sm text-foreground border border-foreground/15 bg-background/80 backdrop-blur-md rounded-full px-5 py-2.5 shadow-lg hover:border-foreground/30 hover:bg-background/95 transition-colors duration-200"
-                      >
-                        How I Built It
-                        <ArrowUpRight className="w-4 h-4" />
-                      </Link>
+                      <StarfieldButton
+                        label={project.storyButtonLabel ?? "How I Built It"}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          navigate(project.buildStoryUrl!);
+                        }}
+                        font={{
+                          fontFamily:
+                            "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+                          fontWeight: 500,
+                          fontSize: 14,
+                          textAlign: "left",
+                          lineHeight: "1.5em",
+                          letterSpacing: "0em",
+                        }}
+                        padding="10px 20px 10px 20px"
+                        rounded={100}
+                        colors={{ fill: "rgba(10,10,10,0.85)", textColor: "#FFFFFF" }}
+                        addIcon
+                        gap={8}
+                        icon={{
+                          icon: "arrowdiagonal",
+                          side: "right",
+                          size: 16,
+                          type: "symbol",
+                          color: "#FFFFFF",
+                          symbol: "↗",
+                          padding: 0,
+                          rounded: 0,
+                        }}
+                        border={{
+                          borderColor: "rgba(255,255,255,0.15)",
+                          borderStyle: "solid",
+                          borderWidth: 1,
+                        }}
+                        glow={{ size: 14, color: "#CC9149", opacity: 0 }}
+                        stroke={{
+                          size: 56,
+                          color: "#CC9149",
+                          count: 1,
+                          speed: 50,
+                          movement: "continuous",
+                          direction: "ccw",
+                          thickness: 2,
+                        }}
+                        pixel={{ size: 3, color: "#CC9149", density: 50, brightness: 100 }}
+                      />
                     </MouseEffectBackground>
                   ) : (
                     <div
@@ -216,7 +325,18 @@ const Projects = () => {
                       </div>
                     </div>
                   )}
-                </Link>
+                </div>
+                </div>
+
+                <NeonBorder
+                  style={{ position: "absolute", inset: 0, zIndex: 10, pointerEvents: "none" }}
+                  color="#CC9149"
+                  rounded={14}
+                  thickness={2}
+                  borderSize={28}
+                  glow={60}
+                  speed={9}
+                />
               </motion.div>
             );
           })}

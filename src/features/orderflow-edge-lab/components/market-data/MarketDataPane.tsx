@@ -58,14 +58,14 @@ const MarketDataPane = ({ symbol }: MarketDataPaneProps) => {
   }, [bars, sessionBars, sessionDates, selectedSession, profileRange]);
 
   if (barsLoading) {
-    return <div className="p-8 text-text-muted text-sm font-mono">Loading market data…</div>;
+    return <div className="p-8 text-text-muted text-sm ">Loading market data…</div>;
   }
 
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div className="flex items-center gap-3">
-          <h3 className="font-mono text-xs uppercase tracking-wide text-text-muted">
+          <h3 className="text-xs uppercase tracking-wide text-text-muted">
             {spec.name} · {selectedSession ?? "N/A"}
           </h3>
         </div>
@@ -91,7 +91,7 @@ const MarketDataPane = ({ symbol }: MarketDataPaneProps) => {
                 key={r}
                 type="button"
                 onClick={() => setProfileRange(r)}
-                className={`font-mono text-[10px] uppercase px-2 py-1 rounded border transition-colors ${
+                className={`text-[10px] uppercase px-2 py-1 rounded border transition-colors ${
                   profileRange === r
                     ? "border-foreground/40 text-foreground"
                     : "border-foreground/10 text-text-muted hover:text-foreground"

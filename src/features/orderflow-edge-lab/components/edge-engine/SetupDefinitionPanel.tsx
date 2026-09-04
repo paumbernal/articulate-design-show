@@ -17,15 +17,15 @@ const SetupDefinitionPanel = ({ setup }: SetupDefinitionPanelProps) => {
     <div className="border border-foreground/10 rounded-xl p-5 bg-foreground/[0.02]">
       <div className="flex items-start justify-between flex-wrap gap-2 mb-3">
         <div>
-          <h3 className="font-mono font-bold text-base">{setup.name}</h3>
-          <p className="text-xs text-text-muted font-mono mt-0.5">
+          <h3 className="font-bold text-base">{setup.name}</h3>
+          <p className="text-xs text-text-muted mt-0.5">
             v{setup.version} · min score {setup.minEdgeScoreDefault}/{maxScore}
           </p>
         </div>
       </div>
       <p className="text-sm text-foreground/80 leading-relaxed mb-4">{setup.description}</p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 mb-4 font-mono text-[11px] text-text-muted">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 mb-4 text-[11px] text-text-muted">
         <div>
           entry <span className="text-foreground">{setup.entryMethodology}</span>
         </div>
@@ -40,7 +40,7 @@ const SetupDefinitionPanel = ({ setup }: SetupDefinitionPanelProps) => {
         </div>
       </div>
 
-      <table className="w-full text-xs font-mono">
+      <table className="w-full text-xs ">
         <thead>
           <tr className="text-text-muted text-left">
             <th className="font-normal pb-2">Condition</th>

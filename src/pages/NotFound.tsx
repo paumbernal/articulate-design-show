@@ -20,9 +20,9 @@ const NotFound = () => {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="text-center"
         >
-          <p className="font-mono text-2xl md:text-4xl text-foreground lowercase tracking-tight mb-6">
+          <h1 className="font-mono text-2xl md:text-4xl text-foreground lowercase tracking-tight mb-6">
             404
-          </p>
+          </h1>
           <p className="font-mono text-sm md:text-base text-text-muted lowercase tracking-wide mb-8">
             page not found
           </p>

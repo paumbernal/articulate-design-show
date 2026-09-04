@@ -29,8 +29,8 @@ const StatsSummaryGrid = ({ stats }: StatsSummaryGridProps) => {
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
       {cells.map((cell) => (
         <div key={cell.label} className="border border-foreground/10 rounded-lg p-3 bg-foreground/[0.02]">
-          <p className="font-mono text-[10px] uppercase tracking-wide text-text-muted mb-1">{cell.label}</p>
-          <p className={`font-mono font-bold text-lg ${cell.accent ? "text-amber-500" : ""}`}>{cell.value}</p>
+          <p className="text-[10px] uppercase tracking-wide text-text-muted mb-1">{cell.label}</p>
+          <p className={`font-bold text-lg ${cell.accent ? "text-amber-500" : ""}`}>{cell.value}</p>
         </div>
       ))}
     </div>

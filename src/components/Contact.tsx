@@ -32,6 +32,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="min-h-[70vh] flex items-center justify-center px-8">
+      <h1 className="sr-only">Contact</h1>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

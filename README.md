@@ -1,11 +1,116 @@
 # Pau Martínez Bernal — Portfolio
 
-Personal portfolio site (React + Vite + TypeScript + Tailwind + shadcn/ui). The one project worth reading about in detail is **OrderFlow Edge Lab**, documented below.
+Personal portfolio site (React + Vite + TypeScript + Tailwind + shadcn/ui). Two projects are documented in detail below: **Monte Carlo VaR Simulation** and **OrderFlow Edge Lab**.
 
 ```bash
 npm install
 npm run dev      # http://localhost:8080
 ```
+
+---
+
+# Monte Carlo VaR Simulation
+
+*A quantitative risk-analysis dashboard for a rules-based futures trading strategy: Monte Carlo simulation of a trade-return distribution, Value-at-Risk, Expected Shortfall, drawdown analysis, and risk of ruin. This is not a trading recommendation, and it's not a record of live performance.*
+
+Live in this portfolio at `/monte-carlo-var-simulation`. Source: [`src/features/futures-risk-lab/`](src/features/futures-risk-lab/), a pure TypeScript quantitative engine (`lib/`) with no UI dependencies, driving a React dashboard (`components/`).
+
+## Project Overview
+
+The pipeline: **trading strategy assumptions → trade-return distribution → Monte Carlo simulation → simulated equity curves → distribution of terminal account values → maximum drawdown analysis → Value-at-Risk → Expected Shortfall → risk-of-ruin analysis → interactive risk dashboard.**
+
+The default assumptions model an MNQ (Micro E-mini Nasdaq-100) day-trading strategy: 59% win rate, +1.2R average winner, -1R average loser, $200 risked per trade (about +$60.40 theoretical expectancy per trade). Every one of those numbers, along with starting balance, trade count, simulation count, VaR confidence, drawdown thresholds, ruin definition, and account target, is a live input in the dashboard, with sensible defaults and validated ranges.
+
+The dashboard operates in two modes:
+
+- **Synthetic mode** (default): trades are drawn from a parametric distribution built around the assumptions above.
+- **Historical/Empirical mode**: upload a CSV of real trades (`date,pnl,r_multiple`, plus optional instrument/price/size/fee/time columns). The app computes actual win rate, average win/loss, expectancy, profit factor, and historical drawdown, then bootstrap-resamples the Monte Carlo simulation directly from that empirical R-multiple distribution instead of the parametric one.
+
+## Architecture
+
+```
+src/features/futures-risk-lab/
+  types.ts                 Shared types: SimulationConfig, SimulationResult, EmpiricalTradeRecord, ...
+  lib/                      The quantitative engine. No React imports, and independently unit-tested.
+    rng.ts                  Seeded PRNG (mulberry32) + Gaussian (Marsaglia polar) + Gamma (Marsaglia-Tsang)
+    tradeDistribution.ts     Synthetic per-trade R-multiple sampler (see Methodology below)
+    monteCarlo.ts            The simulation loop: N paths x M trades produce terminal balance, max
+                              drawdown, and min/max balance per path, plus a bounded sample of full
+                              equity curves
+    riskMetrics.ts            Percentiles, VaR, CVaR, drawdown-threshold probabilities, risk of ruin,
+                              and target probabilities: pure functions over already-simulated arrays
+    dashboardMetrics.ts        Composes riskMetrics.ts into everything the dashboard displays
+    csvParser.ts               Historical-trade CSV parsing plus empirical statistics
+    histogram.ts                Generic binning helper shared by every distribution chart
+    formatters.ts, defaults.ts, validateConfig.ts
+  components/                Presentational React components (charts, panels, forms). No simulation
+                              logic lives here, only lib/ calls and rendering
+  FuturesRiskLab.tsx          Container: owns config state, debounces expensive re-simulation, and
+                              recomputes cheap derived metrics (thresholds/targets) instantly
+```
+
+**Why the engine and UI are split here specifically:** `runMonteCarloSimulation` (expensive, since it generates a fresh set of N random paths) is debounced behind parameter changes, while `computeDashboardMetrics` (cheap, just linear scans over already-simulated arrays) recomputes instantly when you drag a drawdown threshold or change the account target, without re-running the simulation. That split only works because the engine returns raw per-path arrays rather than pre-baked statistics.
+
+**No backend.** Unlike OrderFlow Edge Lab, this project needed no Python engine. The simulation (up to 50,000 paths and 2,000 trades) runs in well under a second in the browser, so a pure client-side TypeScript engine gives instant interactivity (every slider re-simulates) without a server round trip, and the whole thing ships as part of the static build.
+
+## Methodology
+
+**Monte Carlo simulation.** Each of `numSimulations` independent paths draws `numTrades` random trade outcomes, accumulates them into an equity curve starting from `startingBalance`, and records the terminal balance, the maximum peak-to-trough drawdown, and the min/max balance reached at any point. Running thousands of paths turns "what might happen" into a measurable distribution.
+
+**Trade-return distribution.** Rather than emitting exactly +1.2R on every win and exactly -1R on every loss, each side is drawn from a Gamma distribution whose mean is pinned to the requested average. Winners default to a lower shape parameter, giving more spread and a right-skewed tail, reflecting that a trend or breakout edge occasionally runs well past "average." Losers default to a higher shape parameter, staying tighter, reflecting that a hard stop caps most losses at close to the same size. Both shape parameters are adjustable. Dollar P&L per trade equals the R multiple times `riskPerTrade`.
+
+**Value-at-Risk.** Computed as a percentile of the simulated terminal profit and loss distribution: sort every path's ending P&L, take the value at the `(1 - confidence)` percentile, and negate it. This is the standard historical/simulation method for VaR, applied to Monte Carlo output instead of a historical return series. Supports 95% and 99% out of the box.
+
+**Expected Shortfall (CVaR).** The average P&L among only the outcomes at least as bad as VaR. It captures the average magnitude of the tail, not just its edge.
+
+**Maximum drawdown, per path.** The worst `(peak - balance) / peak` seen at any point, tracked with a running high-water mark. The dashboard reports the distribution of this across all paths (percentiles, worst case, probability of exceeding a threshold) rather than a single number.
+
+**Risk of ruin.** The fraction of paths whose balance falls to or below a user-defined floor (a percentage of starting balance) *at any point* in the simulated horizon, not just at the end. This is deliberately path-dependent, since a positive-expectancy strategy can still carry real risk of a deep intra-sequence drawdown.
+
+**Synthetic vs. empirical.** Synthetic mode samples from the Gamma model above. Empirical mode bootstrap-resamples (draws with replacement) directly from an uploaded trade history's R multiples, so the simulation reflects whatever skew or fat tails the real distribution actually has. The tradeoff is that it can't produce outcomes the historical sample never contained.
+
+The in-app **Methodology** tab covers all of this in the same depth, next to the numbers it explains.
+
+## Known Limitations
+
+Stated explicitly, not buried:
+
+- Synthetic-mode assumptions are not verified historical performance. They're inputs you chose, not a track record.
+- Monte Carlo output depends entirely on the assumed (or uploaded) trade-return distribution, so changing it changes every downstream number.
+- VaR describes a threshold, not the shape of the tail beyond it. That's what CVaR is for, and even CVaR is an average, not a worst case.
+- Nothing here models slippage, commissions, or a change in market regime unless it's implicitly present in uploaded historical trades.
+- Position sizing is fixed dollar risk per trade, with no compounding and no scaling with account growth. This is a deliberate simplification, documented rather than hidden.
+- Bootstrap resampling in empirical mode can't manufacture outcomes a short trade history never actually produced.
+- There's no CME holiday calendar or session modeling. Trades are treated as an ordered sequence, not scheduled in time.
+
+## Engineering Challenges
+
+Found during manual browser verification of this exact build, not by the unit test suite, which checked the math in isolation and passed.
+
+With the default MNQ assumptions (59% win rate, +1.2R/-1R, 200 trades), essentially every simulated path over that horizon ends up profitable, so the 1st and 5th percentiles of terminal P&L are themselves positive. `VaR = -percentile(P&L, 1-confidence)` is mathematically correct in that case, and the monotonicity `VaR99 >= VaR95` still holds (unit-tested against constructed data), but it makes the raw VaR value *negative*. A "-$6,150 VaR" reads, at a glance, exactly like a $6,150 loss, when it actually means a guaranteed minimum *gain* of $6,150 at that confidence level. I only caught this by reading the rendered numbers in the browser, not from any test. I fixed it at the display layer (`lib/formatters.ts`'s `formatLossMetric`) rather than touching the math: a value is now labeled "Min. gain $X" and colored accordingly whenever the tail threshold is actually favorable, instead of relying on a bare minus sign to carry that meaning. The math didn't change. The honesty of the label did.
+
+## Future Work
+
+- Position sizing that scales with account equity (compounding), as an alternative to the current fixed-dollar-risk model.
+- A fatter-tailed synthetic distribution option (e.g. Student-t) for strategies where Gamma's thin tails understate real-world slippage/gap risk.
+- Walk-forward / rolling-window empirical resampling instead of a single flat bootstrap pool.
+- Persisting a saved parameter set (localStorage) so a comparison across scenarios doesn't require re-entering assumptions.
+
+## Attribution
+
+The Monte Carlo, VaR, and CVaR percentile methodology (historical and simulation VaR, tail-average CVaR) follows standard, widely published quantitative finance technique, the same technique demonstrated in the open-source [`MonteCarlo-simulation`](https://github.com/arunp77/MonteCarlo-simulation) repository by Arun Kumar Pandey (MIT licensed), which was used as a reference while building this project. Every line of code in `src/features/futures-risk-lab/`, including the futures/R-multiple trade model, the TypeScript simulation engine, the risk-metric functions, the CSV empirical-data pipeline, and the dashboard itself, is a from-scratch implementation written for this project, not a port of that repository's Python and Jupyter code.
+
+## Running it
+
+```bash
+npm install
+npm run dev          # http://localhost:8080/monte-carlo-var-simulation
+
+npm test              # vitest, includes the full futures-risk-lab engine test suite
+npm run lint
+```
+
+No backend, no environment variables, no separate setup step. `npm install && npm run dev` is the whole thing.
 
 ---
 

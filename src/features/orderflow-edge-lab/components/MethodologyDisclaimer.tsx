@@ -11,7 +11,7 @@ const MethodologyDisclaimer = () => {
     .map((s) => (s.endsWith(".") ? s : `${s}.`));
 
   return (
-    <div className="flex items-start gap-2 border border-amber-500/25 bg-amber-500/[0.06] rounded-lg px-3 py-2 text-[11px] font-mono text-amber-600 dark:text-amber-400">
+    <div className="flex items-start gap-2 border border-amber-500/25 bg-amber-500/[0.06] rounded-lg px-3 py-2 text-[11px] text-amber-600 dark:text-amber-400">
       <AlertTriangle className="w-3.5 h-3.5 mt-0.5 shrink-0" />
       <div className="flex flex-col">
         {sentences.map((sentence) => (

@@ -19,7 +19,7 @@ const VolumeProfilePanel = ({ bars, tickSize, height = 420, onHoverPrice }: Volu
   const levels = useMemo(() => [...profile.levels].reverse(), [profile.levels]);
 
   if (bars.length === 0 || profile.levels.length === 0) {
-    return <div className="flex items-center justify-center h-full text-text-muted text-xs font-mono">No data</div>;
+    return <div className="flex items-center justify-center h-full text-text-muted text-xs ">No data</div>;
   }
 
   const maxVolume = Math.max(...profile.levels.map((l) => l.volume));
@@ -83,7 +83,7 @@ const VolumeProfilePanel = ({ bars, tickSize, height = 420, onHoverPrice }: Volu
                   <text
                     x={0}
                     y={y + rowHeight * 0.7}
-                    className={`text-[8px] font-mono ${isHovered ? "fill-foreground font-bold" : "fill-text-muted"}`}
+                    className={`text-[8px] ${isHovered ? "fill-foreground font-bold" : "fill-text-muted"}`}
                   >
                     {formatPrice(level.price, tickSize)}
                   </text>
@@ -95,7 +95,7 @@ const VolumeProfilePanel = ({ bars, tickSize, height = 420, onHoverPrice }: Volu
 
         {hovered && (
           <div
-            className="absolute right-1 font-mono text-[10px] bg-background border border-foreground/15 rounded px-2 py-1 pointer-events-none shadow-sm"
+            className="absolute right-1 text-[10px] bg-background border border-foreground/15 rounded px-2 py-1 pointer-events-none shadow-sm"
             style={{ top: Math.min((hoverIndex as number) * rowHeight, height - 54) }}
           >
             <div className="font-bold">{formatPrice(hovered.price, tickSize)}</div>
@@ -107,7 +107,7 @@ const VolumeProfilePanel = ({ bars, tickSize, height = 420, onHoverPrice }: Volu
         )}
       </div>
 
-      <div className="flex flex-col gap-1 mt-2 font-mono text-[10px] text-text-muted shrink-0">
+      <div className="flex flex-col gap-1 mt-2 text-[10px] text-text-muted shrink-0">
         <div>
           <span className="text-foreground">POC</span> {formatPrice(profile.poc, tickSize)}
         </div>

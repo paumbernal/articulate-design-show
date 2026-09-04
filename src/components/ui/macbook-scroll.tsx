@@ -30,11 +30,13 @@ import { cn } from "@/lib/utils";
  */
 export const MacbookScroll = ({
   src,
+  alt = "laptop screen",
   showGradient,
   title,
   badge,
 }: {
   src?: string;
+  alt?: string;
   showGradient?: boolean;
   title?: string | React.ReactNode;
   badge?: React.ReactNode;
@@ -63,7 +65,7 @@ export const MacbookScroll = ({
       ref={ref}
       className="flex min-h-[200vh] shrink-0 scale-[0.35] transform flex-col items-center justify-start py-0 [perspective:800px] sm:scale-50 md:scale-100 md:py-40"
     >
-      <motion.h2
+      <motion.h1
         style={{ translateY: textTransform, opacity: textOpacity }}
         className="mb-20 text-center text-3xl font-bold text-foreground"
       >
@@ -72,9 +74,9 @@ export const MacbookScroll = ({
             This Macbook is built with Tailwindcss. <br /> No kidding.
           </span>
         )}
-      </motion.h2>
+      </motion.h1>
 
-      <Lid src={src} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
+      <Lid src={src} alt={alt} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
 
       {/* Base area */}
       <div className="relative -z-10 h-[22rem] w-[32rem] overflow-hidden rounded-2xl bg-gray-200 dark:bg-[#272729]">
@@ -110,12 +112,14 @@ export const Lid = ({
   rotate,
   translate,
   src,
+  alt = "laptop screen",
 }: {
   scaleX: MotionValue<number>;
   scaleY: MotionValue<number>;
   rotate: MotionValue<number>;
   translate: MotionValue<number>;
   src?: string;
+  alt?: string;
 }) => {
   return (
     <div className="relative [perspective:800px]">
@@ -141,7 +145,8 @@ export const Lid = ({
         {src ? (
           <img
             src={src}
-            alt="laptop screen"
+            alt={alt}
+            loading="lazy"
             className="absolute inset-0 h-full w-full rounded-lg object-cover object-left-top"
           />
         ) : (

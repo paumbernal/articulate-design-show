@@ -17,7 +17,7 @@ const OrderFlowTerminal = () => {
       <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
         <div>
           <p className="text-text-muted text-xs uppercase tracking-wide mb-1">Research Terminal</p>
-          <h2 className="font-mono font-bold text-2xl">OrderFlow Edge Lab</h2>
+          <h1 className="font-bold text-2xl">OrderFlow Edge Lab</h1>
         </div>
         <div className="flex gap-1 border border-foreground/10 rounded-lg p-1">
           {INSTRUMENT_OPTIONS.map((opt) => (
@@ -25,7 +25,7 @@ const OrderFlowTerminal = () => {
               key={opt}
               type="button"
               onClick={() => setSymbol(opt)}
-              className={`font-mono text-xs px-3 py-1.5 rounded-md transition-colors ${
+              className={`text-xs px-3 py-1.5 rounded-md transition-colors ${
                 symbol === opt ? "bg-foreground text-background" : "text-text-muted hover:text-foreground"
               }`}
             >
@@ -40,17 +40,17 @@ const OrderFlowTerminal = () => {
       </div>
 
       <Tabs defaultValue="market-data">
-        <TabsList className="mb-6">
-          <TabsTrigger value="market-data" className="font-mono text-xs">
+        <TabsList className="mb-6 flex-wrap h-auto">
+          <TabsTrigger value="market-data" className="text-xs">
             Market Data
           </TabsTrigger>
-          <TabsTrigger value="detected-conditions" className="font-mono text-xs">
+          <TabsTrigger value="detected-conditions" className="text-xs">
             Detected Conditions
           </TabsTrigger>
-          <TabsTrigger value="edge-engine" className="font-mono text-xs">
+          <TabsTrigger value="edge-engine" className="text-xs">
             Edge Engine
           </TabsTrigger>
-          <TabsTrigger value="research-results" className="font-mono text-xs">
+          <TabsTrigger value="research-results" className="text-xs">
             Research Results
           </TabsTrigger>
         </TabsList>

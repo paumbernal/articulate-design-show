@@ -84,7 +84,7 @@ const CandlestickChart = ({
 
   if (bars.length === 0) {
     return (
-      <div className="flex items-center justify-center h-[420px] text-text-muted text-sm font-mono">
+      <div className="flex items-center justify-center h-[420px] text-text-muted text-sm ">
         No bars in the selected range.
       </div>
     );
@@ -109,7 +109,7 @@ const CandlestickChart = ({
           return (
             <g key={t}>
               <line x1={PADDING.left} x2={width - PADDING.right} y1={y} y2={y} className="stroke-foreground/5" />
-              <text x={width - PADDING.right + 6} y={y + 3} className="fill-text-muted text-[9px] font-mono">
+              <text x={width - PADDING.right + 6} y={y + 3} className="fill-text-muted text-[9px] ">
                 {formatPrice(price, tickSize)}
               </text>
             </g>
@@ -202,7 +202,7 @@ const CandlestickChart = ({
             <text
               x={width - PADDING.right + 6}
               y={priceScale(highlightPrice) + 3}
-              className="text-[9px] font-mono font-bold"
+              className="text-[9px] font-bold"
               fill="hsl(38 92% 50%)"
             >
               {formatPrice(highlightPrice, tickSize)}
@@ -212,7 +212,7 @@ const CandlestickChart = ({
       </svg>
 
       {hovered && (
-        <div className="absolute top-0 left-0 font-mono text-[10px] bg-background/90 border border-foreground/10 rounded px-2 py-1 pointer-events-none">
+        <div className="absolute top-0 left-0 text-[10px] bg-background/90 border border-foreground/10 rounded px-2 py-1 pointer-events-none">
           <span className="text-text-muted">{formatTime(hovered.timestamp, timezone)}</span>{" "}
           <span>O {formatPrice(hovered.open, tickSize)}</span>{" "}
           <span>H {formatPrice(hovered.high, tickSize)}</span>{" "}

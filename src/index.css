@@ -41,7 +41,7 @@
     --text-primary: 0 0% 8%;
     --text-secondary: 0 0% 35%;
     --text-muted: 0 0% 55%;
-    --text-faded: 0 0% 70%;
+    --text-faded: 0 0% 58%;
     
     --accent-green: 120 60% 45%;
     
@@ -96,7 +96,7 @@
     --text-primary: 0 0% 96%;
     --text-secondary: 0 0% 75%;
     --text-muted: 0 0% 55%;
-    --text-faded: 0 0% 35%;
+    --text-faded: 0 0% 45%;
 
     --accent-green: 120 60% 50%;
 
@@ -124,6 +124,12 @@
 
   html {
     scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 
   body {
