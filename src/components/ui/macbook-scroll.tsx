@@ -33,12 +33,14 @@ export const MacbookScroll = ({
   alt = "laptop screen",
   showGradient,
   title,
+  scrollHint,
   badge,
 }: {
   src?: string;
   alt?: string;
   showGradient?: boolean;
   title?: string | React.ReactNode;
+  scrollHint?: string;
   badge?: React.ReactNode;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -76,7 +78,14 @@ export const MacbookScroll = ({
         )}
       </motion.h1>
 
-      <Lid src={src} alt={alt} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
+      <div className="relative">
+        {scrollHint && (
+          <span className="absolute bottom-full left-1/2 mb-[35px] -translate-x-1/2 whitespace-nowrap text-xs tracking-wide text-text-muted opacity-90">
+            {scrollHint}
+          </span>
+        )}
+        <Lid src={src} alt={alt} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
+      </div>
 
       {/* Base area */}
       <div className="relative -z-10 h-[22rem] w-[32rem] overflow-hidden rounded-2xl bg-gray-200 dark:bg-[#272729]">
