@@ -5,8 +5,6 @@ import { usePageInView } from "@/hooks/use-page-in-view";
 import { TextFlip } from "@/components/ui/text-flip";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { GithubMark } from "@/components/ui/github-mark";
-import { FloatingDock } from "@/components/ui/floating-dock";
-import AboutDock, { DOCK_ITEMS } from "@/components/AboutDock";
 
 const WORDS = ["Researcher", "Developer", "Strategist"];
 
@@ -57,10 +55,6 @@ const AboutMobile = () => (
         ))}
       </ul>
     </section>
-
-    <div className="flex justify-center pt-8">
-      <FloatingDock items={DOCK_ITEMS} />
-    </div>
   </div>
 );
 
@@ -101,8 +95,6 @@ const About = () => {
           }
           showGradient={false}
         />
-
-        <AboutDock />
       </div>
 
       <AboutMobile />
