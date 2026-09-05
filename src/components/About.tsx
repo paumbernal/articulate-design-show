@@ -71,7 +71,7 @@ const About = () => {
           src="/about-me-board.jpg"
           alt="A project board summarizing my background: my interest in finance and markets, what I'm currently working on, and where I'm headed"
           title={
-            <span className="flex flex-col items-center gap-2">
+            <span className="flex flex-col items-center gap-14">
               <span ref={ref} className="inline-flex items-center gap-2.5 font-medium text-muted-foreground">
                 <span>I am a</span>
                 <span className="inline-grid">
@@ -88,7 +88,7 @@ const About = () => {
                   </TextFlip>
                 </span>
               </span>
-              <span className="text-xs font-mono lowercase tracking-wide text-text-muted">(scroll)</span>
+              <span className="text-xs tracking-wide text-text-muted">(scroll)</span>
             </span>
           }
           badge={
