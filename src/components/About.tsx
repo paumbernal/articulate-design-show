@@ -71,21 +71,24 @@ const About = () => {
           src="/about-me-board.jpg"
           alt="A project board summarizing my background: my interest in finance and markets, what I'm currently working on, and where I'm headed"
           title={
-            <span ref={ref} className="inline-flex items-center gap-2.5 font-medium text-muted-foreground">
-              <span>I am a</span>
-              <span className="inline-grid">
-                {/* Placeholder for the longest word */}
-                <span className="invisible col-start-1 row-start-1" aria-hidden>
-                  {WORDS.reduce((a, b) => (a.length >= b.length ? a : b))}
+            <span className="flex flex-col items-center gap-2">
+              <span ref={ref} className="inline-flex items-center gap-2.5 font-medium text-muted-foreground">
+                <span>I am a</span>
+                <span className="inline-grid">
+                  {/* Placeholder for the longest word */}
+                  <span className="invisible col-start-1 row-start-1" aria-hidden>
+                    {WORDS.reduce((a, b) => (a.length >= b.length ? a : b))}
+                  </span>
+                  {/* text-left keeps every word starting at the same x — the slot is
+                      sized to the longest word, and the h2 centers text by default. */}
+                  <TextFlip as={motion.span} className="col-start-1 row-start-1 text-left text-foreground" play={play}>
+                    {WORDS.map((word) => (
+                      <span key={word}>{word}</span>
+                    ))}
+                  </TextFlip>
                 </span>
-                {/* text-left keeps every word starting at the same x — the slot is
-                    sized to the longest word, and the h2 centers text by default. */}
-                <TextFlip as={motion.span} className="col-start-1 row-start-1 text-left text-foreground" play={play}>
-                  {WORDS.map((word) => (
-                    <span key={word}>{word}</span>
-                  ))}
-                </TextFlip>
               </span>
+              <span className="text-xs font-mono lowercase tracking-wide text-text-muted">(scroll)</span>
             </span>
           }
           badge={
