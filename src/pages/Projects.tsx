@@ -2,7 +2,6 @@ import { type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Github, ArrowUpRight } from "lucide-react";
-import Navigation from "@/components/Navigation";
 import NeonBorder from "@/components/ui/neon-border";
 
 type Project = {
@@ -93,7 +92,6 @@ const Projects = () => {
         <div className="absolute top-[62%] left-[8%] w-[26rem] h-[26rem] rounded-full bg-accent-green/10 blur-[120px]" />
       </div>
 
-      <Navigation />
       <div className="max-w-5xl mx-auto px-8 pt-32 pb-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
