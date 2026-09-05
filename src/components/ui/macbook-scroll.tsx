@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import {
+  ArrowDown,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
@@ -33,14 +34,12 @@ export const MacbookScroll = ({
   alt = "laptop screen",
   showGradient,
   title,
-  scrollHint,
   badge,
 }: {
   src?: string;
   alt?: string;
   showGradient?: boolean;
   title?: string | React.ReactNode;
-  scrollHint?: string;
   badge?: React.ReactNode;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -78,14 +77,7 @@ export const MacbookScroll = ({
         )}
       </motion.h1>
 
-      <div className="relative">
-        {scrollHint && (
-          <span className="absolute bottom-full left-1/2 mb-[35px] -translate-x-1/2 whitespace-nowrap text-xs tracking-wide text-text-muted opacity-90">
-            {scrollHint}
-          </span>
-        )}
-        <Lid src={src} alt={alt} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
-      </div>
+      <Lid src={src} alt={alt} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
 
       {/* Base area */}
       <div className="relative -z-10 h-[22rem] w-[32rem] overflow-hidden rounded-2xl bg-gray-200 dark:bg-[#272729]">
@@ -111,6 +103,8 @@ export const MacbookScroll = ({
         )}
         {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
       </div>
+
+      <ArrowDown className="mt-8 h-6 w-6 text-text-muted" />
     </div>
   );
 };

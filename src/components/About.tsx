@@ -88,7 +88,6 @@ const About = () => {
               </span>
             </span>
           }
-          scrollHint="(scroll)"
           badge={
             <a href="https://github.com/paumbernal" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <GithubMark className="h-8 w-8 -rotate-12 transform text-black" />
